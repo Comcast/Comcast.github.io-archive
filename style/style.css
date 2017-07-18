@@ -16,33 +16,70 @@
  */
 
  html, body {
-    padding: 0;
-    margin: 0;
-    color: #191919;
-    background-color: #eef1f3;
+	padding: 0;
+	margin: 0;
+	color: #191919;
+	background-color: #eef1f3;
 }
 
 xc-header {
-    display: block;
-    min-height: 44px;
-    background: #000;
+	display: block;
+	min-height: 44px;
+	background: #000;
 }
 
-.intro-message-container {
-    margin-left: 15%;
-    margin-right: 15%;
+.intro-message-container, .projects {
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .hero-logo-container {
-    margin-left: 40%;
-    margin-right: 40%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 2%;
-    border-bottom: 1px solid black;
+	width: 320px;
+	padding-top: 5%;
+	margin: 0 auto 1.5em;
+	border: 1px solid#000;
+	border-width: 0 0 1px 0;
+}
+
+.projects {
+	clear: both;
+	padding-top: 2em;
+}
+
+.category-menu,
+.category-menu li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 5px;
+}
+
+.category-menu a {
+	display: block;
+	padding: 0 0 0 1em;
+	height: 44px;
+	line-height: 44px;
+	background: #fff;
+	border: 1px solid #0272b6;
+	text-transform: uppercase;
+}
+
+.category-menu a:hover {
+	color: #fff;
+	background: #0272b6;
+	border-color: #0272b6;
+}
+
+@media all and (min-width: 700px) {
+	.category-menu {
+		float: left;
+		width: 200px;
+	}
+	.github-content {
+		padding-left: 220px;
+	}
 }
 
 .project-logo {
-    height: 200px;
-    width: 200px;
+	height: 200px;
+	width: 200px;
 }
