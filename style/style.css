@@ -16,24 +16,33 @@
  */
 
  html, body {
-	padding: 0;
-	margin: 0;
-  color: #191919;
-  background-color: #eef1f3;
+    padding: 0;
+    margin: 0;
+    color: #191919;
+    background-color: #eef1f3;
 }
 
-xc-header { display: block; min-height: 44px; background: #000; }
-
-.intro-message-container{
-	margin-left:15%;
-	margin-right:15%;
+xc-header {
+    display: block;
+    min-height: 44px;
+    background: #000;
 }
 
-.hero-logo-container{
-	margin-left:40%;
-	margin-right:40%;
-	padding-top:5%;
-	padding-bottom:5%;
-	margin-bottom:2%;
-	border-bottom:1px solid black;
+.intro-message-container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.hero-logo-container {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+.project-logo {
+    height: 200px;
+    width: 200px;
 }
