@@ -1,5 +1,4 @@
-(function ($) {
-    $(function () {
+
         function showAll(){
             $(".github-content li").show();
         }
@@ -47,5 +46,3 @@
             $(".github-content li").hide();
 	    $(".github-content li.category-video").show();
 	}
-    });
-}(jQuery));
