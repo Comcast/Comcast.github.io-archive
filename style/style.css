@@ -1,7 +1,11 @@
-﻿#logo-img{
-	height:50px;
-	width:ato;
+﻿html, body {
+	padding: 0;
+	margin: 0;
+  color: #191919;
+  background-color: #eef1f3;
 }
+
+xc-header { display: block; min-height: 44px; background: #000; }
 
 .intro-message-container{
 	margin-left:15%;
