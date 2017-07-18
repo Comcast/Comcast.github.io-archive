@@ -1,272 +1,37 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="./style/header.css">
-		<link rel="stylesheet" type="text/css" href="./style/home.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<title>
-		Open Source Comcast
-	</title>
-	<header>
-		<div class="polaris-nav polaris-nav-header-wrapper" role="navigation">
-			<div class="polaris-header" data-track-module="header" data-track-type="basic">
-				<ul class="polaris-navigation">
-						<li class="polaris-item xfinity-logo">
-							<a href="https://www.xfinity.com" target="_self" class="polaris-link  " data-link-info="ex finity home page">
-								
-							</a>
-						</li>
-				</ul>		
-			</div>
-		</div>
-	</header>
-	<body>
-		<div class="hero-logo-container">
-			<img class="uc_img" src="./img/OpenSourceComcast.png" alt="Open Source Comcast."></img>
-		</div>
-		<div class="intro-message-container">
-			<div>
-				<p>Comcast cares about Free/Libre and Open Source Software (FLOSS). We use FLOSS every day in virtually every software or hardware product we produce. Without FLOSS, Comcast would not be able to bring you great experiences through X1, we wouldn't be able to provide you with the best home security in the world, and we wouldn't be able to provide your with outstanding Internet service.</p>
-				<p>At Comcast, we are built on Free/Libre and Open Source Software, and we are committed as a company to giving back to the community and sharing what we work on with the world. As a platinum sponsor to The Apache Software Foundation we are deeply invested in making a difference through our works.</p>
-			</div>
-		</div>
-	</body>
-	<footer>
-		<footer class="x-globalfooter">
+﻿#logo-img{
+	height:50px;
+	width:ato;
+}
 
-    <section class="x-globalfooter__full">
+.polaris-link{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAAAyCAYAAABs3ChCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRThFRTgzQTlFOTMxMUU0OTVGRkZBMTc4ODFBNEJBRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRThFRTgzQjlFOTMxMUU0OTVGRkZBMTc4ODFBNEJBRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFOEVFODM4OUU5MzExRTQ5NUZGRkExNzg4MUE0QkFFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFOEVFODM5OUU5MzExRTQ5NUZGRkExNzg4MUE0QkFFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OXO/qAAACc9JREFUeNrsXQmQ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);
+		background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80px;
+        margin: 0px 30px 10px 10px;
+        height: 30px;
+		display:block;
+}
+.polaris-nav-header-wrapper{
+	background-color:#000;
+	top:0px;
+}
 
-        <div class="x-globalfooter__share">
-            <div class="x-globalfooter__inner">
-                <ul class="x-flex-row x-content middle-sm x-list--no-bullets">
-                    <li class="x-flex__col x-globalfooter-xfinitylogo">
-                        <a href="//www.xfinity.com" data-tracking="{}">
-                            <svg class="x-icon x-icon--large">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/learn/public/images/logo-sprite.svg#logo-xfinity"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="x-flex__col x-globalfooter__share-twitter">
-                        <a data-tracking="{}" href="//twitter.com/XFINITY">
-                            <svg class="x-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/learn/public/images/logo-sprite.svg#logo-twitter"></use>
-                            </svg>
-                            Follow us for exclusive deals
-                        </a>
-                    </li>
-                    <li class="x-flex__col x-globalfooter__share-youtube">
-                        <a data-tracking="{}" href="//www.youtube.com/user/xfinity?feature=results_main">
-                            <svg class="x-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/learn/public/images/logo-sprite.svg#logo-youtube"></use>
-                            </svg>
-                            Find tutorials and demos
-                        </a>
-                    </li>
-                    <li class="x-flex__col x-globalfooter__share-facebook">
-                        <a data-tracking="{}" href="//www.facebook.com/xfinity">
-                            <svg class="x-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/learn/public/images/logo-sprite.svg#logo-facebook"></use>
-                            </svg>
-                            Connect on Facebook
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+.polaris-header{
+	margin-left:15%;
+	margin-right:15%;
+}
 
-        <div class="x-globalfooter__universe" data-doublecolbreak="10">
-            <div class="x-globalfooter__inner x-flex-row x-content">
-                    <div class="x-flex__col-xs-4">
-                        <h4 class="x-globalfooter__heading">Shop</h4>
-                        <ul class="x-list--no-bullets x-list--two-col">
-                                <li>
-                                    <a href="//www.xfinity.com/learn/offers" data-tracking="{}">Bundles &amp; Promotions</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/Corporate/Learn/DigitalCable/digitalcable.html" data-tracking="{}">TV</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/learn/internet-service" data-tracking="{}">Internet</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/home-phone-service.html" data-tracking="{}">Voice</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/home-security.html" data-tracking="{}">Home</a>
-                                </li>
-                                <li>
-                                    <a href="//business.comcast.com/" data-tracking="{}">Business</a>
-                                </li>
-                                <li>
-                                    <a href="http://experience.xfinity.com/" data-tracking="{}">Customer Guarantee</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/compare/comcast-xfinity-vs-verizon-fios.html" data-tracking="{}">Compare the Competition</a>
-                                </li>
-                                <li>
-                                    <a href="http://store.comcast.com/?Ecid=PRF-CMC-100000&amp;PA=PRF-CMC-100000" data-tracking="{}">Accessories</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/locations/in-my-area.html" data-tracking="{}">Service in my Area</a>
-                                </li>
-                        </ul>
-                    </div>
-                    <div class="x-flex__col-xs-2">
-                        <h4 class="x-globalfooter__heading">My Account</h4>
-                        <ul class="x-list--no-bullets">
-                                <li>
-                                    <a href="//www.xfinity.com/bill-pay.html" data-tracking="{}">Pay Bill</a>
-                                </li>
-                                <li>
-                                    <a href="//customer.xfinity.com/#/" data-tracking="{}">Manage My Account</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/alerts.aspx" data-tracking="{}">Manage Users &amp; Alerts</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/moving" data-tracking="{}">Move Services</a>
-                                </li>
-                                <li>
-                                    <a href="//constantguard.xfinity.com/" data-tracking="{}">Constant Guard</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/policies" data-tracking="{}">Cable Customer Agreement</a>
-                                </li>
-                        </ul>
-                    </div>
-                    <div class="x-flex__col-xs-2">
-                        <h4 class="x-globalfooter__heading">My Services</h4>
-                        <ul class="x-list--no-bullets">
-                                <li>
-                                    <a href="http://parents.xfinity.com/" data-tracking="{}">Parental Controls</a>
-                                </li>
-                                <li>
-                                    <a href="https://login.comcast.net/" data-tracking="{}">Check Email</a>
-                                </li>
-                                <li>
-                                    <a href="http://redir.comcast.net/redirect/voicemail" data-tracking="{}">Check Voicemail</a>
-                                </li>
-                        </ul>
-                    </div>
-                    <div class="x-flex__col-xs-2">
-                        <h4 class="x-globalfooter__heading">Support</h4>
-                        <ul class="x-list--no-bullets">
-                                <li>
-                                    <a href="//www.xfinity.com/support/" data-tracking="{}">Comcast Customer Service</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/billing/" data-tracking="{}">Bill &amp; Payments</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/cable-tv/" data-tracking="{}">TV Help</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/internet/" data-tracking="{}">Internet Help</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/phone/" data-tracking="{}">Voice Help</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/home-security/" data-tracking="{}">Home Help</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/service-center-locations/" data-tracking="{}">Store Locator</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/support/contact-us/" data-tracking="{}">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="//forums.comcast.com/" data-tracking="{}">Support Forums</a>
-                                </li>
-                        </ul>
-                    </div>
-                    <div class="x-flex__col-xs-2">
-                        <h4 class="x-globalfooter__heading">Info</h4>
-                        <ul class="x-list--no-bullets">
-                                <li>
-                                    <a href="//www.xfinity.com/sitemap.html" data-tracking="{}">Sitemap</a>
-                                </li>
-                                <li>
-                                    <a href="http://corporate.comcast.com/" data-tracking="{}">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="http://corporate.comcast.com/comcast-voices" data-tracking="{}">Corporate Blog</a>
-                                </li>
-                                <li>
-                                    <a href="http://corporate.comcast.com/news-information/news-feed" data-tracking="{}">Press Room</a>
-                                </li>
-                                <li>
-                                    <a href="http://jobs.comcast.com/" data-tracking="{}">Career</a>
-                                </li>
-                                <li>
-                                    <a href="http://corporate.comcast.com/our-values" data-tracking="{}">Social Responsibility</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/corporate/legal/privacyStatement.html" data-tracking="{}">Privacy Statement</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/corporate/legal/visitorAgreement.html" data-tracking="{}">Visitor Agreement</a>
-                                </li>
-                                <li>
-                                    <a href="//www.xfinity.com/Corporate/Customers/Policies/CAVoiceDisclosure.html" data-tracking="{}">XFINITY Voice: Use of Personal Info</a>
-                                </li>
-                        </ul>
-                    </div>
+.intro-message-container{
+	margin-left:15%;
+	margin-right:15%;
+}
 
-            </div>
-        </div>
-
-        <div class="x-globalfooter__end x-ui-theme--dark">
-            <div class="x-globalfooter__inner">
-                <ul class="x-flex-row x-content between-xs middle-xs x-list--no-bullets">
-                    <li class="x-globalfooter-xfinitylogo">
-                        <a href="//www.xfinity.com" data-tracking="{}">
-                            <svg class="x-icon x-icon--large">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/learn/public/images/logo-sprite.svg#logo-xfinity"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                        <li class="x-globalfooter__terms x-body3">
-                            <a href="http://my.xfinity.com/privacy/" data-tracking="">Web Privacy Policy</a>
-                            &nbsp;
-                            <a href="http://my.xfinity.com/terms/" data-tracking="">Web Terms of Service</a>
-                        </li>
-
-                    <li class="x-globalfooter-year">
-                        <a href="//www.xfinity.com" data-tracking="{}">© COMCAST 2017</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="x-globalfooter__mini">
-        <div class="x-globalfooter__inner">
-            <ul class="x-flex-row x-content center-xs middle-xs x-list--no-bullets">
-                <li class="x-flex__col x-globalfooter-xfinitylogo">
-                    <a href="//www.xfinity.com" data-tracking="{}">
-                        <svg class="x-icon x-icon--large">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/learn/public/images/logo-sprite.svg#logo-xfinity"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <ul class="x-content center-xs middle-xs x-list--no-bullets">
-                    <li class="x-globalfooter__terms x-body3">
-                        <a href="http://my.xfinity.com/privacy/" data-tracking="">Web Privacy Policy</a>
-                    </li>
-                                    <li class="x-globalfooter__terms x-body3">
-                        <a href="http://my.xfinity.com/terms/" data-tracking="">Web Terms of Service</a>
-                    </li>
-            </ul>
-        </div>
-    </section>
-
-</footer>
-	</footer>
-</html>
+.hero-logo-container{
+	margin-left:40%;
+	margin-right:40%;
+	padding-top:5%;
+	padding-bottom:5%;
+	margin-bottom:2%;
+	border-bottom:1px solid black;
+}
