@@ -46,3 +46,11 @@ xc-header {
     height: 200px;
     width: 200px;
 }
+
+.stats {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
