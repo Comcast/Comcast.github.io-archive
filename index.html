@@ -23,12 +23,13 @@ limitations under the License.
         <link rel="stylesheet" type="text/css" href="./style/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://polaris.xfinity.com/polaris.js" async></script>
-
+        <script src="./js/menu_toggle.js"></script>
         <meta name="title" content="Open Source | Comcast" />
         <meta name="description" content="Comcast Open Source web site" />
         <meta name="robots" content="open source, comcast, innovation" />
         <meta name="googlebot" content="open source, comcast, innovation" />
 
+		
         <title>Open Source Comcast</title>
         <style>
   
@@ -55,20 +56,20 @@ limitations under the License.
             </p>
         </div>
         <ul class="category-menu">
-            <li class="category">All</li>
-            <li class="category">Backend</li>
-            <li class="category">Big Data</li>
-            <li class="category">Frontend</li>
-            <li class="category">Hardware</li>
-            <li class="category">Infrastructure</li>
-            <li class="category">Mobile</li>
-            <li class="category">Testing</li>
-            <li class="category">Video</li>
+            <li class="category"><a href="#github-content" onclick="showAll()">All</a></li>
+            <li class="category"><a href="#github-content" onclick="showBackend()">Backend</a></li>
+            <li class="category"><a href="#github-content" onclick="showBigdata()">Big Data</a></li>
+            <li class="category"><a href="#github-content" onclick="showFrontend()">Frontend</a></li>
+            <li class="category"><a href="#github-content" onclick="showHardware()">Hardware</a></li>
+            <li class="category"><a href="#github-content" onclick="showInfra()">Infrastructure</a></li>
+            <li class="category"><a href="#github-content" onclick="showMobile()">Mobile</a></li>
+            <li class="category"><a href="#github-content" onclick="showTesting()">Testing</a></li>
+            <li class="category"><a href="#github-content" onclick="showVideo()">Video</a></li>
         </ul>
-        <ul class="github-content">
+        <ul id="github-content" class="github-content">
             <li class="github-project category-mobile">
                 <a href="https://github.com/Comcast/FreeFlow">
-                    <img class="project-logo" src="./img/csslint.png" alt="Free Flow" />
+                    <img class="project-logo" src="./img/freeform.png" alt="Free Flow" />
                     <h2 class="project-title">Free Flow</h2>
                 </a>
                 <p class="project-description">
@@ -105,7 +106,7 @@ limitations under the License.
                     Generally speaking, most of these classes implement a ServiceWrapper interface to allow them to be applied around existing services using the Decorator design pattern. Those classes providing operational information, such as PerformanceMonitor and Monitorable can be wrapped in classes that expose their data to JMX controls or on web-accessible health status pages as desired.
                 </p>
             </li>
-            <li class="github-project category-infrastructure">
+            <li class="github-project category-infra">
                 <a href="https://github.com/apache/incubator-trafficcontrol">
                     <img class="project-logo" src="./img/traffic_control.png" alt="traffic control" />
                     <h2 class="project-title">traffic control</h2>
@@ -153,7 +154,7 @@ limitations under the License.
                     A rules engine. You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
                 </p>
             </li>
-            <li class="github-project category-infrastructure">
+            <li class="github-project category-infra">
                 <a href="https://github.com/Comcast/kube-yarn">
                     <img class="project-logo" src="./img/kube-yarn.png" alt="kube yarn" />
                     <h2 class="project-title">kube yarn</h2>
