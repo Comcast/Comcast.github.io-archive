@@ -45,5 +45,7 @@ var COSS = {};
             }
             slides[slideIndex-1].style.display = "block"; 
         }
+        
+        setInterval(function () {COSS.showNext(1)}, 10000);
     });
  }(jQuery));
