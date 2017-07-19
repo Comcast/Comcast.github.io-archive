@@ -42,11 +42,11 @@ xc-header {
 }
 
 .hero-caroussel-container{
-    max-width:1000px;
-    position:relative;
-    margin-left:15%;
-    margin-right:15%;
-} 
+  max-width:1000px;
+  position:relative;
+  margin-left:15%;
+  margin-right:15%;
+}
 
 .projects {
   clear: both;
@@ -78,11 +78,11 @@ xc-header {
 
 @media all and (min-width: 700px) {
   .category-menu {
-    float: left;
-    width: 200px;
+  float: left;
+  width: 200px;
   }
   .github-content {
-    padding-left: 220px;
+  padding-left: 220px;
   }
 }
 
