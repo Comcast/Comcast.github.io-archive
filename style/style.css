@@ -154,7 +154,7 @@ xc-header {
 
 .prev, .next{
   position:absolute;
-  top:45%;
+  top:40%;
   font-size:1.6rem;
   text-align:center;
 }
