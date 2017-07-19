@@ -200,7 +200,7 @@ ul,
 ol,
 dl,
 address {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
   margin: 0 0 1.5em;
   padding: 0; }
@@ -462,7 +462,7 @@ h3,
     color: #44484c; }
 
 .body3 {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
   margin: 0 0 12px;
   line-height: 1.5;
@@ -561,7 +561,7 @@ h6 {
   padding: 0; }
 
 .hgroup {
-  margin-bottom: 14px; }
+  margin-bottom: 16px; }
   .hgroup .display1,
   .hgroup .display2,
   .hgroup .display3,
@@ -1215,7 +1215,7 @@ td {
   border-radius: 3px; }
 
 .button--small {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
   min-width: 120px; }
 
@@ -1554,7 +1554,7 @@ button.card {
 
 .form-control__error,
 label.error {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1739,7 +1739,7 @@ label.error {
     padding: 0 12px;
     width: 50%;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.01429em; }
 
 @media (min-width: 48em) {
@@ -1756,7 +1756,7 @@ label.error {
     padding: 0 12px;
     width: 50%;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.01429em; } }
 
 @media (min-width: 48em) {
