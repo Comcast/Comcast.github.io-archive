@@ -51,18 +51,27 @@ limitations under the License.
             <ul id="hero-caroussel" class="hero-carousel">
                 <li id="slide1" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
-                    <p class="carousel-text">Here at comcast, we love innovation.</p>
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Innovation</h2>
+                        <p class="carousel-text">Here at comcast, we love innovation.</p>
+                    </div>
                 </li>
                 <li id="slide2" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
-                    <p class="carousel-text">Traffic Control is a successful project that's making a real impact.</p>
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Traffic Control</h2>
+                        <p class="carousel-text">Traffic Control is a successful project that's making a real impact.</p>
+                    </div>
                 </li>
                 <li id="slide3" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
-                    <p class="carousel-text">Here at comcast, we are always looking out for new talents to join our diverse and growing team.</p>
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Jobs</h2>
+                        <p class="carousel-text">We are always looking for talented individuals to join our diverse team.</p>
+                    </div>
                 </li>
-                <li>
-                    <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
+                <li class="navigateBtn" onload="COSS.autoRotate(1000)">
+                    <a  class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
                     <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
                 </li>
             </ul>
