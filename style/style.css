@@ -113,6 +113,7 @@ xc-header {
 .hero-carousel{
   list-style-type:none;
   margin: 0 0 0 0;
+  border: 1px solid red;
 }
 
 .hero-slides{
@@ -147,8 +148,8 @@ xc-header {
 }
 
 .prev{
-  left:0;
-  margin-left:1rem;
+   left:0;
+   margin-left:1rem;
 }
 
 .next{
@@ -157,29 +158,10 @@ xc-header {
 }
 
  .prev:hover, .next:hover{
-  color:white;
-  background-color:rgba(0, 0, 0, 0.5);;
+   color:white;
+   background-color:rgba(0, 0, 0, 0.5);;
+   opacity:60%;
  }
-
-.navdot-container{
-  text-align:center;
-  padding-top:0.5rem;
-}
-
-.navdot{
-  border-radius:50%;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .navdot:hover {
-  background-color: #717171;
-}
 
 @media all and (min-width: 1025px) {
   .carousel-hero-img, .slide-text-container{
