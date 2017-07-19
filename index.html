@@ -18,7 +18,7 @@ limitations under the License.
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width" />
         <meta name="title" content="Open Source | Comcast" />
         <meta name="description" content="Comcast Open Source web site" />
         <meta name="robots" content="open source, comcast, innovation" />
@@ -41,11 +41,35 @@ limitations under the License.
         <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-128.png" sizes="128x128" />
       
         <title>Open Source Comcast</title>
+        
+        <style>
+		#slide2, #slide3{
+		    display:none; 
+		}
+</style>
     </head>
     <body>
         <xc-header auto-auth client-id="comcastgithub"></xc-header>
         <div class="hero-logo-container">
             <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
+        </div>
+        <div class="hero-caroussel-container">
+            <ul id="hero-caroussel" class="hero-caroussel">
+                <li id="slide1" class="hero-slides">
+                    <img class="caroussel-hero-img" src="./img/carousel/img1.jpg" />
+                    <p>Slide 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et suscipit orci, et faucibus est. Cras quis lectus venenatis, lacinia augue ut, condimentum risus. Praesent turpis ante, dapibus nec porttitor eget, pulvinar a ipsum. Nullam sagittis ante a condimentum dapibus. Aliquam semper, nisl in blandit tincidunt, magna enim eleifend sem, at finibus ex nunc vitae elit.</p>
+                </li>
+                <li id="slide2" class="hero-slides">
+                    <img class="caroussel-hero-img" src="./img/carousel/img2.jpg" />
+                    <p>Slide 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et suscipit orci, et faucibus est. Cras quis lectus venenatis, lacinia augue ut, condimentum risus. Praesent turpis ante, dapibus nec porttitor eget, pulvinar a ipsum. Nullam sagittis ante a condimentum dapibus. Aliquam semper, nisl in blandit tincidunt, magna enim eleifend sem, at finibus ex nunc vitae elit.</p>
+                </li>
+                <li id="slide3" class="hero-slides">
+                    <img class="caroussel-hero-img" src="./img/carousel/img3.jpg" />
+                    <p>Slide 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et suscipit orci, et faucibus est. Cras quis lectus venenatis, lacinia augue ut, condimentum risus. Praesent turpis ante, dapibus nec porttitor eget, pulvinar a ipsum. Nullam sagittis ante a condimentum dapibus. Aliquam semper, nisl in blandit tincidunt, magna enim eleifend sem, at finibus ex nunc vitae elit.</p>
+                </li>
+                <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
+                <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
+            </ul>
         </div>
         <div class="intro-message-container">
 			<h1 class="message-title">Open Software at Comcast</h1>
@@ -248,6 +272,7 @@ limitations under the License.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://polaris.xfinity.com/polaris.js" async></script>
         <script src="./js/menu_toggle.js"></script>
+	<script src="./js/carousel.js"></script>
         <noscript>Enabling JavaScript improves this site's functionality.</noscript>
     </body>
 </html>
