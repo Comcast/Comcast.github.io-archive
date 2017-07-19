@@ -163,10 +163,22 @@ xc-header {
    opacity:60%;
  }
 
+.carousel-text a{
+  color:white;
+  font-weight: bold;
+}
+.carousel-text a:hover{
+  color: lightblue;
+}
+
 @media all and (min-width: 1025px) {
   .carousel-hero-img, .slide-text-container{
     display:inline-block;
     top:0;
+  }
+
+  .hero-slides .carousel-hero-img {
+    max-width: 49%;
   }
 
   .slide-text-container {
@@ -246,4 +258,9 @@ li.github-project {
   border: 25px solid green;
   padding: 25px;
   margin: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
