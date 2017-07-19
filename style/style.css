@@ -78,6 +78,7 @@ xc-header {
 }
 
 .github-content,
+.github-content ul,
 .github-content li {
   list-style-type: none;
   margin: 0 0 1em;
@@ -106,6 +107,10 @@ li.github-project {
   width: 200px;
   display: block;
   margin: 0 auto 1em;
+}
+
+.additional-projects {
+  border-bottom: 1px solid #B1B9BF;
 }
 
 @media all and (min-width: 1200px) {
