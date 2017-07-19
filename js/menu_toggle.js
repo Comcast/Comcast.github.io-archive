@@ -39,11 +39,19 @@
             $.each(categories, function (index, category) {
                 $(".category.category-" + category).click(showCategory(category));
             });
+            highlightSelectedCategory();
+        }
+
+        function highlightSelectedCategory() {
+          if (window.location.hash.length === 0) {
+            $(".category-menu li.category-all").addClass('category-selected');
+          } else {
+            // TODO: rewrite the setup of this so we can leverage the hash & have bookmarkable URLs
+          }
         }
 
         function setup() {
             setupShowAll();
-
             populateCategories().promise().done(setupShowCategories);
         }
 
