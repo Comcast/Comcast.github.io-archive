@@ -169,6 +169,10 @@ xc-header {
     top:0;
   }
 
+  .hero-slides .carousel-hero-img {
+    max-width: 49%;
+  }
+
   .slide-text-container {
     height: 22rem;
     overflow: auto;
