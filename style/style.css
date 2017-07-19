@@ -251,3 +251,8 @@ li.github-project {
   padding: 25px;
   margin: 25px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
