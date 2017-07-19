@@ -28,7 +28,7 @@ xc-header {
 	background: #000;
 }
 
-.intro-message-container, .projects {
+.intro-message-container, .projects{
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -40,6 +40,13 @@ xc-header {
 	border: 1px solid#000;
 	border-width: 0 0 1px 0;
 }
+
+.hero-caroussel-container{
+    max-width:1000px;
+    position:relative;
+    margin-left:15%;
+    margin-right:15%;
+} 
 
 .projects {
 	clear: both;
@@ -74,9 +81,9 @@ xc-header {
 		float: left;
 		width: 200px;
 	}
-	.github-content {
-		padding-left: 220px;
-	}
+    .github-content {
+        padding-left: 220px;
+    }
 }
 
 .project-logo {
