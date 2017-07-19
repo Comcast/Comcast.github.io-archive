@@ -18,12 +18,16 @@
 
         function showAll() {
             $(".github-content li").show();
+            $(".category-menu li").removeClass('category-selected');
+            $(".category-menu li.category-all").addClass('category-selected');
         }
 
         function showCategory(category) {
             return function () {
                 $(".github-content li").hide();
+                $(".category-menu li").removeClass('category-selected');
                 $(".github-content li.category-" + category).show();
+                $(".category-menu li.category-" + category).addClass('category-selected');
             };
         }
 

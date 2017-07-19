@@ -70,10 +70,18 @@ xc-header {
   text-transform: uppercase;
 }
 
-.category-menu a:hover {
+.category-menu a:hover,
+.category-menu .category-selected a {
   color: #fff;
   background: #0272b6;
   border-color: #0272b6;
+}
+
+.github-content,
+.github-content li {
+  list-style-type: none;
+  margin: 0 0 1em;
+  padding: 0;
 }
 
 @media all and (min-width: 700px) {
@@ -82,13 +90,32 @@ xc-header {
   width: 200px;
   }
   .github-content {
-  padding-left: 220px;
+  	margin-left: 220px;
   }
+}
+
+li.github-project {
+  background: #fff;
+  border: 1px solid #DDE2E6;
+  padding: 1em;
+  overflow: hidden;
 }
 
 .project-logo {
   height: 200px;
   width: 200px;
+  display: block;
+  margin: 0 auto 1em;
+}
+
+@media all and (min-width: 1200px) {
+  .project-logo {
+    margin: 0 1em 0 0;
+    float: left;
+  }
+  .project-description {
+    margin-left: calc(200px + 1em);
+  }
 }
 
 .stats {
