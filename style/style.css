@@ -41,13 +41,6 @@ xc-header {
   border-width: 0 0 1px 0;
 }
 
-.hero-caroussel-container{
-  max-width:1000px;
-  position:relative;
-  margin-left:15%;
-  margin-right:15%;
-}
-
 .projects {
   clear: both;
   padding-top: 2em;
@@ -84,6 +77,37 @@ xc-header {
   margin: 0 0 1em;
   padding: 0;
 }
+
+/**Carousel**/
+#slide2, #slide3{
+  display:none;
+}
+
+.carousel-hero-img, .carousel-text{
+  display:inline-block;
+}
+
+.hero-carousel{
+  list-style-type:none;
+}
+
+.hero-slides{
+  background-color:#f3f3f3;
+}
+
+.hero-slides .carousel-hero-img{
+  width:auto;
+  height:20rem;
+}
+
+.hero-carousel-container{
+  max-width:1000px;
+  position:relative;
+  margin-left:15%;
+  margin-right:15%;
+}
+
+/**End of Carousel**/
 
 @media all and (min-width: 700px) {
   .category-menu {
