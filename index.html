@@ -1,3 +1,4 @@
+<!doctype html>
 <!--
 @license
 Copyright 2017 Comcast Cable Communications Management, LLC
@@ -14,33 +15,34 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="./style/all-digital.css">
-        <link rel="stylesheet" type="text/css" href="./style/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://polaris.xfinity.com/polaris.js" async></script>
-        <script src="./js/menu_toggle.js"></script>
-		<script src="./js/carousel.js"></script>
+        <meta name="viewport" content="width=device-width" />
         <meta name="title" content="Open Source | Comcast" />
         <meta name="description" content="Comcast Open Source web site" />
         <meta name="robots" content="open source, comcast, innovation" />
         <meta name="googlebot" content="open source, comcast, innovation" />
-
-
+      
+        <link rel="stylesheet" href="./style/all-digital.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://comcast.github.io/img/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://comcast.github.io/img/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://comcast.github.io/img/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://comcast.github.io/img/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://comcast.github.io/img/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://comcast.github.io/img/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://comcast.github.io/img/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://comcast.github.io/img/favicon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-128.png" sizes="128x128" />
+      
         <title>Open Source Comcast</title>
+        
         <style>
-        .stats {
-            background-color: lightgrey;
-            width: 300px;
-            border: 25px solid green;
-            padding: 25px;
-            margin: 25px;
-        }
-
 		#slide2, #slide3{
 		    display:none; 
 		}
@@ -70,187 +72,189 @@ limitations under the License.
             </ul>
         </div>
         <div class="intro-message-container">
+			<h1 class="message-title">Open Software at Comcast</h1>
             <p class="message-content">
                 Comcast cares about open source software, and is an active member of the open source community. Not only do we build and run much of our technology on open source platforms, we also contribute actively to dozens of open source projects and strive to open source many of the technologies we develop internally. We collaborate with other companies and projects as members of open source foundations such as the Linux Foundation, OpenStack Foundation, Apache Foundation and many other organizations for collaboration. This allows us to share our own experience and to contribute to industry direction.
             </p>
             <p class="message-content">
                 Without open source software, Comcast would not be able to bring you great experiences through X1, provide you with outstanding Internet service, or become the fastest-growing home security provider. We support and encourage open source culture, tools and collaboration inside the company to enable developers to be productive and effective. We are built on open source software, and we are committed as a company to giving back to the community and sharing our work with the world.
             </p>
-		</div>
-		<div class="projects">
-			<ul class="category-menu">
-				<li class="category"><a href="#all-projects">All Projects</a></li>
-				<li class="category"><a href="#category-backend">Backend</a></li>
-				<li class="category"><a href="#category-bigdata">Big Data</a></li>
-				<li class="category"><a href="#category-frontend">Frontend</a></li>
-				<li class="category"><a href="#category-hardware">Hardware</a></li>
-				<li class="category"><a href="#category-infrastructure">Infrastructure</a></li>
-				<li class="category"><a href="#category-mobile">Mobile</a></li>
-				<li class="category"><a href="#category-testing">Testing</a></li>
-				<li class="category"><a href="#category-video">Video</a></li>
-			</ul>
-			<ul id="github-content" class="github-content">
-				<li class="github-project category-mobile">
-					<a href="https://github.com/Comcast/FreeFlow">
-						<img class="project-logo" src="./img/freeform.png" alt="Free Flow" />
-						<h2 class="project-title">Free Flow</h2>
-					</a>
-					<p class="project-description">
-						A layout engine for Android that decouples layouts from the View containers. We developed FreeFlow to overcome limitations we encountered as we worked to develop our next generation of Android apps.
-					</p>
-					<p class="project-description">
-						FreeFlow is a composition based approach to Android Layouts. As opposed to default Android Layouts, FreeFlow Layouts are swappable at runtime which allows views to their new states smoothly. The fundamental difference here is that FreeFlow prefers Composition over Inheritance which makes the system a lot more adaptable.
-					</p>
-				</li>
-				<li class="github-project category-bigdata">
-					<a href="https://github.com/Comcast/cmb">
-						<img class="project-logo" src="./img/cmb.png" alt="cmb" />
-						<h2 class="project-title">cmb</h2>
-					</a>
-					<p class="project-description">
-						CMB is a general purpose open source message bus for the cloud.
-					</p>
-					<p class="project-description">
-						CMB is a general purpose open source message bus for the cloud. The service is API compatible with Amazon’s SQS/SNS and is built on Cassandra and Redis with the goal of linear horizontal scalability.
-					</p>
-				</li>
-				<li class="github-project category-backend">
-					<a href="https://github.com/Comcast/jrugged">
-						<img class="project-logo" src="./img/jrugged.png" alt="jrugged" />
-						<h2 class="project-title">jrugged</h2>
-					</a>
-					<p class="project-description">
-						The jrugged library allows your code to adapt to network issues in a responsible way.
-					</p>
-					<p class="project-description">
-						The jrugged library provides straightforward add-ons to existing code to make it more robust and easier to manage. Examples include CircuitBreaker, Initializer, PerformanceMonitor and Monitorable.
-					</p>
-					<p class="project-description">
-						Generally speaking, most of these classes implement a ServiceWrapper interface to allow them to be applied around existing services using the Decorator design pattern. Those classes providing operational information, such as PerformanceMonitor and Monitorable can be wrapped in classes that expose their data to JMX controls or on web-accessible health status pages as desired.
-					</p>
-				</li>
-				<li class="github-project category-infra">
-					<a href="https://github.com/apache/incubator-trafficcontrol">
-						<img class="project-logo" src="./img/traffic_control.png" alt="traffic control" />
-						<h2 class="project-title">traffic control</h2>
-					</a>
-					<p class="project-description">
-						Traffic Control is a caching server control plane application used to aggregate caching servers into a Content Delivery Network (CDN).
-					</p>
-					<p class="project-description">
-						The CDN caching software chosen for Traffic Control is Apache Traffic Server (ATS). Although the current release only supports ATS as a cache, this may change with future releases.
-					</p>
-				</li>
-				<li class="github-project category-video">
-					<a href="https://github.com/Comcast/gots">
-						<img class="project-logo"  src="./img/gots.png" alt="gots" />
-						<h2 class="project-title">gots</h2>
-					</a>
-					<p class="project-description">
-						gots (Go Transport Streams) is a library for working with MPEG transport streams.
-					</p>
-					<p class="project-description">
-						gots (Go Transport Streams) is a library for working with MPEG transport streams. It provides abstractions for reading packet information and program specific information (psi).
-					</p>
-				</li>
-				<li class="github-project category-frontend">
-					<a href="https://github.com/Comcast/Surf-N-Perf">
-						<img class="project-logo" src="./img/surf-n-perf.png" alt="surf-n-perf" />
-						<h2 class="project-title">surf-n-perf</h2>
-					</a>
-					<p class="project-description">
-						A micro-library for gathering frontend web page performance data.
-					</p>
-					<p class="project-description">
-						Surf-N-Perf provides a simple to use API to gather User Timing and other important performance data in any browser.
-					</p>
-				</li>
-				<li class="github-project category-frontend">
-					<a href="https://github.com/Comcast/rulio">
-						<img class="project-logo" src="./img/Rulio_logo.png" alt="rulio" />
-						<h2 class="project-title">rulio</h2>
-					</a>
-					<p class="project-description">
-						A rules engine, i.e. an event processor based on pattern matching, condition evaluation, and arbitrary actions.
-					</p>
-					<p class="project-description">
-						A rules engine. You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
-					</p>
-				</li>
-				<li class="github-project category-infra">
-					<a href="https://github.com/Comcast/kube-yarn">
-						<img class="project-logo" src="./img/kube-yarn.png" alt="kube yarn" />
-						<h2 class="project-title">kube yarn</h2>
-					</a>
-					<p class="project-description">
-						Running YARN on Kubernetes with PetSet controller.
-					</p>
-					<p class="project-description">
-						Apache Hadoop YARN (Yet Another Resource Negotiator) is a cluster management technology. This allows you to build an Image for deploying the kube-yarn artifacts without any local dependencies.
-					</p>
-				</li>
-				<li class="github-project category-bigdata">
-					<a href="https://github.com/Comcast/sirius">
-						<img class="project-logo" src="./img/sirius.png" alt="Sirius" />
-						<h2 class="project-title">Sirius</h2>
-					</a>
-					<p class="project-description">
-						Sirius is a library for distributing and coordinating data updates amongst a cluster of nodes.
-					</p>
-					<p class="project-description">
-						Said another way: Sirius enables a cluster of nodes to keep developer-controlled in-memory data structures eventually consistent, allowing I/O-free access to shared information.
-					</p>
-				</li>
-				<li class="github-project category-frontend">
-					<a href="https://github.com/Comcast/Speed-testJS">
-						<img class="project-logo" src="./img/speed-testJS.png" alt="Speed-testJS" />
-						<h2 class="project-title">SpeedtestJS</h2>
-					</a>
-					<p class="project-description">
-						SpeedtestJS is a JavaScript based speed test providing users with an enriched view of their Internet speed. We developed and open sourced SpeedTestJS to create a benchmark solution that would be transparent, independent and used and contributed by many.
-					</p>
-					<p class="project-description">
-						Using speed tier data to add a qualifying metric to standard speed test results, users will now know whether their experience is poor, good or great.
-					</p>
-				</li>
-				<li class="github-project category-frontend">
-					<a href="https://github.com/Comcast/Xooie">
-						<img class="project-logo" src="./img/xooie.png" alt="xooie" />
-						<h2 class="project-title">xooie</h2>
-					</a>
-					<p class="project-description">
-						Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles.
-					</p>
-					<p class="project-description">
-						Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles. With Xooie, you can create almost any interface you want. Key components are tagged with data attributes, informing Xooie to bind the associated widget functionality.
-					</p>
-				</li>
-				<li class="github-project category-backend">
-					<a href="https://github.com/Comcast/htmlapi-client-python">
-						<img class="project-logo" src="./img/html-client-python.png" alt="htmlapi-client-python" />
-						<h2 class="project-title"></h2>
-					</a>
-					<p class="project-description">
-						Python code for driving an HTML-based hypermedia API.
-					</p>
-					<p class="project-description">
-						This is Python code for driving an HTML-based hypermedia API, as described in Jon Moore's talk: "Building Hypermedia APIs with HTML".
-					</p>
-				</li>
-				<li class="github-project category-testing">
-					<a href="https://github.com/Comcast/zucchini">
-						<img class="project-logo" src="./img/zucchini.png" alt="zucchini" />
-						<h2 class="project-title">Zucchini</h2>
-					</a>
-					<p class="project-description">
-						Run your cucumber-jvm tests in parallel across all your devices.
-					</p>
-					<p class="project-description">
-						Zucchini sits on top of cucumber-jvm and maven to provide higher testing throughput by enabling concurrent test execution. A test author specifies a description of each of the devices (or browsers) under test as well as the cucumber feature files to execute and zucchini runs the tests in parallel with a separate backing cucumber runtime for each device under test. Upon completion, all of these tests are compiled into a single report made available in an html format.
-					</p>
-				</li>
-			</ul>
-		</div>
+        </div>
+
+        <div class="projects">
+            <ul class="category-menu">
+                <li class="category category-all"><a href="#all-projects">All Projects</a></li>
+                <li class="category category-backend"><a href="#github-content">Backend</a></li>
+                <li class="category category-bigdata"><a href="#github-content">Big Data</a></li>
+                <li class="category category-frontend"><a href="#github-content">Frontend</a></li>
+                <li class="category category-hardware"><a href="#github-content">Hardware</a></li>
+                <li class="category category-infrastructure"><a href="#github-content">Infrastructure</a></li>
+                <li class="category category-mobile"><a href="#github-content">Mobile</a></li>
+                <li class="category category-testing"><a href="#github-content">Testing</a></li>
+                <li class="category category-video"><a href="#github-content">Video</a></li>
+            </ul>
+            <ul id="github-content" class="github-content">
+                <li class="github-project category-mobile">
+                    <a href="https://github.com/Comcast/FreeFlow">
+                        <img class="project-logo" src="./img/freeform.png" alt="Free Flow" />
+                        <h2 class="project-title">Free Flow</h2>
+                    </a>
+                    <p class="project-description">
+                        A layout engine for Android that decouples layouts from the View containers. We developed FreeFlow to overcome limitations we encountered as we worked to develop our next generation of Android apps.
+                    </p>
+                    <p class="project-description">
+                        FreeFlow is a composition based approach to Android Layouts. As opposed to default Android Layouts, FreeFlow Layouts are swappable at runtime which allows views to their new states smoothly. The fundamental difference here is that FreeFlow prefers Composition over Inheritance which makes the system a lot more adaptable.
+                    </p>
+                </li>
+                <li class="github-project category-bigdata">
+                    <a href="https://github.com/Comcast/cmb">
+                        <img class="project-logo" src="./img/cmb.png" alt="cmb" />
+                        <h2 class="project-title">cmb</h2>
+                    </a>
+                    <p class="project-description">
+                        CMB is a general purpose open source message bus for the cloud.
+                    </p>
+                    <p class="project-description">
+                        CMB is a general purpose open source message bus for the cloud. The service is API compatible with Amazon’s SQS/SNS and is built on Cassandra and Redis with the goal of linear horizontal scalability.
+                    </p>
+                </li>
+                <li class="github-project category-backend">
+                    <a href="https://github.com/Comcast/jrugged">
+                        <img class="project-logo" src="./img/jrugged.png" alt="jrugged" />
+                        <h2 class="project-title">jrugged</h2>
+                    </a>
+                    <p class="project-description">
+                        The jrugged library allows your code to adapt to network issues in a responsible way.
+                    </p>
+                    <p class="project-description">
+                        The jrugged library provides straightforward add-ons to existing code to make it more robust and easier to manage. Examples include CircuitBreaker, Initializer, PerformanceMonitor and Monitorable.
+                    </p>
+                    <p class="project-description">
+                        Generally speaking, most of these classes implement a ServiceWrapper interface to allow them to be applied around existing services using the Decorator design pattern. Those classes providing operational information, such as PerformanceMonitor and Monitorable can be wrapped in classes that expose their data to JMX controls or on web-accessible health status pages as desired.
+                    </p>
+                </li>
+                <li class="github-project category-infrastructure">
+                    <a href="https://github.com/apache/incubator-trafficcontrol">
+                        <img class="project-logo" src="./img/traffic_control.png" alt="traffic control" />
+                        <h2 class="project-title">traffic control</h2>
+                    </a>
+                    <p class="project-description">
+                        Traffic Control is a caching server control plane application used to aggregate caching servers into a Content Delivery Network (CDN).
+                    </p>
+                    <p class="project-description">
+                        The CDN caching software chosen for Traffic Control is Apache Traffic Server (ATS). Although the current release only supports ATS as a cache, this may change with future releases.
+                    </p>
+                </li>
+                <li class="github-project category-video">
+                    <a href="https://github.com/Comcast/gots">
+                        <img class="project-logo"  src="./img/gots.png" alt="gots" />
+                        <h2 class="project-title">gots</h2>
+                    </a>
+                    <p class="project-description">
+                        gots (Go Transport Streams) is a library for working with MPEG transport streams.
+                    </p>
+                    <p class="project-description">
+                        gots (Go Transport Streams) is a library for working with MPEG transport streams. It provides abstractions for reading packet information and program specific information (psi).
+                    </p>
+                </li>
+                <li class="github-project category-frontend">
+                    <a href="https://github.com/Comcast/Surf-N-Perf">
+                        <img class="project-logo" src="./img/surf-n-perf.png" alt="surf-n-perf" />
+                        <h2 class="project-title">surf-n-perf</h2>
+                    </a>
+                    <p class="project-description">
+                        A micro-library for gathering frontend web page performance data.
+                    </p>
+                    <p class="project-description">
+                        Surf-N-Perf provides a simple to use API to gather User Timing and other important performance data in any browser.
+                    </p>
+                </li>
+                <li class="github-project category-frontend">
+                    <a href="https://github.com/Comcast/rulio">
+                        <img class="project-logo" src="./img/Rulio_logo.png" alt="rulio" />
+                        <h2 class="project-title">rulio</h2>
+                    </a>
+                    <p class="project-description">
+                        A rules engine, i.e. an event processor based on pattern matching, condition evaluation, and arbitrary actions.
+                    </p>
+                    <p class="project-description">
+                        A rules engine. You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
+                    </p>
+                </li>
+                <li class="github-project category-infrastructure">
+                    <a href="https://github.com/Comcast/kube-yarn">
+                        <img class="project-logo" src="./img/kube-yarn.png" alt="kube yarn" />
+                        <h2 class="project-title">kube yarn</h2>
+                    </a>
+                    <p class="project-description">
+                        Running YARN on Kubernetes with PetSet controller.
+                    </p>
+                    <p class="project-description">
+                        Apache Hadoop YARN (Yet Another Resource Negotiator) is a cluster management technology. This allows you to build an Image for deploying the kube-yarn artifacts without any local dependencies.
+                    </p>
+                </li>
+                <li class="github-project category-bigdata">
+                    <a href="https://github.com/Comcast/sirius">
+                        <img class="project-logo" src="./img/sirius.png" alt="Sirius" />
+                        <h2 class="project-title">Sirius</h2>
+                    </a>
+                    <p class="project-description">
+                        Sirius is a library for distributing and coordinating data updates amongst a cluster of nodes.
+                    </p>
+                    <p class="project-description">
+                        Said another way: Sirius enables a cluster of nodes to keep developer-controlled in-memory data structures eventually consistent, allowing I/O-free access to shared information.
+                    </p>
+                </li>
+                <li class="github-project category-frontend">
+                    <a href="https://github.com/Comcast/Speed-testJS">
+                        <img class="project-logo" src="./img/speed-testJS.png" alt="Speed-testJS" />
+                        <h2 class="project-title">SpeedtestJS</h2>
+                    </a>
+                    <p class="project-description">
+                        SpeedtestJS is a JavaScript based speed test providing users with an enriched view of their Internet speed. We developed and open sourced SpeedTestJS to create a benchmark solution that would be transparent, independent and used and contributed by many.
+                    </p>
+                    <p class="project-description">
+                        Using speed tier data to add a qualifying metric to standard speed test results, users will now know whether their experience is poor, good or great.
+                    </p>
+                </li>
+                <li class="github-project category-frontend">
+                    <a href="https://github.com/Comcast/Xooie">
+                        <img class="project-logo" src="./img/xooie.png" alt="xooie" />
+                        <h2 class="project-title">xooie</h2>
+                    </a>
+                    <p class="project-description">
+                        Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles.
+                    </p>
+                    <p class="project-description">
+                        Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles. With Xooie, you can create almost any interface you want. Key components are tagged with data attributes, informing Xooie to bind the associated widget functionality.
+                    </p>
+                </li>
+                <li class="github-project category-backend">
+                    <a href="https://github.com/Comcast/htmlapi-client-python">
+                        <img class="project-logo" src="./img/html-client-python.png" alt="htmlapi-client-python" />
+                        <h2 class="project-title"></h2>
+                    </a>
+                    <p class="project-description">
+                        Python code for driving an HTML-based hypermedia API.
+                    </p>
+                    <p class="project-description">
+                        This is Python code for driving an HTML-based hypermedia API, as described in Jon Moore's talk: "Building Hypermedia APIs with HTML".
+                    </p>
+                </li>
+                <li class="github-project category-testing">
+                    <a href="https://github.com/Comcast/zucchini">
+                        <img class="project-logo" src="./img/zucchini.png" alt="zucchini" />
+                        <h2 class="project-title">Zucchini</h2>
+                    </a>
+                    <p class="project-description">
+                        Run your cucumber-jvm tests in parallel across all your devices.
+                    </p>
+                    <p class="project-description">
+                        Zucchini sits on top of cucumber-jvm and maven to provide higher testing throughput by enabling concurrent test execution. A test author specifies a description of each of the devices (or browsers) under test as well as the cucumber feature files to execute and zucchini runs the tests in parallel with a separate backing cucumber runtime for each device under test. Upon completion, all of these tests are compiled into a single report made available in an html format.
+                    </p>
+                </li>
+            </ul>
+        </div>
         <div class="stats">
            stats box
         </div>
@@ -265,5 +269,9 @@ limitations under the License.
             </address>
         </div>
         <xc-footer client-id="comcastgithub"></xc-footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://polaris.xfinity.com/polaris.js" async></script>
+        <script src="./js/menu_toggle.js"></script>
+        <noscript>Enabling JavaScript improves this site's functionality.</noscript>
     </body>
 </html>

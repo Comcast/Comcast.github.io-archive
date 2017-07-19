@@ -1,48 +1,48 @@
+(function ($) {
+    "use strict";
 
-        function showAll(){
+    $(function () {
+        var categories = [];
+
+        function extractCategory(index, classes) {
+            if (classes.match(/^category-/) && !classes.match(/all$/)) {
+                categories.push(classes.split("-")[1]);
+            }
+        }
+
+        function populateCategories() {
+            return $(".category-menu li").each(function (index, lis) {
+                $.each($(lis).attr("class").split(" "), extractCategory);
+            });
+        }
+
+        function showAll() {
             $(".github-content li").show();
         }
 
-        function hideAll(){
-            $(".github-content li").hide();
+        function showCategory(category) {
+            return function () {
+                $(".github-content li").hide();
+                $(".github-content li.category-" + category).show();
+            };
         }
 
-        function showBackend(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-backend").show();
+        function setupShowAll() {
+            $(".category.category-all").click(showAll);
         }
 
-        function showBigdata(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-bigdata").show();
-        }	
-
-        function showFrontend(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-frontend").show();
+        function setupShowCategories() {
+            $.each(categories, function (index, category) {
+                $(".category.category-" + category).click(showCategory(category));
+            });
         }
 
-        function showHardware(){
-            $(".github-content li").hide();
-	    $(".github-content lt.category-hardware").show();
-        }	
+        function setup() {
+            setupShowAll();
 
-        function showInfra(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-infra").show();
+            populateCategories().promise().done(setupShowCategories);
         }
 
-        function showMobile(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-mobile").show();
-        }
-
-        function showTesting(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-testing").show();
-        }
-
-        function showVideo(){
-            $(".github-content li").hide();
-	    $(".github-content li.category-video").show();
-	}
+        setup();
+    });
+}(jQuery));

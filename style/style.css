@@ -15,30 +15,30 @@
  * limitations under the License.
  */
 
- html, body {
-	padding: 0;
-	margin: 0;
-	color: #191919;
-	background-color: #eef1f3;
+html, body {
+  padding: 0;
+  margin: 0;
+  color: #191919;
+  background-color: #eef1f3;
 }
 
 xc-header {
-	display: block;
-	min-height: 44px;
-	background: #000;
+  display: block;
+  min-height: 44px;
+  background: #000;
 }
 
-.intro-message-container, .projects{
-	margin-left: 15%;
-	margin-right: 15%;
+.intro-message-container, .projects {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .hero-logo-container {
-	width: 320px;
-	padding-top: 5%;
-	margin: 0 auto 1.5em;
-	border: 1px solid#000;
-	border-width: 0 0 1px 0;
+  width: 320px;
+  padding-top: 5%;
+  margin: 0 auto 1.5em;
+  border: 1px solid#000;
+  border-width: 0 0 1px 0;
 }
 
 .hero-caroussel-container{
@@ -49,44 +49,52 @@ xc-header {
 } 
 
 .projects {
-	clear: both;
-	padding-top: 2em;
+  clear: both;
+  padding-top: 2em;
 }
 
 .category-menu,
 .category-menu li {
-	list-style-type: none;
-	margin: 0;
-	padding: 0 0 5px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 5px;
 }
 
 .category-menu a {
-	display: block;
-	padding: 0 0 0 1em;
-	height: 44px;
-	line-height: 44px;
-	background: #fff;
-	border: 1px solid #0272b6;
-	text-transform: uppercase;
+  display: block;
+  padding: 0 0 0 1em;
+  height: 44px;
+  line-height: 44px;
+  background: #fff;
+  border: 1px solid #0272b6;
+  text-transform: uppercase;
 }
 
 .category-menu a:hover {
-	color: #fff;
-	background: #0272b6;
-	border-color: #0272b6;
+  color: #fff;
+  background: #0272b6;
+  border-color: #0272b6;
 }
 
 @media all and (min-width: 700px) {
-	.category-menu {
-		float: left;
-		width: 200px;
-	}
-    .github-content {
-        padding-left: 220px;
-    }
+  .category-menu {
+    float: left;
+    width: 200px;
+  }
+  .github-content {
+    padding-left: 220px;
+  }
 }
 
 .project-logo {
-	height: 200px;
-	width: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+.stats {
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
 }
