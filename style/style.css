@@ -84,8 +84,12 @@ xc-header {
 }
 
 .carousel-hero-img, .slide-text-container{
-  display:inline-block;
-  top:0;
+  display: block;
+}
+
+.slide-text-container {
+  background-color: rgb(48,48,48);
+  box-sizing: border-box;
 }
 
 .slide-text-container .carousel-slide-title, .slide-text-container .carousel-text{
@@ -100,7 +104,7 @@ xc-header {
 }
 
 .slide-text-container{
-   padding-left:3%;
+   padding: 3%;
    vertical-align:top;
    height:inherit;
    word-wrap:normal;
@@ -114,7 +118,7 @@ xc-header {
 
 .hero-slides{
   background-color:rgb(48,48,48);
-  height:22rem;
+  display: block;
 }
 
 .hero-slides .carousel-hero-img{
@@ -149,16 +153,33 @@ xc-header {
 }
 
 .next{
-  right:0; 
+  right:0;
   margin-right:1rem;
 }
- 
+
  .prev:hover, .next:hover{
-   color:white; 
+   color:white;
    background-color:rgba(0, 0, 0, 0.5);;
    opacity:60%;
  }
- 
+
+@media all and (min-width: 1025px) {
+  .carousel-hero-img, .slide-text-container{
+    display:inline-block;
+    top:0;
+  }
+
+  .slide-text-container {
+    height: 22rem;
+    overflow: auto;
+    width: 50%;
+  }
+
+  .hero-slides{
+    height:22rem;
+  }
+}
+
 /**End of Carousel**/
 
 @media all and (min-width: 700px) {
