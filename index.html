@@ -43,87 +43,64 @@ limitations under the License.
         <title>Open Source Comcast</title>
     </head>
     <body>
-        <div class="top-informational">
-            <xc-header auto-auth client-id="comcastgithub"></xc-header>
-            <div class="hero-logo-container">
-                <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
-            </div>
-            <div class="hero-carousel-container">
-                <ul id="hero-caroussel" class="hero-carousel">
-                    <li id="slide1" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
-                        <div class="slide-text-container">
-                            <h2 class="carousel-text">Open Source Development Grants</h2>
-                            <p class="carousel-text">
-                                Comcast is an active and engaged participant in
-                                the global open source community. These grants
-                                are intended to support the creation and
-                                advancement of important open source projects,
-                                including those that may not have immediate
-                                business value, but which carry the potential for
-                                important technological development. Open
-                                Source Development Grants are intended to fund
-                                new or continued development of open source
-                                software in areas of interest to Comcast or of
-                                benefit to the internet and broadband industries.
-                                This can fund a range of development, from
-                                adding specific features to an existing open source
-                                project, to general support of an open source                            project in which we are interested.
-                            </p>
-                            <p class="carousel-text">
-                                Comcast created the Comcast Innovation Fund to
-                                identify and support important research that has the
-                                potential to advance broadband, the internet and the
-                                global open-source community. The fund was
-                                established as a resource for researchers working on
-                                smaller and mid-sized technology projects that may
-                                not qualify for larger national grant programs.
-                                Grants range from $3,000 for smaller projects, up to
-                                more than $100,000 for medium-term research
-                                efforts. A cross-functional team of technology and
-                                business leaders within Comcast reviews grant
-                                applications and directs funding where it is most
-                                needed, and can have the greatest impact. The fund
-                                was backed by a million-dollar commitment from
-                                several groups within Comcast in 2013, and that
-                                level has been renewed for 2017.
-                                Comcast recently concluded the fourth full year of
-                                the grant program, and issued 25 grants to
-                                applicants in six countries.
-                            </p>
-                        </div>
-                    </li>
-                    <li id="slide2" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
-                        <div class="slide-text-container">
-                            <h2 class="carousel-slide-title">Traffic Control</h2>
-                            <p class="carousel-text">Traffic Control is a successful project that's making a real impact.</p>
-                        </div>
-                    </li>
-                    <li id="slide3" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
-                        <div class="slide-text-container">
-                            <h2 class="carousel-slide-title">Jobs</h2>
-                            <p class="carousel-text">We are always looking for talented individuals to join our diverse team.</p>
-                        </div>
-                    </li>
-                    <li class="navigateBtn" onload="COSS.autoRotate(1000)">
-                        <a  class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
-                        <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="intro-message-container">
-    			<h1 class="message-title">Open Source Software at Comcast</h1>
-                <p class="message-content">
-                    Comcast cares about open source software, and is an active member of the open source community. Not only do we build and run much of our technology on open source platforms, we also contribute actively to dozens of open source projects and strive to open source many of the technologies we develop internally. We collaborate with other companies and projects as members of open source foundations such as the Linux Foundation, OpenStack Foundation, Apache Foundation and many other organizations for collaboration. This allows us to share our own experience and to contribute to industry direction.
-                </p>
-                <p class="message-content">
-                    Without open source software, Comcast would not be able to bring you great experiences through X1, provide you with outstanding Internet service, or become the fastest-growing home security provider. We support and encourage open source culture, tools and collaboration inside the company to enable developers to be productive and effective. We are built on open source software, and we are committed as a company to giving back to the community and sharing our work with the world.
-                </p>
-            </div>
+        <xc-header auto-auth client-id="comcastgithub"></xc-header>
+        <div class="hero-logo-container">
+            <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
         </div>
-
+        <div class="hero-carousel-container">
+            <ul id="hero-caroussel" class="hero-carousel">
+                <li id="slide1" class="hero-slides">
+                    <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Open Source Grants</h2>
+                        <p class="carousel-text">
+                            The Comcast Innovation Fund provides grants for both open
+                            source and eductional research. The Open Source Development Grants 
+                            fund development of open source software in areas 
+                            benefiting cable, internet and broadband industries.
+                            For more information, please visit 
+                            <a href="http://innovationfund.comcast.com">http://innovationfund.comcast.com</a>
+                        </p>
+                    </div>
+                </li>
+                <li id="slide2" class="hero-slides">
+                    <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Traffic Control</h2>
+                        <p class="carousel-text">
+                          Traffic Control is an Open Source implementation of a 
+                          Content Delivery Network (CDN). Originally developed by 
+                          Comcast, it was released as a Comcast 
+                          Open Source software in April 2015. In late 2016, Comcast 
+                          was honored to have Traffic Control accepted by the Apache 
+                          Software Foundation and renamed to Apache Traffic Control. 
+                          It is currently under incubation and available at 
+                          <a href="https://trafficcontrol.incubator.apache.org">https://trafficcontrol.incubator.apache.org</a>
+                        </p>
+                    </div>
+                </li>
+                <li id="slide3" class="hero-slides">
+                    <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Jobs</h2>
+                        <p class="carousel-text">We are always looking for talented individuals to join our diverse team.</p>
+                    </div>
+                </li>
+                <li class="navigateBtn" onload="COSS.autoRotate(1000)">
+                    <a  class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
+                    <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro-message-container">
+			<h1 class="message-title">Open Source Software at Comcast</h1>
+            <p class="message-content">
+                Comcast cares about open source software, and is an active member of the open source community. Not only do we build and run much of our technology on open source platforms, we also contribute actively to dozens of open source projects and strive to open source many of the technologies we develop internally. We collaborate with other companies and projects as members of open source foundations such as the Linux Foundation, OpenStack Foundation, Apache Foundation and many other organizations for collaboration. This allows us to share our own experience and to contribute to industry direction.
+            </p>
+            <p class="message-content">
+                Without open source software, Comcast would not be able to bring you great experiences through X1, provide you with outstanding Internet service, or become the fastest-growing home security provider. We support and encourage open source culture, tools and collaboration inside the company to enable developers to be productive and effective. We are built on open source software, and we are committed as a company to giving back to the community and sharing our work with the world.
+            </p>
+        </div>
         <div class="projects">
             <ul class="category-menu">
                 <li><a href="#all-projects">All Projects</a></li>
