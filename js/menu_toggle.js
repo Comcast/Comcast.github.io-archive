@@ -1,60 +1,27 @@
-(function ($) {
-    "use strict";
+(function(){
+  'use strict';
 
-    $(function () {
-        var categories = [];
+  var categoryLinks = document.querySelectorAll('.category-menu a');
+  var i;
+  var locationHash = window.location.hash;
+  var githubContentElement = document.querySelector('.github-content');
+  var showCategory = function(selectedCategoryAnchor) {
+    var anchor = typeof selectedCategoryAnchor === 'string' ? selectedCategoryAnchor : this.href.split('#')[1];
+    var category = anchor.substring(0, anchor.length-9); // removes '-projects'
 
-        function extractCategory(index, classes) {
-            if (classes.match(/^category-/) && !classes.match(/all$/)) {
-                categories.push(classes.split("-")[1]);
-            }
-        }
+    if (category === 'all') {
+      githubContentElement.className = 'github-content';
+    } else {
+      githubContentElement.className = 'github-content category-selected ' + category + '-selected';
+    }
+  }
 
-        function populateCategories() {
-            return $(".category-menu li").each(function (index, lis) {
-                $.each($(lis).attr("class").split(" "), extractCategory);
-            });
-        }
+  for (i = 0; i < categoryLinks.length; i++) {
+    categoryLinks[i].addEventListener('click', showCategory);
+  }
 
-        function showAll() {
-            $(".github-content li").show();
-            $(".category-menu li").removeClass('category-selected');
-            $(".category-menu li.category-all").addClass('category-selected');
-        }
-
-        function showCategory(category) {
-            return function () {
-                $(".github-content li").hide();
-                $(".category-menu li").removeClass('category-selected');
-                $(".github-content li.category-" + category).show();
-                $(".category-menu li.category-" + category).addClass('category-selected');
-            };
-        }
-
-        function setupShowAll() {
-            $(".category.category-all").click(showAll);
-        }
-
-        function setupShowCategories() {
-            $.each(categories, function (index, category) {
-                $(".category.category-" + category).click(showCategory(category));
-            });
-            highlightSelectedCategory();
-        }
-
-        function highlightSelectedCategory() {
-          if (window.location.hash.length === 0) {
-            $(".category-menu li.category-all").addClass('category-selected');
-          } else {
-            // TODO: rewrite the setup of this so we can leverage the hash & have bookmarkable URLs
-          }
-        }
-
-        function setup() {
-            setupShowAll();
-            populateCategories().promise().done(setupShowCategories);
-        }
-
-        setup();
-    });
-}(jQuery));
+  if (locationHash) {
+    showCategory(locationHash.substring(1));
+    setTimeout(function() { githubContentElement.scrollIntoView(); }, 60);
+  }
+}());
