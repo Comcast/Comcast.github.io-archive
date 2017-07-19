@@ -43,65 +43,72 @@ limitations under the License.
         <title>Open Source Comcast</title>
     </head>
     <body>
-        <xc-header auto-auth client-id="comcastgithub"></xc-header>
-        <div class="hero-logo-container">
-            <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
-        </div>
-        <div class="hero-carousel-container">
-            <ul id="hero-caroussel" class="hero-carousel">
-                <li id="slide1" class="hero-slides">
-                    <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
-                    <div class="slide-text-container">
-                        <h2 class="carousel-slide-title">Open Source Grants</h2>
-                        <p class="carousel-text">
-                            The Comcast Innovation Fund provides grants for both open
-                            source and eductional research. The Open Source Development Grants
-                            fund development of open source software in areas
-                            benefiting cable, internet and broadband industries.
-                            For more information, please visit
-                            <a href="http://innovationfund.comcast.com">http://innovationfund.comcast.com</a>
-                        </p>
-                    </div>
-                </li>
-                <li id="slide2" class="hero-slides">
-                    <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
-                    <div class="slide-text-container">
-                        <h2 class="carousel-slide-title">Traffic Control</h2>
-                        <p class="carousel-text">
-                          Traffic Control is an Open Source implementation of a
-                          Content Delivery Network (CDN). Originally developed by
-                          Comcast, it was released as a Comcast
-                          Open Source software in April 2015. In late 2016, Comcast
-                          was honored to have Traffic Control accepted by the Apache
-                          Software Foundation and renamed to Apache Traffic Control.
-                          It is currently under incubation and available at
-                          <a href="https://trafficcontrol.incubator.apache.org">https://trafficcontrol.incubator.apache.org</a>
-                        </p>
-                    </div>
-                </li>
-                <li id="slide3" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
+        <div class="top-informational">
+            <xc-header auto-auth client-id="comcastgithub"></xc-header>
+            <div class="hero-logo-container">
+                <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
+            </div>
+            <div class="hero-carousel-container">
+                <ul id="hero-caroussel" class="hero-carousel">
+                    <li id="slide1" class="hero-slides">
+                        <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
                         <div class="slide-text-container">
-                            <h2 class="carousel-slide-title">Jobs</h2>
-                            <p  class="carousel-text">Here at comcast, we are always looking out for new talents to join our diverse and growing team.</p>
-                            <p  class="carousel-text"> Employees in serviceable areas enjoy free digital TV and Internet service as well as deeply discounted phone service, and other features. </p>
-                            <p class="carousel-text"> <a href="https://jobs.comcast.com">Join us  &#10095</a> </p>
+                            <h2 class="carousel-slide-title">Open Source Grants</h2>
+                            <p class="carousel-text">
+                                The Comcast Innovation Fund provides grants for both open
+                                source and eductional research. The Open Source Development Grants 
+                                fund development of open source software in areas 
+                                benefiting cable, internet and broadband industries.
+                                For more information, please visit 
+                                <a href="http://innovationfund.comcast.com">http://innovationfund.comcast.com</a>
+                            </p>
                         </div>
-                </li>
-                <li class="navigateBtn" onload="COSS.autoRotate(1000)">
-                    <a  class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
-                    <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
-                </li>
-            </ul>
-        </div>
-        <div class="intro-message-container">
-			<h1 class="message-title">Open Source Software at Comcast</h1>
-            <p class="message-content">
-                Comcast cares about open source software, and is an active member of the open source community. Not only do we build and run much of our technology on open source platforms, we also contribute actively to dozens of open source projects and strive to open source many of the technologies we develop internally. We collaborate with other companies and projects as members of open source foundations such as the Linux Foundation, OpenStack Foundation, Apache Foundation and many other organizations for collaboration. This allows us to share our own experience and to contribute to industry direction.
-            </p>
-            <p class="message-content">
-                Without open source software, Comcast would not be able to bring you great experiences through X1, provide you with outstanding Internet service, or become the fastest-growing home security provider. We support and encourage open source culture, tools and collaboration inside the company to enable developers to be productive and effective. We are built on open source software, and we are committed as a company to giving back to the community and sharing our work with the world.
-            </p>
+                    </li>
+                    <li id="slide2" class="hero-slides">
+                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
+                        <div class="slide-text-container">
+                            <h2 class="carousel-slide-title">Traffic Control</h2>
+                            <p class="carousel-text">
+                              Traffic Control is an Open Source implementation of a 
+                              Content Delivery Network (CDN). Originally developed by 
+                              Comcast, it was released as a Comcast 
+                              Open Source software in April 2015. In late 2016, Comcast 
+                              was honored to have Traffic Control accepted by the Apache 
+                              Software Foundation and renamed to Apache Traffic Control. 
+                              It is currently under incubation and available at 
+                              <a href="https://trafficcontrol.incubator.apache.org">https://trafficcontrol.incubator.apache.org</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li id="slide3" class="hero-slides">
+                            <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
+                            <div class="slide-text-container">
+                                <h2 class="carousel-slide-title">Jobs</h2>
+                                <p  class="carousel-text">Here at comcast, we are always looking out for new talents to join our diverse and growing team.</p>
+                                <p  class="carousel-text"> Employees in serviceable areas enjoy free digital TV and Internet service as well as deeply discounted phone service, and other features. </p>
+                                <p class="carousel-text"> <a href="https://jobs.comcast.com">Join us  &#10095</a> </p>
+                            </div>
+                    </li>
+                    <li class="navigateBtn">
+                        <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
+                        <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
+                    </li>
+                    <li class="navdot-container">
+                        <span class="navdot" onclick="COSS.show(1)"></span>
+                        <span class="navdot" onclick="COSS.show(2)"></span>
+                        <span class="navdot" onclick="COSS.show(3)"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="intro-message-container">
+    			      <h1 class="message-title">Open Source Software at Comcast</h1>
+                <p class="message-content">
+                    Comcast cares about open source software, and is an active member of the open source community. Not only do we build and run much of our technology on open source platforms, we also contribute actively to dozens of open source projects and strive to open source many of the technologies we develop internally. We collaborate with other companies and projects as members of open source foundations such as the Linux Foundation, OpenStack Foundation, Apache Foundation and many other organizations for collaboration. This allows us to share our own experience and to contribute to industry direction.
+                </p>
+                <p class="message-content">
+                    Without open source software, Comcast would not be able to bring you great experiences through X1, provide you with outstanding Internet service, or become the fastest-growing home security provider. We support and encourage open source culture, tools and collaboration inside the company to enable developers to be productive and effective. We are built on open source software, and we are committed as a company to giving back to the community and sharing our work with the world.
+                </p>
+            </div>
         </div>
         <div class="projects">
             <ul class="category-menu">
