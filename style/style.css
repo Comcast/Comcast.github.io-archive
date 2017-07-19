@@ -119,6 +119,24 @@ xc-header {
   }
 }
 
+.github-content .github-category {
+  display: block;
+}
+
+.github-content.category-selected .github-category {
+  display: none;
+}
+.github-content.backend-selected #backend-projects,
+.github-content.bigdata-selected #bigdata-projects,
+.github-content.frontend-selected #frontend-projects,
+.github-content.hardware-selected #hardware-projects,
+.github-content.infrastructure-selected #infrastructure-projects,
+.github-content.mobile-selected #mobile-projects,
+.github-content.testing-selected #testing-projects,
+.github-content.video-selected #video-projects {
+  display: block;
+}
+
 li.github-project {
   background: #fff;
   border: 1px solid #DDE2E6;
@@ -148,6 +166,7 @@ li.github-project {
 }
 
 .stats {
+  clear: both;
   background-color: lightgrey;
   width: 300px;
   border: 25px solid green;

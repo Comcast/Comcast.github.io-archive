@@ -61,8 +61,10 @@ limitations under the License.
                     <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
                     <p class="carousel-text">Here at comcast, we are always looking out for new talents to join our diverse and growing team.</p>
                 </li>
-                <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
-                <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
+                <li>
+                    <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
+                    <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
+                </li>
             </ul>
         </div>
         <div class="intro-message-container">
@@ -77,20 +79,20 @@ limitations under the License.
 
         <div class="projects">
             <ul class="category-menu">
-                <li class="category category-all"><a href="#all-projects">All Projects</a></li>
-                <li class="category category-backend"><a href="#github-content">Backend</a></li>
-                <li class="category category-bigdata"><a href="#github-content">Big Data</a></li>
-                <li class="category category-frontend"><a href="#github-content">Frontend</a></li>
-                <li class="category category-hardware"><a href="#github-content">Hardware</a></li>
-                <li class="category category-infrastructure"><a href="#github-content">Infrastructure</a></li>
-                <li class="category category-mobile"><a href="#github-content">Mobile</a></li>
-                <li class="category category-testing"><a href="#github-content">Testing</a></li>
-                <li class="category category-video"><a href="#github-content">Video</a></li>
+                <li><a href="#all-projects">All Projects</a></li>
+                <li><a href="#backend-projects">Backend</a></li>
+                <li><a href="#bigdata-projects">Big Data</a></li>
+                <li><a href="#frontend-projects">Frontend</a></li>
+                <li><a href="#hardware-projects">Hardware</a></li>
+                <li><a href="#infrastructure-projects">Infrastructure</a></li>
+                <li><a href="#mobile-projects">Mobile</a></li>
+                <li><a href="#testing-projects">Testing</a></li>
+                <li><a href="#video-projects">Video</a></li>
             </ul>
-            <ul id="all-projects" class="github-content">
-              <li class="github-category">
+            <ul class="github-content" id="all-projects">
+              <li class="github-category" id="backend-projects">
                 <h2>Backend</h2>
-                <ul id="category-backend">
+                <ul>
                   <li class="github-project">
                       <a href="https://github.com/Comcast/jrugged">
                           <img class="project-logo" src="./img/jrugged.png" alt="jrugged" />
@@ -127,9 +129,9 @@ limitations under the License.
                 </ul>
               </li>
 
-              <li class="github-category">
+              <li class="github-category" id="bigdata-projects">
                 <h2>Big Data</h2>
-                <ul id="category-bigdata">
+                <ul>
                   <li class="github-project">
                       <a href="https://github.com/Comcast/cmb">
                           <img class="project-logo" src="./img/cmb.png" alt="cmb" />
@@ -139,7 +141,7 @@ limitations under the License.
                           CMB is a general purpose open source message bus for the cloud.
                       </p>
                       <p class="project-description">
-                          CMB is a general purpose open source message bus for the cloud. The service is API compatible with Amazon’s SQS/SNS and is built on Cassandra and Redis with the goal of linear horizontal scalability.
+                          The service is API compatible with Amazon’s SQS/SNS and is built on Cassandra and Redis with the goal of linear horizontal scalability.
                       </p>
                   </li>
                   <li class="github-project">
@@ -165,9 +167,9 @@ limitations under the License.
                 </ul>
               </li>
 
-              <li class="github-category">
+              <li class="github-category" id="frontend-projects">
                 <h2>Frontend</h2>
-                <ul id="category-frontend">
+                <ul>
                   <li class="github-project">
                     <a href="https://github.com/Comcast/Surf-N-Perf">
                         <img class="project-logo" src="./img/surf-n-perf.png" alt="surf-n-perf" />
@@ -213,7 +215,7 @@ limitations under the License.
                         Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles.
                     </p>
                     <p class="project-description">
-                        Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles. With Xooie, you can create almost any interface you want. Key components are tagged with data attributes, informing Xooie to bind the associated widget functionality.
+                        With Xooie, you can create almost any interface you want. Key components are tagged with data attributes, informing Xooie to bind the associated widget functionality.
                     </p>
                   </li>
                   <li class="additional-projects">
@@ -226,10 +228,10 @@ limitations under the License.
                   </li>
                 </ul>
               </li>
-
-              <li class="github-category">
+              
+              <li class="github-category" id="hardware-projects">
                 <h2>Hardware</h2>
-                <ul id="category-hardware">
+                <ul>
                   <li class="github-project">
                     <a href="https://github.com/Comcast/dmc-sim">
                         <img class="project-logo" src="./img/dmc-sim.png" alt="dmc-sim" />
@@ -239,7 +241,16 @@ limitations under the License.
                         ns-3 bindings to support simulation evaluations of Distributed Monotonic Clocks (DMC).
                     </p>
                     <p class="project-description">
-                        Distributed monotonic clocks (DMC) whose timestamps can reflect causality but which have a component that stays close to wall clock time. This scheme builds on previous hybrid logical clock proposals by adding important operational hooks and by building in mechanisms to prevent a single runaway system clock from dragging a whole cluster's logical clocks forward into the future.  More at:  https://www.youtube.com/watch?v=YqNGbvFHoKM
+                        Distributed monotonic clocks (DMC) whose timestamps can reflect causality but which have a component that stays close to wall clock time. This scheme builds on previous hybrid logical clock proposals by adding important operational hooks and by building in mechanisms to prevent a single runaway system clock from dragging a whole cluster's logical clocks forward into the future.  <a href="https://www.youtube.com/watch?v=YqNGbvFHoKM">More at YouTube.</a>
+                    </p>
+                  </li>
+	          <li class="github-project">
+                    <a href="https://github.com/Comcast/rdk-on-raspberrypi">
+                        <img class="project-logo" src="./img/rdk-on-raspberrypi.png" alt="rdk-on-raspberrypi" />
+                        <h2 class="project-title">rdk-on-raspberrypi</h2>
+                    </a>
+                    <p class="project-description">
+                        Documentation for running RDK profiles ( Video, broadband, Camera ) on Raspberrypi boards.
                     </p>
                   </li>
                   <li class="additional-projects">
@@ -253,9 +264,9 @@ limitations under the License.
                 </ul>
               </li>
 
-              <li class="github-category">
+              <li class="github-category" id="infrastructure-projects">
                 <h2>Infrastructure</h2>
-                <ul id="category-infrastructure">
+                <ul>
                   <li class="github-project">
                     <a href="https://github.com/apache/incubator-trafficcontrol">
                         <img class="project-logo" src="./img/traffic_control.png" alt="traffic control" />
@@ -291,9 +302,9 @@ limitations under the License.
                 </ul>
               </li>
 
-              <li class="github-category">
+              <li class="github-category" id="mobile-projects">
                 <h2>Mobile</h2>
-                <ul id="category-mobile">
+                <ul>
                   <li class="github-project">
                     <a href="https://github.com/Comcast/FreeFlow">
                         <img class="project-logo" src="./img/freeform.png" alt="Free Flow" />
@@ -304,6 +315,15 @@ limitations under the License.
                     </p>
                     <p class="project-description">
                         FreeFlow is a composition based approach to Android Layouts. As opposed to default Android Layouts, FreeFlow Layouts are swappable at runtime which allows views to their new states smoothly. The fundamental difference here is that FreeFlow prefers Composition over Inheritance which makes the system a lot more adaptable.
+                    </p>
+                  </li>
+	          <li class="github-project">
+                    <a href="https://github.com/Comcast/ccsplite">
+                        <img class="project-logo" src="./img/ccsplite.png" alt="ccsplite" />
+                        <h2 class="project-title">ccsplite</h2>
+                    </a>
+                    <p class="project-description">
+                        Simple and light weight interface to the CCSP Bus.
                     </p>
                   </li>
                   <li class="additional-projects">
@@ -317,9 +337,9 @@ limitations under the License.
                 </ul>
               </li>
 
-              <li class="github-category">
+              <li class="github-category" id="testing-projects">
                 <h2>Testing</h2>
-                <ul id="category-testing">
+                <ul>
                   <li class="github-project">
                     <a href="https://github.com/Comcast/zucchini">
                         <img class="project-logo" src="./img/zucchini.png" alt="zucchini" />
@@ -352,9 +372,9 @@ limitations under the License.
                 </ul>
               </li>
 
-              <li class="github-category">
+              <li class="github-category" id="video-projects">
                 <h2>Video</h2>
-                <ul id="category-video">
+                <ul>
                   <li class="github-project">
                     <a href="https://github.com/Comcast/gots">
                         <img class="project-logo"  src="./img/gots.png" alt="gots" />
@@ -364,9 +384,18 @@ limitations under the License.
                         gots (Go Transport Streams) is a library for working with MPEG transport streams.
                     </p>
                     <p class="project-description">
-                        gots (Go Transport Streams) is a library for working with MPEG transport streams. It provides abstractions for reading packet information and program specific information (psi).
+                        It provides abstractions for reading packet information and program specific information (psi).
                     </p>
                   </li>
+		  <li class="github-project">
+                    <a href="https://github.com/Comcast/gaad">
+                        <img class="project-logo"  src="./img/gaad.png" alt="gaad" />
+                        <h2 class="project-title">GAAD (Go Advanced Audio Decoder)</h2>
+                    </a>
+                    <p class="project-description">
+                        Package currently provides AAC parsing capabilities. This package performs a full parse of AAC-LC and HE-AACv1 bitstreams. Bitstreams with Parametric Stereo (HE-AACv2) are not yet supported, but AAC bitstream data and SBR data will be extracted. The AAC decode from the parsed data to LPCM (.wav) is not yet implemented. Please help us expand and test this library!
+                    </p>
+                  </li>		
                   <li class="additional-projects">
                       <h4>Additional Video Projects</h4>
                       <ul>
