@@ -28,6 +28,21 @@ xc-header {
   background: #000;
 }
 
+.screen-reader-text {
+  position: absolute !important;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0px, 0px, 0px, 0px); /* deprecated */
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  white-space: nowrap; /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
+}
+
 .intro-message-container, .projects {
   margin-left: 15%;
   margin-right: 15%;
@@ -39,6 +54,11 @@ xc-header {
   margin: 0 auto 1.5em;
   border: 1px solid#000;
   border-width: 0 0 1px 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
 
 .projects {
@@ -274,13 +294,167 @@ li.github-project {
 .stats {
   clear: both;
   background-color: lightgrey;
-  width: 300px;
+  max-width: 300px;
   border: 25px solid green;
   padding: 25px;
   margin: 25px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
+footer {
+  display: block;
+  background: #181818 url('../img/footer-bg.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0;
+  padding: 1rem;
+  font-weight: 100;
+  font-size: 3rem;
+  color: #fff;
+}
+
+footer p {
+  font-weight: 200;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #C7CDD2;
+}
+
+footer h2 span,
+footer p span {
+  white-space: nowrap;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #0272b6;
+}
+
+address {
+  padding-bottom: 2rem;
+}
+
+address a {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 120px 90px;
+  padding-top: 106px;
+  display: block;
+  margin: 0 0 1rem;
+}
+
+address .twitter {
+  background-image: url('../img/icon-twitter-bubble.svg');
+}
+
+address .twitter:hover {
+  background-image: url('../img/icon-twitter-bubble-hover.svg');
+}
+
+address .email {
+  background-image: url('../img/icon-email-bubble.svg');
+}
+
+address .email:hover {
+  background-image: url('../img/icon-email-bubble-hover.svg');
+}
+
+address .blog {
+  background-image: url('../img/icon-comcast-labs.svg');
+}
+
+address .blog:hover {
+  background-image: url('../img/icon-comcast-labs-hover.svg');
+}
+
+.social {
+  margin: 3rem auto 4rem;
+}
+
+.social img {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 autol;
+}
+
+.social li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.social a {
+  opacity: .8;
+}
+
+.social a:hover {
+  opacity: 1;
+}
+
+.copyright {
+  text-align: center;
+  color: #646A70;
+  font-size: .75rem;
+  line-height: 2.0em;
+  text-transform: uppercase;
+  padding: 0 0 1rem;
+}
+
+.copyright img {
+  width: 76px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.copyright a {
+	color: #9BA4AA;
+	margin-left: 14px;
+}
+
+.copyright .humans {
+  display: inline-block;
+  width: 88px;
+  height: 17px;
+  background: url('../img/logo-humans.png') bottom center no-repeat;
+  background-size: 100%;
+}
+
+@media all and (min-width: 900px) {
+  footer {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  footer h2 {
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+  address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  address a {
+    background-size: 120px 90px;
+    padding-top: 106px;
+    display: inline-block;
+    width: 200px;
+  }
 }
