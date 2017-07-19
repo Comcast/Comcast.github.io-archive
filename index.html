@@ -41,31 +41,25 @@ limitations under the License.
         <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-128.png" sizes="128x128" />
 
         <title>Open Source Comcast</title>
-
-        <style>
-		#slide2, #slide3{
-		    display:none;
-		}
-		</style>
     </head>
     <body>
         <xc-header auto-auth client-id="comcastgithub"></xc-header>
         <div class="hero-logo-container">
             <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
         </div>
-        <div class="hero-caroussel-container">
-            <ul id="hero-caroussel" class="hero-caroussel">
+        <div class="hero-carousel-container">
+            <ul id="hero-caroussel" class="hero-carousel">
                 <li id="slide1" class="hero-slides">
-                    <img class="caroussel-hero-img" src="./img/carousel/img1.jpg" />
-                    <p>Slide 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et suscipit orci, et faucibus est. Cras quis lectus venenatis, lacinia augue ut, condimentum risus. Praesent turpis ante, dapibus nec porttitor eget, pulvinar a ipsum. Nullam sagittis ante a condimentum dapibus. Aliquam semper, nisl in blandit tincidunt, magna enim eleifend sem, at finibus ex nunc vitae elit.</p>
+                    <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
+                    <p class="carousel-text">Here at comcast, we love innovation.</p>
                 </li>
                 <li id="slide2" class="hero-slides">
-                    <img class="caroussel-hero-img" src="./img/carousel/img2.jpg" />
-                    <p>Slide 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et suscipit orci, et faucibus est. Cras quis lectus venenatis, lacinia augue ut, condimentum risus. Praesent turpis ante, dapibus nec porttitor eget, pulvinar a ipsum. Nullam sagittis ante a condimentum dapibus. Aliquam semper, nisl in blandit tincidunt, magna enim eleifend sem, at finibus ex nunc vitae elit.</p>
+                    <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
+                    <p class="carousel-text">Traffic Control is a successful project that's making a real impact.</p>
                 </li>
                 <li id="slide3" class="hero-slides">
-                    <img class="caroussel-hero-img" src="./img/carousel/img3.jpg" />
-                    <p>Slide 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et suscipit orci, et faucibus est. Cras quis lectus venenatis, lacinia augue ut, condimentum risus. Praesent turpis ante, dapibus nec porttitor eget, pulvinar a ipsum. Nullam sagittis ante a condimentum dapibus. Aliquam semper, nisl in blandit tincidunt, magna enim eleifend sem, at finibus ex nunc vitae elit.</p>
+                    <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
+                    <p class="carousel-text">Here at comcast, we are always looking out for new talents to join our diverse and growing team.</p>
                 </li>
                 <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
                 <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
@@ -94,7 +88,6 @@ limitations under the License.
                 <li class="category category-video"><a href="#github-content">Video</a></li>
             </ul>
             <ul id="all-projects" class="github-content">
-
               <li class="github-category">
                 <h2>Backend</h2>
                 <ul id="category-backend">
