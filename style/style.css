@@ -133,7 +133,8 @@ xc-header {
 .github-content.infrastructure-selected #infrastructure-projects,
 .github-content.mobile-selected #mobile-projects,
 .github-content.testing-selected #testing-projects,
-.github-content.video-selected #video-projects {
+.github-content.video-selected #video-projects,
+.github-content.webpa-selected #webpa-projects {
   display: block;
 }
 
