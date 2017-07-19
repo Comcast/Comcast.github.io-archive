@@ -21,6 +21,15 @@ var COSS = {};
             }
         }
         
+        COSS.show = function(n){
+            var i;
+            var slides = document.getElementsByClassName("hero-slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            slides[n-1].style.display = "block"; 
+        }
+        
         function showSlides(n){
             var i;
             var slides = document.getElementsByClassName("hero-slides");
