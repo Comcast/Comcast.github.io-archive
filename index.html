@@ -52,8 +52,44 @@ limitations under the License.
                 <li id="slide1" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
                     <div class="slide-text-container">
-                        <h2 class="carousel-slide-title">Innovation</h2>
-                        <p class="carousel-text">Here at comcast, we love innovation.</p>
+                        <h2 class="carousel-text">Open Source Development Grants</h2>
+                        <p class="carousel-text">
+                            Comcast is an active and engaged participant in
+                            the global open source community. These grants
+                            are intended to support the creation and
+                            advancement of important open source projects,
+                            including those that may not have immediate
+                            business value, but which carry the potential for
+                            important technological development. Open
+                            Source Development Grants are intended to fund
+                            new or continued development of open source
+                            software in areas of interest to Comcast or of
+                            benefit to the internet and broadband industries.
+                            This can fund a range of development, from
+                            adding specific features to an existing open source
+                            project, to general support of an open source                            project in which we are interested.
+                        </p>
+                        <p class="carousel-text">
+                            Comcast created the Comcast Innovation Fund to
+                            identify and support important research that has the
+                            potential to advance broadband, the internet and the
+                            global open-source community. The fund was
+                            established as a resource for researchers working on
+                            smaller and mid-sized technology projects that may
+                            not qualify for larger national grant programs.
+                            Grants range from $3,000 for smaller projects, up to
+                            more than $100,000 for medium-term research
+                            efforts. A cross-functional team of technology and
+                            business leaders within Comcast reviews grant
+                            applications and directs funding where it is most
+                            needed, and can have the greatest impact. The fund
+                            was backed by a million-dollar commitment from
+                            several groups within Comcast in 2013, and that
+                            level has been renewed for 2017.
+                            Comcast recently concluded the fourth full year of
+                            the grant program, and issued 25 grants to
+                            applicants in six countries.
+                        </p>
                     </div>
                 </li>
                 <li id="slide2" class="hero-slides">
@@ -97,6 +133,7 @@ limitations under the License.
                 <li><a href="#mobile-projects">Mobile</a></li>
                 <li><a href="#testing-projects">Testing</a></li>
                 <li><a href="#video-projects">Video</a></li>
+                <li><a href="#webpa-projects">WebPA</a></li>
             </ul>
             <ul class="github-content" id="all-projects">
               <li class="github-category" id="backend-projects">
@@ -114,7 +151,7 @@ limitations under the License.
                           The jrugged library provides straightforward add-ons to existing code to make it more robust and easier to manage. Examples include CircuitBreaker, Initializer, PerformanceMonitor and Monitorable.
                       </p>
                       <p class="project-description">
-                          Generally speaking, most of these classes implement a ServiceWrapper interface to allow them to be applied around existing services using the Decorator design pattern. Those classes providing operational information, such as PerformanceMonitor and Monitorable can be wrapped in classes that expose their data to JMX controls or on web-accessible health status pages as desired.
+                          Most of these classes implement a ServiceWrapper interface to allow them to be applied around existing services using the Decorator design pattern. Those classes providing operational information, such as PerformanceMonitor and Monitorable can be wrapped in classes that expose their data to JMX controls or on web-accessible health status pages as desired.
                       </p>
                   </li>
                   <li class="github-project">
@@ -126,13 +163,21 @@ limitations under the License.
                           Python code for driving an HTML-based hypermedia API.
                       </p>
                       <p class="project-description">
-                          This is Python code for driving an HTML-based hypermedia API, as described in Jon Moore's talk: "Building Hypermedia APIs with HTML".
+                          This is sample Python code for driving an HTML-based hypermedia API. The top-level method of interest is enter(), where you can supply a URL and arrive at the "start" state of a client state machine. From there, the client can examine semantic objects as annotated by HTML5 microdata, for example with ontologies like <a href="Schema.org">"schema.org</a>.
                       </p>
                   </li>
                   <li class="additional-projects">
                       <h4>Additional Backend Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/drive-thru">Drive-Thru</a></li>
+                        <li><a href="https://www.github.com/Comcast/xml-selector">xml-selector</a></li>
+                        <li><a href="https://www.github.com/Comcast/http-health-check-microservice">http-health-check-microservice</a></li>
+                        <li><a href="https://www.github.com/Comcast/redirector">redirector</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-log">go-log</a></li>
+                        <li><a href="https://www.github.com/Comcast/pantry">pantry</a></li>
+                        <li><a href="https://www.github.com/Comcast/cjson-extras">cjson-extras</a></li>
+                        <li><a href="https://www.github.com/Comcast/malcolm">malcolm</a></li>
+                        <li><a href="https://www.github.com/Comcast/malcolm-sample-express-client">malcolm-sample-express-client</a></li>
+                        <li><a href="https://www.github.com/Comcast/malcolm-sample-hapi-client">malcolm-sample-hapi-client</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -162,15 +207,13 @@ limitations under the License.
                         Sirius is a library for distributing and coordinating data updates amongst a cluster of nodes.
                     </p>
                     <p class="project-description">
-                        Said another way: Sirius enables a cluster of nodes to keep developer-controlled in-memory data structures eventually consistent, allowing I/O-free access to shared information.
+                        Sirius enables a cluster of nodes to keep developer-controlled in-memory data structures eventually consistent, allowing I/O-free access to shared information.
                     </p>
                   </li>
                   <li class="additional-projects">
                       <h4>Additional Big Data Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li>More to come!</li>
                       </ul>
                   </li>
                 </ul>
@@ -200,7 +243,7 @@ limitations under the License.
                         A rules engine, i.e. an event processor based on pattern matching, condition evaluation, and arbitrary actions.
                     </p>
                     <p class="project-description">
-                        A rules engine. You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
+                        You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
                     </p>
                   </li>
                   <li class="github-project">
@@ -230,9 +273,16 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Frontend Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li><a href="https://www.github.com/Comcast/cats">cats</a></li>
+                        <li><a href="https://www.github.com/Comcast/watchmen-ping-nightmare">watchmen-ping-nightmare</a></li>
+                        <li><a href="https://www.github.com/Comcast/sirius-reference-app">sirius-reference-app</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-extensions-sample">compass-extensions-sample</a></li>
+                        <li><a href="https://www.github.com/Comcast/drive-thru">drive-thru</a></li>
+                        <li><a href="https://www.github.com/Comcast/polaris">polaris</a></li>
+                        <li><a href="https://www.github.com/Comcast/html-helloworld-ref-app">html-helloworld-ref-app</a></li>
+                        <li><a href="https://www.github.com/Comcast/magic-wand">magic-wand</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csslint-sample">compass-csslint-sample</a></li>
+                        <li><a href="https://www.github.com/Comcast/publicious">publicious</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -265,9 +315,12 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Hardware Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-recycle-plugin">cf-recycle-plugin</a></li>
+                        <li><a href="https://www.github.com/Comcast/Oscar">Oscar</a></li>
+                        <li><a href="https://www.github.com/Comcast/cimplog">cimplog</a></li>
+                        <li><a href="https://www.github.com/Comcast/service-agent-c">service-agent-c</a></li>
+                        <li><a href="https://www.github.com/Comcast/libucresolv">libucresolv</a></li>
+                        <li><a href="https://www.github.com/Comcast/tr18b1e">tr18b1e</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -303,9 +356,49 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Infrastructure Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csslint">compass-csslint</a></li>
+                        <li><a href="https://www.github.com/Comcast/Canticle">Canticle</a></li>
+                        <li><a href="https://www.github.com/Comcast/k8sh">k8sh</a></li>
+                        <li><a href="https://www.github.com/Comcast/eel">eel</a></li>
+                        <li><a href="https://www.github.com/Comcast/money">money</a></li>
+                        <li><a href="https://www.github.com/Comcast/ActorServiceRegistry">ActorServiceRegistry</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csscss">compass-csscss</a></li>
+                        <li><a href="https://www.github.com/Comcast/hlsparserj">hlsparserj</a></li>
+                        <li><a href="https://www.github.com/Comcast/ssh-to">ssh-to</a></li>
+                        <li><a href="https://www.github.com/Comcast/ansible-sdkman">ansible-sdkman</a></li>
+                        <li><a href="https://www.github.com/Comcast/discovery">discovery</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-edgegrid">go-edgegrid</a></li>
+                        <li><a href="https://www.github.com/Comcast/css_lint_ruby">css_lint_ruby</a></li>
+                        <li><a href="https://www.github.com/Comcast/vesper">vesper</a></li>
+                        <li><a href="https://www.github.com/Comcast/golang-money">golang-money</a></li>
+                        <li><a href="https://www.github.com/Comcast/flume2storm">flume2storm</a></li>
+                        <li><a href="https://www.github.com/Comcast/dawg">dawg</a></li>
+                        <li><a href="https://www.github.com/Comcast/akamai-slack-reporter">akamai-slack-reporter</a></li>
+                        <li><a href="https://www.github.com/Comcast/zootomy">zootomy</a></li>
+                        <li><a href="https://www.github.com/Comcast/svn-to-github">svn-to-github</a></li>
+                        <li><a href="https://www.github.com/Comcast/pipeclamp">pipeclamp</a></li>
+                        <li><a href="https://www.github.com/Comcast/drone-cloudfoundry">drone-cloudfoundry</a></li>
+                        <li><a href="https://www.github.com/Comcast/cereal">cereal</a></li>
+                        <li><a href="https://www.github.com/Comcast/akamai-gtm">akamai-gtm</a></li>
+                        <li><a href="https://www.github.com/Comcast/terraform-provider-akamai">terraform-provider-akamai</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-zdd-plugin">cf-zdd-plugin</a></li>
+                        <li><a href="https://www.github.com/Comcast/kafka-admin-tool">kafka-admin-tool</a></li>
+                        <li><a href="https://www.github.com/Comcast/rdkcryptoapi">rdkcryptoapi</a></li>
+                        <li><a href="https://www.github.com/Comcast/telegraf-buildpack">telegraf-buildpack</a></li>
+                        <li><a href="https://www.github.com/Comcast/weasel">weasel</a></li>
+                        <li><a href="https://www.github.com/Comcast/trower-base64">trower-base64</a></li>
+                        <li><a href="https://www.github.com/Comcast/cjwt">cjwt</a></li>
+                        <li><a href="https://www.github.com/Comcast/compare-ini-files">compare-ini-files</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-buildpack-multi">cf-buildpack-multi</a></li>
+                        <li><a href="https://www.github.com/Comcast/ansible-role-pypi">ansible-role-pypi</a></li>
+                        <li><a href="https://www.github.com/Comcast/telegraf-boshrelease">telegraf-boshrelease</a></li>
+                        <li><a href="https://www.github.com/Comcast/seshat">seshat</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-leaderelection">go-leaderelection</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-scaler-service">cf-scaler-service</a></li>
+                        <li><a href="https://www.github.com/Comcast/golang-discovery-client">golang-discovery-client</a></li>
+                        <li><a href="https://www.github.com/Comcast/rally-rest-toolkit">rally-rest-toolkit</a></li>
+                        <li><a href="https://www.github.com/Comcast/VulKrum">VulKrum</a></li>
+                        <li><a href="https://www.github.com/Comcast/Cleanup-SnapShots">Cleanup-SnapShots</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -338,9 +431,9 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Mobile Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li><a href="https://www.github.com/Comcast/resourceprovider">resourceprovider</a></li>
+                        <li><a href="https://www.github.com/Comcast/loadingdots">loadingdots</a></li>
+                        <li><a href="https://www.github.com/Comcast/ansible-android-sdk">ansible-android-sdk</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -373,9 +466,8 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Testing Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li><a href="https://www.github.com/Comcast/goint">goint</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-junit-report">go-junit-report</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -396,7 +488,7 @@ limitations under the License.
                         It provides abstractions for reading packet information and program specific information (psi).
                     </p>
                   </li>
-		  <li class="github-project">
+                  <li class="github-project">
                     <a href="https://github.com/Comcast/gaad">
                         <img class="project-logo"  src="./img/gaad.png" alt="gaad" />
                         <h2 class="project-title">GAAD (Go Advanced Audio Decoder)</h2>
@@ -408,9 +500,54 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Video Projects</h4>
                       <ul>
-                        <li><a href="https://github.com/Comcast/">Awesome Sauce Project</a></li>
-                        <li><a href="https://github.com/Comcast/">Trogdor: The Burninator</a></li>
-                        <li><a href="https://github.com/Comcast/">The Cheat Lightswitch Rave</a></li>
+                        <li><a href="https://www.github.com/Comcast/cea-extractor">cea-extractor</a></li>
+                        <li><a href="https://www.github.com/Comcast/xmpp_maven">xmpp_maven</a></li>
+                        <li><a href="https://www.github.com/Comcast/scte35-js">scte35-js</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="webpa-projects">
+                <h2><a href="http://rdkcentral.com/a-unique-feature-of-rdk-b-webpa/">WebPA</a></h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/webpa-common">
+                        <img class="project-logo"  src="./img/webpa-common.png" alt="webpa-common" />
+                        <h2 class="project-title">webpa-common</h2>
+                    </a>
+                    <p class="project-description">
+                        The collection of small common packages for the webpa project.
+                    </p>
+                    <p class="project-description">
+                        WebPA is a lightweight connectivity socket, with lower-level protocol connectivity between devices, and the cloud — much like a websocket. It works by each client registering with the cloud, so that it maintains a socket connection to the cloud. On the cloud side, APIs enable polls through which other cloud components could receive events, or translate them in to a TR-181 device data model for further analysis.
+                    </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/wrp-c">
+                        <img class="project-logo"  src="./img/wrp-c.png" alt="wrp-c" />
+                        <h2 class="project-title">wrp-c</h2>
+                    </a>
+                    <p class="project-description">
+                        C implementation of the Web Routing Protocol
+                    </p>
+                    <p class="project-description">
+                        The goal of this layer is to enable devices to interact with a centralized web router (cluster) that routes the messages to/from various services on the other side. From the service perspective, this layer provides a centralized mechanism to directly interact with millions of authorized devices in the field in a scalable manor.
+                    </p>
+                  </li>     
+                  <li class="additional-projects">
+                      <h4>Additional Video Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/parodus">parodus</a></li>
+                        <li><a href="https://www.github.com/Comcast/caduceus">caduceus</a></li>
+                        <li><a href="https://www.github.com/Comcast/wdmp-c">wdmp-c</a></li>
+                        <li><a href="https://www.github.com/Comcast/libparodus">libparodus</a></li>
+                        <li><a href="https://www.github.com/Comcast/talaria">talaria</a></li>
+                        <li><a href="https://www.github.com/Comcast/petasos">petasos</a></li>
+                        <li><a href="https://www.github.com/Comcast/scytale">scytale</a></li>
+                        <li><a href="https://www.github.com/Comcast/tr181cli">tr181cli</a></li>
+                        <li><a href="https://www.github.com/Comcast/parodus2snmp">parodus2snmp</a></li>
+                        <li><a href="https://www.github.com/Comcast/mnemosyne">mnemosyne</a></li>
                       </ul>
                   </li>
                 </ul>
