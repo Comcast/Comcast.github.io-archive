@@ -14,6 +14,13 @@ var COSS = {};
             showSlides(slideIndex += n);
         }
         
+        COSS.autoRotate = function(n){
+            while(true){
+                showSlides(slideIndex += n);
+                setTimeout(autoRotate, n)
+            }
+        }
+        
         function showSlides(n){
             var i;
             var slides = document.getElementsByClassName("hero-slides");

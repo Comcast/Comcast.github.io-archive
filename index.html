@@ -51,55 +51,63 @@ limitations under the License.
             <ul id="hero-caroussel" class="hero-carousel">
                 <li id="slide1" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
-                    <h2 class="carousel-text">Open Source Development Grants</h2>
-                    <p class="carousel-text">
-                        Comcast is an active and engaged participant in
-                        the global open source community. These grants
-                        are intended to support the creation and
-                        advancement of important open source projects,
-                        including those that may not have immediate
-                        business value, but which carry the potential for
-                        important technological development. Open
-                        Source Development Grants are intended to fund
-                        new or continued development of open source
-                        software in areas of interest to Comcast or of
-                        benefit to the internet and broadband industries.
-                        This can fund a range of development, from
-                        adding specific features to an existing open source
-                        project, to general support of an open source                            project in which we are interested.
-                    </p>
-                    <p class="carousel-text">
-                        Comcast created the Comcast Innovation Fund to
-                        identify and support important research that has the
-                        potential to advance broadband, the internet and the
-                        global open-source community. The fund was
-                        established as a resource for researchers working on
-                        smaller and mid-sized technology projects that may
-                        not qualify for larger national grant programs.
-                        Grants range from $3,000 for smaller projects, up to
-                        more than $100,000 for medium-term research
-                        efforts. A cross-functional team of technology and
-                        business leaders within Comcast reviews grant
-                        applications and directs funding where it is most
-                        needed, and can have the greatest impact. The fund
-                        was backed by a million-dollar commitment from
-                        several groups within Comcast in 2013, and that
-                        level has been renewed for 2017.
-                        Comcast recently concluded the fourth full year of
-                        the grant program, and issued 25 grants to
-                        applicants in six countries.
-                    </p>
+                    <div class="slide-text-container">
+                        <h2 class="carousel-text">Open Source Development Grants</h2>
+                        <p class="carousel-text">
+                            Comcast is an active and engaged participant in
+                            the global open source community. These grants
+                            are intended to support the creation and
+                            advancement of important open source projects,
+                            including those that may not have immediate
+                            business value, but which carry the potential for
+                            important technological development. Open
+                            Source Development Grants are intended to fund
+                            new or continued development of open source
+                            software in areas of interest to Comcast or of
+                            benefit to the internet and broadband industries.
+                            This can fund a range of development, from
+                            adding specific features to an existing open source
+                            project, to general support of an open source                            project in which we are interested.
+                        </p>
+                        <p class="carousel-text">
+                            Comcast created the Comcast Innovation Fund to
+                            identify and support important research that has the
+                            potential to advance broadband, the internet and the
+                            global open-source community. The fund was
+                            established as a resource for researchers working on
+                            smaller and mid-sized technology projects that may
+                            not qualify for larger national grant programs.
+                            Grants range from $3,000 for smaller projects, up to
+                            more than $100,000 for medium-term research
+                            efforts. A cross-functional team of technology and
+                            business leaders within Comcast reviews grant
+                            applications and directs funding where it is most
+                            needed, and can have the greatest impact. The fund
+                            was backed by a million-dollar commitment from
+                            several groups within Comcast in 2013, and that
+                            level has been renewed for 2017.
+                            Comcast recently concluded the fourth full year of
+                            the grant program, and issued 25 grants to
+                            applicants in six countries.
+                        </p>
+                    </div>
                 </li>
                 <li id="slide2" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
-                    <p class="carousel-text">Traffic Control is a successful project that's making a real impact.</p>
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Traffic Control</h2>
+                        <p class="carousel-text">Traffic Control is a successful project that's making a real impact.</p>
+                    </div>
                 </li>
                 <li id="slide3" class="hero-slides">
                     <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
-                    <p class="carousel-text">Here at comcast, we are always looking out for new talents to join our diverse and growing team.</p>
+                    <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Jobs</h2>
+                        <p class="carousel-text">We are always looking for talented individuals to join our diverse team.</p>
+                    </div>
                 </li>
-                <li>
-                    <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
+                <li class="navigateBtn" onload="COSS.autoRotate(1000)">
+                    <a  class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
                     <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
                 </li>
             </ul>
