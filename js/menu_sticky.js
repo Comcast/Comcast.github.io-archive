@@ -13,7 +13,7 @@
         }
 
         $(window).scroll(function () {
-            if($(this).scrollTop() > top && !checkVisible(bottom)) {
+            if($(this).scrollTop() > top && !checkVisible(bottom) && $('body').width() > 700) {
                 categories.addClass(stickyEl);
             } else {
                 categories.removeClass(stickyEl);
