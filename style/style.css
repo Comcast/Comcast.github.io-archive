@@ -197,8 +197,8 @@ xc-header {
 
  .prev:hover, .next:hover{
    color:white;
-   background-color:rgba(0, 0, 0, 0.5);;
-   opacity:60%;
+   background-color:rgba(0, 0, 0, 0.5);
+   opacity:0.6;
  }
 
 .carousel-text a{
@@ -427,7 +427,7 @@ address .blog:hover {
 .social img {
   vertical-align: middle;
   display: inline-block;
-  margin: 0 autol;
+  margin: 0 auto;
 }
 
 .social li {
