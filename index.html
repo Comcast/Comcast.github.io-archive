@@ -26,14 +26,14 @@ limitations under the License.
 
         <link rel="stylesheet" href="./style/all-digital.css" />
         <link rel="stylesheet" href="./style/style.css" />
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://comcast.github.io/img/favicon/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://comcast.github.io/img/favicon/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://comcast.github.io/img/favicon/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://comcast.github.io/img/favicon/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://comcast.github.io/img/favicon/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://comcast.github.io/img/favicon/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://comcast.github.io/img/favicon/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://comcast.github.io/img/favicon/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="https://comcast.github.io/img/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://comcast.github.io/img/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://comcast.github.io/img/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://comcast.github.io/img/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="https://comcast.github.io/img/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://comcast.github.io/img/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://comcast.github.io/img/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://comcast.github.io/img/favicon/apple-touch-icon-152x152.png" />
         <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-196x196.png" sizes="196x196" />
         <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-32x32.png" sizes="32x32" />
@@ -44,14 +44,23 @@ limitations under the License.
     </head>
     <body>
         <div class="top-informational">
-            <xc-header auto-auth client-id="comcastgithub"></xc-header>
+            <header>
+              <div>
+                <img src="./img/logo-comcast-black.png" alt="Comcast">
+                <ul class="navbar">
+                  <li id="nav-about"><a href="#about">About</a></li>
+                  <li id="nav-projects"><a href="#projects">Projects</a></li>
+                  <li id="nav-contact"><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </header>
             <div class="hero-logo-container">
-                <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
+                <img src="./img/OpenSourceComcast.png" alt="Open Source at Comcast" />
             </div>
-            <div class="hero-carousel-container">
+            <div class="hero-carousel-container" id="about">
                 <ul id="hero-caroussel" class="hero-carousel">
                     <li id="slide1" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/innovation.jpg" />
+                        <img id="carousel-img1" class="carousel-hero-img" src="./img/carousel/innovation.jpg" alt="Comcast Innovation Fund"/>
                         <div class="slide-text-container">
                             <h2 class="carousel-slide-title">Open Source Grants</h2>
                             <p class="carousel-text">
@@ -59,75 +68,77 @@ limitations under the License.
                                 source and eductional research. The Open Source Development Grants
                                 fund development of open source software in areas
                                 benefiting cable, internet and broadband industries.
+                            </p>
+                            <p class="carousel-text">
                                 For more information, please visit the
-                                <a href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
+                                <a class="carousel-text-link" href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
                             </p>
                         </div>
                     </li>
                     <li id="slide2" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" />
+                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg"alt="Apache Traffic Control"/>
                         <div class="slide-text-container">
                             <h2 class="carousel-slide-title">Traffic Control</h2>
                             <p class="carousel-text">
-                              Traffic Control is an Open Source implementation of a
-                              Content Delivery Network (CDN). Originally developed by
-                              Comcast, it was released as a Comcast
-                              Open Source software in April 2015. In late 2016, Comcast
-                              was honored to have Traffic Control accepted by the Apache
-                              Software Foundation and renamed to Apache Traffic Control.
-                              It is currently under incubation and available at
-                              <a href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
+                              Traffic Control is an Open Source implementation of a 
+                              Content Delivery Network (CDN). Originally developed by 
+                              Comcast, it was released as a Comcast 
+                              Open Source software in April 2015. In late 2016, Comcast 
+                              was honored to have Traffic Control accepted by the Apache 
+                              Software Foundation and renamed to Apache Traffic Control. 
+                              It is currently under incubation and available at 
+                              <a class="carousel-text-link" href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
                             </p>
                         </div>
                     </li>
                     <li id="slide3" class="hero-slides">
-                            <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" />
+                            <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" alt="Jobs"/>
                             <div class="slide-text-container">
                               <h2 class="carousel-slide-title">Jobs</h2>
                               <p  class="carousel-text">
-                                Here at Comcast, we are always looking out for new talents 
+                                Here at Comcast, we are always looking out for new talents
                                 to join our diverse and growing team.</p>
-                              <p  class="carousel-text"> 
-                                Employees in serviceable areas enjoy free digital TV and Internet 
+                              <p  class="carousel-text">
+                                Employees in serviceable areas enjoy free digital TV and Internet
                                 service as well as deeply discounted phone service, and other features. </p>
-                              <p class="carousel-text"> <a href="https://jobs.comcast.com">
-                                Join us  &#10095</a></p>
+                              <p class="carousel-text"> <a class="carousel-text-link" href="https://jobs.comcast.com">
+                                Join us  &#10095;</a></p>
                             </div>
                     </li>
                     <li class="navigateBtn">
-                        <a class="prev" onclick="COSS.showNext(-1)">&#10094;</a>
-                        <a class="next" onclick="COSS.showNext(1)">&#10095;</a>
+                        <a class="prev" id="prevBtn" onclick="COSS.showNext(-1)">&#10094;</a>
+                        <a class="next" id="nextBtn" onclick="COSS.showNext(1)">&#10095;</a>
                     </li>
                     <li class="navdot-container">
-                        <span class="navdot" onclick="COSS.show(1)"></span>
-                        <span class="navdot" onclick="COSS.show(2)"></span>
-                        <span class="navdot" onclick="COSS.show(3)"></span>
+                        <a><span class="navdot active" onclick="COSS.show(1)"></span></a>
+                        <a><span class="navdot" onclick="COSS.show(2)"></span></a>
+                        <a><span class="navdot" onclick="COSS.show(3)"></span></a>
                     </li>
                 </ul>
             </div>
             <div class="intro-message-container">
     			      <h1 class="message-title">Open Source Software at Comcast</h1>
                 <p class="message-content">
-                    Comcast cares about open source software and is an active member of the open source community. 
-                    Not only do we build and run much of our technology on open source platforms, we also contribute 
-                    actively to dozens of open source projects and strive to open source many of the technologies we 
+                    Comcast cares about open source software and is an active member of the open source community.
+                    Not only do we build and run much of our technology on open source platforms, we also contribute
+                    actively to dozens of open source projects and strive to open source many of the technologies we
                     develop internally. Comcast is a Platinum Sponsor for the Apache Software Foundation, and we
-                    collaborate with other companies and projects as members of open source foundations such as the 
-                    Linux Foundation, OpenStack Foundation and Apache Foundation. This allows us to share our own 
+                    collaborate with other companies and projects as members of open source foundations such as the
+                    Linux Foundation, OpenStack Foundation and Apache Foundation. This allows us to share our own
                     experience and to contribute to industry direction.
                 </p>
                 <p class="message-content">
-                    Without open source software, Comcast would not be able to bring you great experiences through X1, 
-                    provide you with outstanding Internet service, or become the fastest-growing home security provider. 
-                    We support and encourage open source culture, tools and collaboration inside the company to enable 
-                    developers to be productive and effective. We are built on open source software, and we are 
-                    committed as a company to giving back to the community and sharing our work with the world. For 
+                    Without open source software, Comcast would not be able to bring you great experiences through X1,
+                    provide you with outstanding Internet service, or become the fastest-growing home security provider.
+                    We support and encourage open source culture, tools and collaboration inside the company to enable
+                    developers to be productive and effective. We are built on open source software, and we are
+                    committed as a company to giving back to the community and sharing our work with the world. For
                     more information, see our
-                    <a href="./docs/Comcast Open Source Briefing.pdf">OSS Briefing</a>.
+                    <a href="./docs/Comcast%20Open%20Source%20Briefing.pdf">OSS Briefing</a>.
                 </p>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <ul class="category-menu">
                 <li><a href="#all-projects">All Projects</a></li>
                 <li><a href="#backend-projects">Backend</a></li>
@@ -168,14 +179,27 @@ limitations under the License.
                           Python code for driving an HTML-based hypermedia API.
                       </p>
                       <p class="project-description">
-                          This is sample Python code for driving an HTML-based hypermedia API. The top-level method of interest is enter(), where you can supply a URL and arrive at the "start" state of a client state machine. From there, the client can examine semantic objects as annotated by HTML5 microdata, for example with ontologies like <a href="Schema.org">schema.org</a>.
+                          This is Python code for driving an HTML-based hypermedia API. The top-level method of interest is enter(), where you can supply a URL and arrive at the "start" state of a client state machine. From there, the client can examine semantic objects as annotated by HTML5 microdata, for example with ontologies like <a href="Schema.org">schema.org</a>.
                       </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/rulio">
+                        <img class="project-logo" src="./img/Rulio_logo.png" alt="rulio" />
+                        <h2 class="project-title">rulio</h2>
+                    </a>
+                    <p class="project-description">
+                        A rules engine, i.e. an event processor based on pattern matching, condition evaluation, and arbitrary actions.
+                    </p>
+                    <p class="project-description">
+                        You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
+                    </p>
                   </li>
                   <li class="additional-projects">
                       <h4>Additional Backend Projects</h4>
                       <ul>
                         <li><a href="https://www.github.com/Comcast/xml-selector">xml-selector</a></li>
                         <li><a href="https://www.github.com/Comcast/http-health-check-microservice">http-health-check-microservice</a></li>
+                        <li><a href="https://www.github.com/Comcast/drive-thru">drive-thru</a></li>
                         <li><a href="https://www.github.com/Comcast/redirector">redirector</a></li>
                         <li><a href="https://www.github.com/Comcast/go-log">go-log</a></li>
                         <li><a href="https://www.github.com/Comcast/pantry">pantry</a></li>
@@ -218,7 +242,7 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Big Data Projects</h4>
                       <ul>
-                        <li>More to come!</li>
+                        <li><a href="https://www.github.com/Comcast/sirius-reference-app">sirius-reference-app</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -237,18 +261,6 @@ limitations under the License.
                     </p>
                     <p class="project-description">
                         Surf-N-Perf provides a simple to use API to gather User Timing and other important performance data in any browser.
-                    </p>
-                  </li>
-                  <li class="github-project">
-                    <a href="https://github.com/Comcast/rulio">
-                        <img class="project-logo" src="./img/Rulio_logo.png" alt="rulio" />
-                        <h2 class="project-title">rulio</h2>
-                    </a>
-                    <p class="project-description">
-                        A rules engine, i.e. an event processor based on pattern matching, condition evaluation, and arbitrary actions.
-                    </p>
-                    <p class="project-description">
-                        You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
                     </p>
                   </li>
                   <li class="github-project">
@@ -278,14 +290,11 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Frontend Projects</h4>
                       <ul>
-                        <li><a href="https://www.github.com/Comcast/cats">cats</a></li>
-                        <li><a href="https://www.github.com/Comcast/watchmen-ping-nightmare">watchmen-ping-nightmare</a></li>
-                        <li><a href="https://www.github.com/Comcast/sirius-reference-app">sirius-reference-app</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csslint">compass-csslint</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csscss">compass-csscss</a></li>
                         <li><a href="https://www.github.com/Comcast/compass-extensions-sample">compass-extensions-sample</a></li>
-                        <li><a href="https://www.github.com/Comcast/drive-thru">drive-thru</a></li>
                         <li><a href="https://www.github.com/Comcast/polaris">polaris</a></li>
                         <li><a href="https://www.github.com/Comcast/html-helloworld-ref-app">html-helloworld-ref-app</a></li>
-                        <li><a href="https://www.github.com/Comcast/magic-wand">magic-wand</a></li>
                         <li><a href="https://www.github.com/Comcast/compass-csslint-sample">compass-csslint-sample</a></li>
                         <li><a href="https://www.github.com/Comcast/publicious">publicious</a></li>
                       </ul>
@@ -361,13 +370,11 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Infrastructure Projects</h4>
                       <ul>
-                        <li><a href="https://www.github.com/Comcast/compass-csslint">compass-csslint</a></li>
                         <li><a href="https://www.github.com/Comcast/Canticle">Canticle</a></li>
                         <li><a href="https://www.github.com/Comcast/k8sh">k8sh</a></li>
                         <li><a href="https://www.github.com/Comcast/eel">eel</a></li>
                         <li><a href="https://www.github.com/Comcast/money">money</a></li>
                         <li><a href="https://www.github.com/Comcast/ActorServiceRegistry">ActorServiceRegistry</a></li>
-                        <li><a href="https://www.github.com/Comcast/compass-csscss">compass-csscss</a></li>
                         <li><a href="https://www.github.com/Comcast/hlsparserj">hlsparserj</a></li>
                         <li><a href="https://www.github.com/Comcast/ssh-to">ssh-to</a></li>
                         <li><a href="https://www.github.com/Comcast/ansible-sdkman">ansible-sdkman</a></li>
@@ -470,6 +477,9 @@ limitations under the License.
                   <li class="additional-projects">
                       <h4>Additional Testing Projects</h4>
                       <ul>
+                        <li><a href="https://www.github.com/Comcast/cats">cats</a></li>
+                        <li><a href="https://www.github.com/Comcast/watchmen-ping-nightmare">watchmen-ping-nightmare</a></li>
+                        <li><a href="https://www.github.com/Comcast/magic-wand">magic-wand</a></li>
                         <li><a href="https://www.github.com/Comcast/goint">goint</a></li>
                         <li><a href="https://www.github.com/Comcast/go-junit-report">go-junit-report</a></li>
                       </ul>
@@ -560,9 +570,20 @@ limitations under the License.
         </div>
     <div class="bottom-informational">
         <div class="stats">
-           stats box
+           <h2>Statistics</h2>
+           <ul>
+            <li>Total Repos: <span id="total-repos">...</span></li>
+            <li>Total Members: <span id="total-members">...</span></li>
+           </ul>
+           <h2>Recently updated</h2>
+           <p><a href="https://github.com/comcast/repositories">View All on GitHub</a></p>
+           <ul>
+            <li id="recent-1">...</li>
+            <li id="recent-2">...</li>
+            <li id="recent-3">...</li>
+           </ul>
         </div>
-        <footer>
+        <footer id="contact">
           <section>
             <h2>Stay in touch <span>with us</span></h2>
             <p>We'd love to hear from you.</p>
@@ -571,8 +592,6 @@ limitations under the License.
                 <a class="email" href="mailto:Comcast_Open_Source_Services@comcast.com"><span>Email Comcast Open Source Services</span></a>
                 <a class="blog" href="http://labs.comcast.com"><span>Comcast Labs Blog</span></a>
             </address>
-          </section>
-          <section>
             <p>Like what you see? <span>Come work with us!</span></p>
             <a href="http://jobs.comcast.com/search-jobs?q=open+source&amp;loc=&amp;team=Technology&amp;radius=25&amp;postDate=&amp;pos=Full+Time&amp;country=#results" class="button button--primary">View Job Openings</a>
 
@@ -583,8 +602,6 @@ limitations under the License.
                 <li><a href="https://www.youtube.com/user/ComcastCareers"><img src="img/icon-youtube.svg" alt="YouTube"></a></li>
                 <li><a href="https://dribbble.com/comcast"><img src="img/icon-dribbble.svg" alt="Dribbble"></a></li>
             </ul>
-          </section>
-          <section>
             <div class="copyright">
               <a href="http://corporate.comcast.com"><img src="img/logo-comcast-alt.svg" alt="Comcast"></a> &copy; 2017 Comcast
               <a href="http://www.xfinity.com/corporate/legal/privacyStatement.html">Privacy</a>
@@ -594,11 +611,22 @@ limitations under the License.
           </section>
         </footer>
     </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://polaris.xfinity.com/polaris.js" async></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/GitHub.bundle.min.js"></script>
+        <script src="./js/promise.min.js"></script>
         <script src="./js/menu_toggle.js"></script>
         <script src="./js/menu_sticky.js"></script>
         <script src="./js/carousel.js"></script>
+        <script src="./js/gh_stats.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-102911798-1', 'auto');
+            ga('send', 'pageview');
+        </script>
         <noscript>Enabling JavaScript improves this site's functionality.</noscript>
     </body>
 </html>
