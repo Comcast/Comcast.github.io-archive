@@ -68,7 +68,6 @@ xc-header {
 
 .carousel-hero-img, .slide-text-container{
   display: block;
-  cursor:pointer;
 }
 
 .slide-text-container {
@@ -130,24 +129,11 @@ xc-header {
   cursor:pointer;
 }
 
-/**
-.hero-carousel > .prev, .hero-carousel > .next {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-
-.hero-carousel:hover li .prev,  .hero-carousel:hover li .next{
-  visibility: visible;
-  opacity: 1;
-}
-**/
 .prev{
    float:left;
    left:0;  
    padding-left:2rem;
    padding-right:4rem;
-   /*margin-left:1rem;*/
 }
 
 .next{
@@ -155,12 +141,14 @@ xc-header {
   right:0;
   padding-left:4rem;
   padding-right:2rem;
-  /*margin-right:1rem;*/
 }
 
- .prev:hover, .next:hover{
-   color:white;
-   background-color:rgba(0, 0, 0, 0.5);
+.hero-carousel:hover .prev, .hero-carousel:hover .next{
+    display:block;
+}
+
+.prev:hover, .next:hover{
+   color:#2B9CD8;
    opacity:0.6;
  }
 
@@ -168,13 +156,15 @@ xc-header {
   color:white;
   font-weight: bold;
 }
-.carousel-text a:hover{
-  color: lightblue;
+
+.slide-text-container .carousel-text .carousel-text-link:hover{
+  color: #2B9CD8;
 }
 
 .navdot-container{
   text-align:center;
   padding-top:0.5rem;
+  bottom:0;
 }
 
 .navdot{

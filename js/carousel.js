@@ -8,22 +8,6 @@ var COSS = {};
         var btnN = document.getElementById("nextBtn");
         var btnP = document.getElementById("prevBtn");
         
-        var timer;
-        var delay = 1000;
-
-        $('#prevBtn').hover(function() {
-            // on mouse in, start a timeout
-
-            timer = setTimeout(function() {
-                // do your stuff here
-                btnP.style.display="block";
-            }, delay);
-        }, function() {
-            // on mouse out, cancel the timer
-            btnP.style.display="none";
-            clearTimeout(timer);
-        });
-        
         COSS.showPrevious = function(n){
             showSlides(slideIndex - n);
             alert("previous!");
@@ -55,22 +39,6 @@ var COSS = {};
             
             slides[n-1].style.display = "block"; 
             dots[n-1].className += " active";
-        }
-        
-        COSS.showPrevBtn = function(){  
-            btnP.style.display="block";
-        }
-        
-        COSS.hidePrevBtn = function(){
-            btnP.style.display="none";
-        }
-        
-        COSS.showNextBtn = function(){
-            btnN.style.display="block";
-        }
-        
-        COSS.hideNextBtn = function(){
-            btnN.style.display="none";
         }
         
         function showSlides(n){
