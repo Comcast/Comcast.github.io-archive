@@ -34,7 +34,7 @@
     anchorToLinkReference[getAnchor(categoryLinks[i].href)] = categoryLinks[i];
   }
 
-  if (locationHash) {
+  if (locationHash && locationHash.indexOf('-projects') > 0) {
     showCategory(locationHash.substring(1));
     setTimeout(function() { githubContentElement.scrollIntoView(); }, 60);
   }
