@@ -48,6 +48,10 @@ xc-header {
   margin-right: 15%;
 }
 
+.intro-message-container {
+  border-bottom: 1px solid #DDE2E6;
+}
+
 .hero-logo-container {
   width: 320px;
   padding-top: 5%;
@@ -56,47 +60,6 @@ xc-header {
   border-width: 0 0 1px 0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-}
-
-.projects {
-  clear: both;
-  padding-top: 2em;
-}
-
-.category-menu,
-.category-menu li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 5px;
-}
-
-.category-menu a {
-  display: block;
-  padding: 0 0 0 1em;
-  height: 44px;
-  line-height: 44px;
-  background: #fff;
-  border: 1px solid #0272b6;
-  text-transform: uppercase;
-}
-
-.category-menu a:hover,
-.category-menu .category-selected a {
-  color: #fff;
-  background: #0272b6;
-  border-color: #0272b6;
-}
-
-.github-content,
-.github-content ul,
-.github-content li {
-  list-style-type: none;
-  margin: 0 0 1em;
-  padding: 0;
-}
 
 /**Carousel**/
 #slide2, #slide3{
@@ -233,11 +196,90 @@ xc-header {
 
 /**End of Carousel**/
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.projects {
+  clear: both;
+  padding-top: 2em;
+}
+
+.category-menu li {
+  display: none;
+}
+
+.category-menu li:first-of-type {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.category-menu li:first-of-type a {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #191919;
+}
+
+.category-menu,
+.category-menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.github-content,
+.github-content ul,
+.github-content li {
+  list-style-type: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
 @media all and (min-width: 700px) {
   .category-menu {
-  float: left;
-  width: 200px;
+    display: block;
+    float: left;
+    width: 200px;
   }
+
+  .category-menu li,
+  .category-menu li:first-of-type {
+    display: block;
+    padding: 0;
+  }
+
+  .category-menu li:first-of-type a {
+    border-left: 2px solid #0272B6;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 4px 0 4px 20px;
+  }
+
+  .category-menu li:first-of-type a:hover {
+    font-weight: 400;
+    color: #191919;
+  }
+
+  .category-menu a {
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 40px;
+    height: 35px;
+    line-height: 35px;
+    color: #868F96;
+  }
+
+  .category-menu a:hover {
+    color: #191919;
+  }
+
+  .category-menu a.active {
+    color: #2A2C2D;
+    font-weight: 700;
+    background: transparent;
+  }
+
   .github-content {
   	margin-left: 220px;
   }
