@@ -59,12 +59,9 @@ limitations under the License.
             </div>
             <div class="hero-carousel-container" id="about">
                 <ul id="hero-caroussel" class="hero-carousel">
-                    <li class="navigateBtn">
-                        <a class="prev" id="prevBtn" onmousedown="COSS.showNext(-1)" onclick="COSS.showNext(-1)">&#10094;</a>
-                    </li>
                     <li id="slide1" class="hero-slides">
-                        <img id="carousel-img1" class="carousel-hero-img" src="./img/carousel/innovation.jpg" onmouseenter="COSS.showPrevBtn()" onmouseleave="COSS.hidePrevBtn()" alt="Comcast Innovation Fund"/>
-                        <div class="slide-text-container" onMouseenter="COSS.showNextBtn()" onmouseleave="COSS.hideNextBtn()">
+                        <img id="carousel-img1" class="carousel-hero-img" src="./img/carousel/innovation.jpg" alt="Comcast Innovation Fund"/>
+                        <div class="slide-text-container">
                             <h2 class="carousel-slide-title">Open Source Grants</h2>
                             <p class="carousel-text">
                                 The Comcast Innovation Fund provides grants for both open
@@ -74,29 +71,29 @@ limitations under the License.
                             </p>
                             <p class="carousel-text">
                                 For more information, please visit the
-                                <a href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
+                                <a class="carousel-text-link" href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
                             </p>
                         </div>
                     </li>
                     <li id="slide2" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg"onmouseenter="COSS.showPrevBtn()" onmouseleave="COSS.hidePrevBtn()" alt="Apache Traffic Control"/>
-                        <div class="slide-text-container" onMouseenter="COSS.showNextBtn()" onmouseleave="COSS.hideNextBtn()">
+                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg"alt="Apache Traffic Control"/>
+                        <div class="slide-text-container">
                             <h2 class="carousel-slide-title">Traffic Control</h2>
                             <p class="carousel-text">
-                              Traffic Control is an Open Source implementation of a
-                              Content Delivery Network (CDN). Originally developed by
-                              Comcast, it was released as a Comcast
-                              Open Source software in April 2015. In late 2016, Comcast
-                              was honored to have Traffic Control accepted by the Apache
-                              Software Foundation and renamed to Apache Traffic Control.
-                              It is currently under incubation and available at
-                              <a href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
+                              Traffic Control is an Open Source implementation of a 
+                              Content Delivery Network (CDN). Originally developed by 
+                              Comcast, it was released as a Comcast 
+                              Open Source software in April 2015. In late 2016, Comcast 
+                              was honored to have Traffic Control accepted by the Apache 
+                              Software Foundation and renamed to Apache Traffic Control. 
+                              It is currently under incubation and available at 
+                              <a class="carousel-text-link" href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
                             </p>
                         </div>
                     </li>
                     <li id="slide3" class="hero-slides">
-                            <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" onmouseenter="COSS.showPrevBtn()" onmouseleave="COSS.hidePrevBtn()"/>
-                            <div class="slide-text-container" onMouseenter="COSS.showNextBtn()" onmouseleave="COSS.hideNextBtn()">
+                            <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" alt="Jobs"/>
+                            <div class="slide-text-container">
                               <h2 class="carousel-slide-title">Jobs</h2>
                               <p  class="carousel-text">
                                 Here at Comcast, we are always looking out for new talents
@@ -104,12 +101,13 @@ limitations under the License.
                               <p  class="carousel-text">
                                 Employees in serviceable areas enjoy free digital TV and Internet
                                 service as well as deeply discounted phone service, and other features. </p>
-                              <p class="carousel-text"> <a href="https://jobs.comcast.com">
+                              <p class="carousel-text"> <a class="carousel-text-link" href="https://jobs.comcast.com">
                                 Join us  &#10095;</a></p>
                             </div>
                     </li>
                     <li class="navigateBtn">
-                        <a class="next" id="nextBtn" onclick="COSS.showNext(1)" onmousedown="COSS.showNext(1)">&#10095;</a>
+                        <a class="prev" id="prevBtn" onclick="COSS.showNext(-1)">&#10094;</a>
+                        <a class="next" id="nextBtn" onclick="COSS.showNext(1)">&#10095;</a>
                     </li>
                     <li class="navdot-container">
                         <a><span class="navdot active" onclick="COSS.show(1)"></span></a>
