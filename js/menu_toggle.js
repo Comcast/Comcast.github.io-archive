@@ -14,7 +14,7 @@
     for (i = 0; i < categoryLinks.length; i++) {
       categoryLinks[i].className = '';
     }
-    link.className = 'active';
+    link.className = 'active-category';
   }
   var showCategory = function(selectedCategoryAnchor) {
     var anchor = typeof selectedCategoryAnchor === 'string' ? selectedCategoryAnchor : getAnchor(this.href);
