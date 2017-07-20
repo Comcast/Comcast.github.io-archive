@@ -22,12 +22,6 @@ html, body {
   background-color: #eef1f3;
 }
 
-xc-header {
-  display: block;
-  min-height: 44px;
-  background: #000;
-}
-
 .screen-reader-text {
   position: absolute !important;
   display: block;
@@ -43,7 +37,51 @@ xc-header {
   white-space: nowrap; /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
 }
 
-.intro-message-container, .projects {
+header {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #E6EAED;
+  height: 60px;
+}
+
+header img {
+  margin-top: 12px;
+  height: 35px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media all and (min-width: 520px) {
+  .navbar {
+    float: right;
+  }
+
+  .navbar, .navbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .navbar a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    color: #868F96;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .navbar li:last-of-type a {
+    padding-right: 0;
+  }
+}
+
+header > div, .intro-message-container, .projects {
   margin-left: 15%;
   margin-right: 15%;
 }
