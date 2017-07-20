@@ -221,9 +221,12 @@ xc-header {
   top: 0;
 }
 
+ul.sticky, .projects {
+  padding-top: 2em;
+}
+
 .projects {
   clear: both;
-  padding-top: 2em;
 }
 
 .category-menu li {
@@ -294,10 +297,9 @@ xc-header {
     color: #191919;
   }
 
-  .category-menu a.active {
+  .category-menu a.active-category {
     color: #2A2C2D;
     font-weight: 700;
-    background: transparent;
   }
 
   .github-content {
