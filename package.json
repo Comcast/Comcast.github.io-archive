@@ -1,0 +1,20 @@
+{
+  "name": "comcast.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Comcast Open Source Software Portal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comcast/Comcast.github.io.git"
+  },
+  "author": "Comcast_Open_Source_Services@comcast.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Comcast/Comcast.github.io/issues"
+  },
+  "homepage": "https://comcast.github.io"
+}
