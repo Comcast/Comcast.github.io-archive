@@ -105,6 +105,7 @@ xc-header {
 
 .carousel-hero-img, .slide-text-container{
   display: block;
+  cursor:pointer;
 }
 
 .slide-text-container {
@@ -153,27 +154,45 @@ xc-header {
 }
 
 .prev, .next{
+  display:none;
   position:absolute;
-  top:40%;
+  top:0; /*40%*/
   font-size:1.6rem;
   text-align:center;
-}
-
-.prev, .next{
   color:#f3f3f3;
   margin:auto;
-  padding:0.5rem;
-  border-radius:0.5rem;
+  padding-top:9.7rem;
+  padding-bottom:9.7rem;
+  z-index:100;
+  cursor:pointer;
 }
 
+/**
+.hero-carousel > .prev, .hero-carousel > .next {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hero-carousel:hover li .prev,  .hero-carousel:hover li .next{
+  visibility: visible;
+  opacity: 1;
+}
+**/
 .prev{
-   left:0;
-   margin-left:1rem;
+   float:left;
+   left:0;  
+   padding-left:2rem;
+   padding-right:4rem;
+   /*margin-left:1rem;*/
 }
 
 .next{
+  float:right;
   right:0;
-  margin-right:1rem;
+  padding-left:4rem;
+  padding-right:2rem;
+  /*margin-right:1rem;*/
 }
 
  .prev:hover, .next:hover{
@@ -204,6 +223,7 @@ xc-header {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  cursor:pointer;
 }
 
 .active, .navdot:hover {
