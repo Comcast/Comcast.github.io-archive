@@ -12,7 +12,6 @@
         }
 
         function setStickyClass() {
-console.info($(this).scrollTop(), document.querySelector('.top-informational').offsetHeight)
             if($(this).scrollTop() > document.querySelector('.top-informational').offsetHeight && !checkVisible(bottom) && $('body').width() >= 700) {
                 categories.addClass(stickyEl);
             } else {
