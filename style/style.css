@@ -298,6 +298,33 @@ li.github-project {
 
 .additional-projects {
   border-bottom: 1px solid #B1B9BF;
+  overflow: hidden;
+}
+
+@media all and (min-width: 535px) and (max-width: 699px), (min-width: 849px) {
+  .additional-projects li {
+    float: left;
+    width: 48%;
+    clear: right;
+  }
+  .additional-projects ul > :nth-child(even) {
+    float: right;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .additional-projects li {
+    width: 32%;
+    padding-right: 2%;
+    clear: right;
+  }
+  .additional-projects ul > :nth-child(even) {
+    float: left;
+  }
+  .additional-projects ul > :nth-child(3n) {
+    float: right;
+    padding-right: 0;
+  }
 }
 
 @media all and (min-width: 1200px) {
