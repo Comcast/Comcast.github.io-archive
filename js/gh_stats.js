@@ -25,7 +25,7 @@
         }
 
         function generateRecentRepoHTML(repo) {
-            return "<a href\"" + repo.html_url + "\">" + repo.name + "</a>"
+            return "<a href=\"" + repo.html_url + "\">" + repo.name + "</a>"
                  + " <span class=\"repo-update-date\">"
                  + formatDate(new Date(repo.updated_at))
                  + "</span>"
