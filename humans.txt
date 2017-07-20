@@ -32,8 +32,10 @@
 
 /* THANKS */
 		
+	Open Source Developers: You know who you are!
+	From: Everywhere!
 
 /* SITE */
-	Last update: 2017/07/18
+	Last update: 2017/07/21
 	Language: English
 	Doctype: HTML5
