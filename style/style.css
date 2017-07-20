@@ -22,12 +22,6 @@ html, body {
   background-color: #eef1f3;
 }
 
-xc-header {
-  display: block;
-  min-height: 44px;
-  background: #000;
-}
-
 .screen-reader-text {
   position: absolute !important;
   display: block;
@@ -43,9 +37,57 @@ xc-header {
   white-space: nowrap; /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
 }
 
-.intro-message-container, .projects {
+header {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #E6EAED;
+  height: 60px;
+}
+
+header img {
+  margin-top: 12px;
+  height: 35px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media all and (min-width: 520px) {
+  .navbar {
+    float: right;
+  }
+
+  .navbar, .navbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .navbar a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    color: #868F96;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .navbar li:last-of-type a {
+    padding-right: 0;
+  }
+}
+
+header > div, .intro-message-container, .projects {
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.intro-message-container {
+  border-bottom: 1px solid #DDE2E6;
 }
 
 .hero-logo-container {
@@ -56,47 +98,6 @@ xc-header {
   border-width: 0 0 1px 0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-}
-
-.projects {
-  clear: both;
-  padding-top: 2em;
-}
-
-.category-menu,
-.category-menu li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 5px;
-}
-
-.category-menu a {
-  display: block;
-  padding: 0 0 0 1em;
-  height: 44px;
-  line-height: 44px;
-  background: #fff;
-  border: 1px solid #0272b6;
-  text-transform: uppercase;
-}
-
-.category-menu a:hover,
-.category-menu .category-selected a {
-  color: #fff;
-  background: #0272b6;
-  border-color: #0272b6;
-}
-
-.github-content,
-.github-content ul,
-.github-content li {
-  list-style-type: none;
-  margin: 0 0 1em;
-  padding: 0;
-}
 
 /**Carousel**/
 #slide2, #slide3{
@@ -153,46 +154,55 @@ xc-header {
 }
 
 .prev, .next{
+  display:none;
   position:absolute;
-  top:40%;
+  top:0; /*40%*/
   font-size:1.6rem;
   text-align:center;
-}
-
-.prev, .next{
   color:#f3f3f3;
   margin:auto;
-  padding:0.5rem;
-  border-radius:0.5rem;
+  padding-top:9.7rem;
+  padding-bottom:9.7rem;
+  z-index:100;
+  cursor:pointer;
 }
 
 .prev{
-   left:0;
-   margin-left:1rem;
+   float:left;
+   left:0;  
+   padding-left:2rem;
+   padding-right:4rem;
 }
 
 .next{
+  float:right;
   right:0;
-  margin-right:1rem;
+  padding-left:4rem;
+  padding-right:2rem;
 }
 
- .prev:hover, .next:hover{
-   color:white;
-   background-color:rgba(0, 0, 0, 0.5);;
-   opacity:60%;
+.hero-carousel:hover .prev, .hero-carousel:hover .next{
+    display:block;
+}
+
+.prev:hover, .next:hover{
+   color:#2B9CD8;
+   opacity:0.6;
  }
 
 .carousel-text a{
   color:white;
   font-weight: bold;
 }
-.carousel-text a:hover{
-  color: lightblue;
+
+.slide-text-container .carousel-text .carousel-text-link:hover{
+  color: #2B9CD8;
 }
 
 .navdot-container{
   text-align:center;
   padding-top:0.5rem;
+  bottom:0;
 }
 
 .navdot{
@@ -204,6 +214,7 @@ xc-header {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  cursor:pointer;
 }
 
 .active, .navdot:hover {
@@ -233,11 +244,92 @@ xc-header {
 
 /**End of Carousel**/
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+ul.sticky, .projects {
+  padding-top: 2em;
+}
+
+.projects {
+  clear: both;
+}
+
+.category-menu li {
+  display: none;
+}
+
+.category-menu li:first-of-type {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.category-menu li:first-of-type a {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #191919;
+}
+
+.category-menu,
+.category-menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.github-content,
+.github-content ul,
+.github-content li {
+  list-style-type: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
 @media all and (min-width: 700px) {
   .category-menu {
-  float: left;
-  width: 200px;
+    display: block;
+    float: left;
+    width: 200px;
   }
+
+  .category-menu li,
+  .category-menu li:first-of-type {
+    display: block;
+    padding: 0;
+  }
+
+  .category-menu li:first-of-type a {
+    border-left: 2px solid #0272B6;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 4px 0 4px 20px;
+  }
+
+  .category-menu li:first-of-type a:hover {
+    font-weight: 400;
+    color: #191919;
+  }
+
+  .category-menu a {
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 40px;
+    height: 35px;
+    line-height: 35px;
+    color: #868F96;
+  }
+
+  .category-menu a:hover {
+    color: #191919;
+  }
+
+  .category-menu a.active-category {
+    color: #2A2C2D;
+    font-weight: 700;
+  }
+
   .github-content {
   	margin-left: 220px;
   }
@@ -278,6 +370,33 @@ li.github-project {
 
 .additional-projects {
   border-bottom: 1px solid #B1B9BF;
+  overflow: hidden;
+}
+
+@media all and (min-width: 535px) and (max-width: 699px), (min-width: 849px) {
+  .additional-projects li {
+    float: left;
+    width: 48%;
+    clear: right;
+  }
+  .additional-projects ul > :nth-child(even) {
+    float: right;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .additional-projects li {
+    width: 32%;
+    padding-right: 2%;
+    clear: right;
+  }
+  .additional-projects ul > :nth-child(even) {
+    float: left;
+  }
+  .additional-projects ul > :nth-child(3n) {
+    float: right;
+    padding-right: 0;
+  }
 }
 
 @media all and (min-width: 1200px) {
@@ -380,7 +499,7 @@ address .blog:hover {
 .social img {
   vertical-align: middle;
   display: inline-block;
-  margin: 0 autol;
+  margin: 0 auto;
 }
 
 .social li {

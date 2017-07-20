@@ -5,9 +5,12 @@ var COSS = {};
     
     $(function() {
         var slideIndex = 1;
-
+        var btnN = document.getElementById("nextBtn");
+        var btnP = document.getElementById("prevBtn");
+        
         COSS.showPrevious = function(n){
             showSlides(slideIndex - n);
+            alert("previous!");
         }
 
         COSS.showNext = function(n){
