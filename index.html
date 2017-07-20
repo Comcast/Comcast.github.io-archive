@@ -44,11 +44,20 @@ limitations under the License.
     </head>
     <body>
         <div class="top-informational">
-            <xc-header auto-auth client-id="comcastgithub"></xc-header>
+            <header>
+              <div>
+                <img src="./img/logo-comcast-black.png" alt="Comcast">
+                <ul class="navbar">
+                  <li id="nav-about"><a href="#about">About</a></li>
+                  <li id="nav-projects"><a href="#projects">Projects</a></li>
+                  <li id="nav-contact"><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </header>
             <div class="hero-logo-container">
-                <img src="./img/OpenSourceComcast.png" alt="Open Source Comcast." />
+                <img src="./img/OpenSourceComcast.png" alt="Open Source at Comcast" />
             </div>
-            <div class="hero-carousel-container">
+            <div class="hero-carousel-container" id="about">
                 <ul id="hero-caroussel" class="hero-carousel">
                     <li class="navigateBtn">
                         <a class="prev" id="prevBtn" onmousedown="COSS.showNext(-1)" onclick="COSS.showNext(-1)">&#10094;</a>
@@ -74,13 +83,13 @@ limitations under the License.
                         <div class="slide-text-container" onMouseenter="COSS.showNextBtn()" onmouseleave="COSS.hideNextBtn()">
                             <h2 class="carousel-slide-title">Traffic Control</h2>
                             <p class="carousel-text">
-                              Traffic Control is an Open Source implementation of a 
-                              Content Delivery Network (CDN). Originally developed by 
-                              Comcast, it was released as a Comcast 
-                              Open Source software in April 2015. In late 2016, Comcast 
-                              was honored to have Traffic Control accepted by the Apache 
-                              Software Foundation and renamed to Apache Traffic Control. 
-                              It is currently under incubation and available at 
+                              Traffic Control is an Open Source implementation of a
+                              Content Delivery Network (CDN). Originally developed by
+                              Comcast, it was released as a Comcast
+                              Open Source software in April 2015. In late 2016, Comcast
+                              was honored to have Traffic Control accepted by the Apache
+                              Software Foundation and renamed to Apache Traffic Control.
+                              It is currently under incubation and available at
                               <a href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
                             </p>
                         </div>
@@ -131,7 +140,7 @@ limitations under the License.
                 </p>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <ul class="category-menu">
                 <li><a href="#all-projects">All Projects</a></li>
                 <li><a href="#backend-projects">Backend</a></li>
@@ -568,7 +577,7 @@ limitations under the License.
             <li>Total Members: <span id="total-members">...</span></li>
            </ul>
         </div>
-        <footer>
+        <footer id="contact">
           <section>
             <h2>Stay in touch <span>with us</span></h2>
             <p>We'd love to hear from you.</p>
@@ -598,7 +607,6 @@ limitations under the License.
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
-        <script src="https://polaris.xfinity.com/polaris.js" async></script>
         <script src="./js/menu_toggle.js"></script>
         <script src="./js/menu_sticky.js"></script>
         <script src="./js/carousel.js"></script>
