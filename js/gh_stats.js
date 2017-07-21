@@ -22,10 +22,20 @@
 
         function generateRecentRepoHTML(repo, options) {
           options = options || {};
+          var includeDescription = options.hasOwnProperty('desc') ? options.desc : true;
           var includeDate = options.hasOwnProperty('date') ? options.date : true;
           var includeStars = options.hasOwnProperty('stars') ? options.stars : true;
           var includeForks = options.hasOwnProperty('forks') ? options.forks : true;
           var html = "<a href=\"" + repo.html_url + "\">" + repo.name + "</a>";
+
+          if (includeDescription) {
+            html += " <span class=\"repo-description\">";
+            html += repo.description;
+            html += "</span>";
+            if (includeDate || includeStars || includeForks) {
+              html += "<span class=\"repo-bullet\">&#8226;</span>"
+            }
+          }
 
           if (includeDate) {
             html += " <span class=\"repo-update-date\">";
@@ -81,9 +91,9 @@
                     forkedRepos = response.data.filter(function(repo){ return repo.fork; });
                     document.getElementById('total-source-repos').innerHTML = sourceRepos.length;
                     document.getElementById('total-forked-repos').innerHTML = forkedRepos.length;
-                    populateStat(sourceRepos, 'pushed_at', 'recent');
-                    populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false});
-                    populateStat(sourceRepos, 'forks_count', 'forked', {date:false});
+                    populateStat(sourceRepos, 'pushed_at', 'recent', {stars: false, forks: false});
+                    populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false, desc: false});
+                    populateStat(sourceRepos, 'forks_count', 'forked', {date:false, desc: false});
                     populateStat(forkedRepos, 'pushed_at', 'pr', {date:false, stars: false, forks: false});
                 } else {
                     document.getElementById('total-members').innerHTML = response.data.length;

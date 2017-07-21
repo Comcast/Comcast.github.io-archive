@@ -453,9 +453,15 @@ li.github-project {
   font-weight: 300;
 }
 
+.stat-box .repo-update-date {
+  color: #2A2C2D;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
 .stat-box .repo-bullet {
   color: #44484C;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 footer {
