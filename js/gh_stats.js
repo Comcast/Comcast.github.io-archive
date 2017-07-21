@@ -2,7 +2,7 @@
     "use strict";
 
     $(function () {
-        var gh = new GitHub({token: "290ceb2840c197938c226d6d3f2b07e0178953d3"});
+        var gh = new GitHub({token: "3ab48f1540336680f0ee83ba41359dcba1c7e712"});
         var comcast = gh.getOrganization("comcast");
 
         function formatDate(date) {
