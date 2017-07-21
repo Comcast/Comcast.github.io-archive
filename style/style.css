@@ -81,7 +81,7 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .projects {
+header > div, .intro-message-container, .projects, .stats {
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -169,7 +169,7 @@ header > div, .intro-message-container, .projects {
 
 .prev{
    float:left;
-   left:0;  
+   left:0;
    padding-left:2rem;
    padding-right:4rem;
 }
@@ -410,12 +410,52 @@ li.github-project {
 }
 
 .stats {
-  clear: both;
-  background-color: lightgrey;
-  max-width: 300px;
-  border: 25px solid green;
-  padding: 25px;
-  margin: 25px;
+  border-top: 1px solid #DDE2E6;
+  margin-top: -17px;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.stats > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.stat-box {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background: #fff;
+  border: 1px solid #DDE2E6;
+  padding: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+.stat-box li {
+  margin-bottom: 0.5rem;
+}
+
+.stat-box a {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.stat-box span {
+  color: #9BA4AA;
+  font-weight: 300;
+}
+
+.stat-box .repo-bullet {
+  color: #44484C;
+  margin: 0 1rem;
 }
 
 footer {
