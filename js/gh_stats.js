@@ -28,7 +28,7 @@
           var includeForks = options.hasOwnProperty('forks') ? options.forks : true;
           var html = "<a href=\"" + repo.html_url + "\">" + repo.name + "</a>";
 
-          if (includeDescription) {
+          if (includeDescription && repo.description) {
             html += " <span class=\"repo-description\">";
             html += repo.description;
             html += "</span>";
