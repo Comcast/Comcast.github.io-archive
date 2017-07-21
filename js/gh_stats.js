@@ -20,10 +20,6 @@
           return monthNames[monthIndex] + " " + day + ", " + year;
         }
 
-        function sortReposByUpdatedDate(a, b) {
-            return new Date(b.pushed_at) - new Date(a.pushed_at);
-        }
-
         function generateRecentRepoHTML(repo, options) {
           options = options || {};
           var includeDate = options.hasOwnProperty('date') ? options.date : true;
@@ -47,53 +43,20 @@
           return html;
         }
 
-        function populateRecentRepos(repos) {
-            var mostRecentRepos = repos.sort(sortReposByUpdatedDate);
+        function populateStat(repos, sortKey, idPrefix, options) {
+            var sortFunction = function(a, b) {
+              return new Date(b[sortKey]) - new Date(a[sortKey]);
+            }
+            var mostRecentRepos = repos.sort(sortFunction);
             var repo;
-            var recent;
+            var li;
             var i;
 
             for (i = 0; i < 5; i++) {
-                recent = document.getElementById("recent-" + (i + 1));
+                li = document.getElementById(idPrefix + '-' + (i + 1));
                 repo = mostRecentRepos[i];
 
-                recent.innerHTML = generateRecentRepoHTML(repo);
-            }
-        }
-
-        function sortReposByStars(a, b) {
-            return new Date(b.stargazers_count) - new Date(a.stargazers_count);
-        }
-
-        function populateStarredRepos(repos) {
-            var mostStarredRepos = repos.sort(sortReposByStars);
-            var repo;
-            var star;
-            var i;
-
-            for (i = 0; i < 5; i++) {
-                star = document.getElementById("starred-" + (i + 1));
-                repo = mostStarredRepos[i];
-
-                star.innerHTML = generateRecentRepoHTML(repo, {date:false});
-            }
-        }
-
-        function sortReposByForks(a, b) {
-            return new Date(b.forks_count) - new Date(a.forks_count);
-        }
-
-        function populateForkedRepos(repos) {
-            var mostForkedRepos = repos.sort(sortReposByForks);
-            var repo;
-            var fork;
-            var i;
-
-            for (i = 0; i < 5; i++) {
-                fork = document.getElementById("forked-" + (i + 1));
-                repo = mostForkedRepos[i];
-
-                fork.innerHTML = generateRecentRepoHTML(repo, {date:false});
+                li.innerHTML = generateRecentRepoHTML(repo, options);
             }
         }
 
@@ -104,9 +67,9 @@
                 total.innerHTML = response.data.length;
 
                 if (type === "repos") {
-                    populateRecentRepos(response.data);
-                    populateStarredRepos(response.data);
-                    populateForkedRepos(response.data);
+                    populateStat(response.data, 'pushed_at', 'recent');
+                    populateStat(response.data, 'stargazers_count', 'starred', {date:false});
+                    populateStat(response.data, 'forks_count', 'forked', {date:false});
                 }
             }
         }
