@@ -21,13 +21,13 @@
         }
 
         function sortReposByUpdatedDate(a, b) {
-            return new Date(b.updated_at) - new Date(a.updated_at);
+            return new Date(b.pushed_at) - new Date(a.pushed_at);
         }
 
         function generateRecentRepoHTML(repo) {
             return "<a href=\"" + repo.html_url + "\">" + repo.name + "</a>"
                  + " <span class=\"repo-update-date\">"
-                 + formatDate(new Date(repo.updated_at))
+                 + formatDate(new Date(repo.pushed_at))
                  + "</span>"
                  + "<span class=\"repo-bullet\">&#8226;</span>"
                  + "<span class=\"repo-stargazers\">"
@@ -45,7 +45,7 @@
             var recent;
             var i;
 
-            for (i = 0; i < 3; i++) {
+            for (i = 0; i < 5; i++) {
                 recent = document.getElementById("recent-" + (i + 1));
                 repo = mostRecentRepos[i];
 
