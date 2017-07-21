@@ -79,6 +79,24 @@
             }
         }
 
+        function sortReposByForks(a, b) {
+            return new Date(b.forks_count) - new Date(a.forks_count);
+        }
+
+        function populateForkedRepos(repos) {
+            var mostForkedRepos = repos.sort(sortReposByForks);
+            var repo;
+            var fork;
+            var i;
+
+            for (i = 0; i < 5; i++) {
+                fork = document.getElementById("forked-" + (i + 1));
+                repo = mostForkedRepos[i];
+
+                fork.innerHTML = generateRecentRepoHTML(repo, {date:false});
+            }
+        }
+
         function populateTotal(type) {
             return function (response) {
                 var total = document.getElementById("total-" + type);
@@ -88,6 +106,7 @@
                 if (type === "repos") {
                     populateRecentRepos(response.data);
                     populateStarredRepos(response.data);
+                    populateForkedRepos(response.data);
                 }
             }
         }
