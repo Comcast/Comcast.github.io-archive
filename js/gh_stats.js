@@ -62,16 +62,19 @@
 
         function populateTotal(type) {
             return function (response) {
-                var total = document.getElementById("total-" + type);
                 var sourceRepos;
-
-                total.innerHTML = response.data.length;
+                var forkedRepos;
 
                 if (type === "repos") {
                     sourceRepos = response.data.filter(function(repo){ return !repo.fork; });
+                    forkedRepos = response.data.filter(function(repo){ return repo.fork; });
+                    document.getElementById('total-source-repos').innerHTML = sourceRepos.length;
+                    document.getElementById('total-forked-repos').innerHTML = forkedRepos.length;
                     populateStat(sourceRepos, 'pushed_at', 'recent');
                     populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false});
                     populateStat(sourceRepos, 'forks_count', 'forked', {date:false});
+                } else {
+                    document.getElementById('total-members').innerHTML = response.data.length;
                 }
             }
         }
