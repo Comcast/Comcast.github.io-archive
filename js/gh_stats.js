@@ -23,22 +23,33 @@
         function generateRecentRepoHTML(repo, options) {
           options = options || {};
           var includeDate = options.hasOwnProperty('date') ? options.date : true;
+          var includeStars = options.hasOwnProperty('stars') ? options.stars : true;
+          var includeForks = options.hasOwnProperty('forks') ? options.forks : true;
           var html = "<a href=\"" + repo.html_url + "\">" + repo.name + "</a>";
 
           if (includeDate) {
             html += " <span class=\"repo-update-date\">";
             html += formatDate(new Date(repo.pushed_at))
             html += "</span>";
-            html += "<span class=\"repo-bullet\">&#8226;</span>"
+            if (includeStars || includeForks) {
+              html += "<span class=\"repo-bullet\">&#8226;</span>"
+            }
           }
 
-          html += "<span class=\"repo-stargazers\">"
-          html += repo.stargazers_count + " stargazers"
-          html += "</span>"
-          html += "<span class=\"repo-bullet\">&#8226;</span>"
-          html += "<span class=\"repo-forks\">"
-          html += repo.forks_count + " forks"
-          html += "</span>";
+          if (includeStars) {
+            html += "<span class=\"repo-stargazers\">"
+            html += repo.stargazers_count + " stargazers"
+            html += "</span>"
+            if (includeForks) {
+              html += "<span class=\"repo-bullet\">&#8226;</span>"
+            }
+          }
+
+          if (includeForks) {
+            html += "<span class=\"repo-forks\">"
+            html += repo.forks_count + " forks"
+            html += "</span>";
+          }
 
           return html;
         }
@@ -73,6 +84,7 @@
                     populateStat(sourceRepos, 'pushed_at', 'recent');
                     populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false});
                     populateStat(sourceRepos, 'forks_count', 'forked', {date:false});
+                    populateStat(forkedRepos, 'pushed_at', 'pr', {date:false, stars: false, forks: false});
                 } else {
                     document.getElementById('total-members').innerHTML = response.data.length;
                 }
