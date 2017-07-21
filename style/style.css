@@ -464,6 +464,14 @@ li.github-project {
   margin: 0 0.5rem;
 }
 
+.github-api-failed .stat-box {
+  display: none;
+}
+
+.github-api-failed #stat-newest {
+  display: block;
+}
+
 footer {
   display: block;
   background: #181818 url('../img/footer-bg.jpg') center center no-repeat;
