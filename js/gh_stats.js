@@ -63,13 +63,15 @@
         function populateTotal(type) {
             return function (response) {
                 var total = document.getElementById("total-" + type);
+                var sourceRepos;
 
                 total.innerHTML = response.data.length;
 
                 if (type === "repos") {
-                    populateStat(response.data, 'pushed_at', 'recent');
-                    populateStat(response.data, 'stargazers_count', 'starred', {date:false});
-                    populateStat(response.data, 'forks_count', 'forked', {date:false});
+                    sourceRepos = response.data.filter(function(repo){ return !repo.fork; });
+                    populateStat(sourceRepos, 'pushed_at', 'recent');
+                    populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false});
+                    populateStat(sourceRepos, 'forks_count', 'forked', {date:false});
                 }
             }
         }
