@@ -11,7 +11,7 @@ Comcast.github.io is licensed under [Apache License 2.0](LICENSE).
 Code of Conduct
 ===============
 
-We take our [code of conduct](CODE_OF_CONDUCT.md) very serioulsly. Please abide by it.
+We take our [code of conduct](CODE_OF_CONDUCT.md) very seriously. Please abide by it.
 
 Contributing
 ============
