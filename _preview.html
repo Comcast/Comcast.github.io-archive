@@ -1,0 +1,658 @@
+<!doctype html>
+<!--
+@license
+Copyright 2017 Comcast Cable Communications Management, LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="title" content="Open Source | Comcast" />
+        <meta name="description" content="Comcast Open Source web site" />
+        <meta name="robots" content="open source, comcast, innovation" />
+        <meta name="googlebot" content="open source, comcast, innovation" />
+
+        <link rel="stylesheet" href="./style/css.css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="https://comcast.github.io/img/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://comcast.github.io/img/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://comcast.github.io/img/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://comcast.github.io/img/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="https://comcast.github.io/img/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://comcast.github.io/img/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://comcast.github.io/img/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://comcast.github.io/img/favicon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-128.png" sizes="128x128" />
+
+        <title>Open Source Comcast</title>
+    </head>
+    <body>
+        <div class="top-informational">
+            <header>
+              <div>
+                <img src="./img/logo-comcast-color.png" alt="Comcast">
+                <ul class="navbar">
+                  <li id="nav-about"><a href="#about">About</a></li>
+                  <li id="nav-projects"><a href="#projects">Projects</a></li>
+                  <li id="nav-contact"><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </header>
+            <div class="hero-carousel-container" id="about">
+                <ul id="hero-carousel" class="hero-carousel">
+                    <li id="slide1" class="hero-slides">
+                        <img id="carousel-img1" class="carousel-hero-img" src="./img/carousel/innovation.jpg" alt="Comcast Innovation Fund"/>
+                        <div class="slide-text-container">
+                            <h2 class="carousel-slide-title">Open Source Grants</h2>
+                            <p class="carousel-text">
+                                The Comcast Innovation Fund provides grants for both open
+                                source and eductional research. The Open Source Development Grants
+                                fund development of open source software in areas
+                                benefiting cable, internet and broadband industries.
+                            </p>
+                            <p class="carousel-text">
+                                For more information, please visit the
+                                <a class="carousel-text-link" href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
+                            </p>
+                        </div>
+                    </li>
+                    <li id="slide2" class="hero-slides">
+                        <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" alt="Apache Traffic Control"/>
+                        <div class="slide-text-container">
+                            <h2 class="carousel-slide-title">Traffic Control</h2>
+                            <p class="carousel-text">
+                              Traffic Control is an Open Source implementation of a
+                              Content Delivery Network (CDN). Originally developed by
+                              Comcast, it was released as a Comcast
+                              Open Source software in April 2015. In late 2016, Comcast
+                              was honored to have Traffic Control accepted by the Apache
+                              Software Foundation and renamed to Apache Traffic Control.
+                              It is currently under incubation and available at
+                              <a class="carousel-text-link" href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
+                            </p>
+                        </div>
+                    </li>
+                    <li id="slide3" class="hero-slides">
+                            <img class="carousel-hero-img" src="./img/carousel/jobs.jpg" alt="Jobs"/>
+                            <div class="slide-text-container">
+                              <h2 class="carousel-slide-title">Jobs</h2>
+                              <p  class="carousel-text">
+                                Here at Comcast, we are always looking out for new talents
+                                to join our diverse and growing team.</p>
+                              <p  class="carousel-text">
+                                Employees in serviceable areas enjoy free digital TV and Internet
+                                service as well as deeply discounted phone service, and other features. </p>
+                              <p class="carousel-text"> <a class="carousel-text-link" href="https://jobs.comcast.com">
+                                Join us  &#10095;</a></p>
+                            </div>
+                    </li>
+                    <li class="navigateBtn">
+                        <a class="prev" id="prevBtn" onclick="COSS.showNext(-1)">&#10094;</a>
+                        <a class="next" id="nextBtn" onclick="COSS.showNext(1)">&#10095;</a>
+                    </li>
+                    <li class="navdot-container">
+                        <a><span class="navdot active" onclick="COSS.show(1)"></span></a>
+                        <a><span class="navdot" onclick="COSS.show(2)"></span></a>
+                        <a><span class="navdot" onclick="COSS.show(3)"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="intro-message-container">
+    			      <h1 class="message-title">Open Source Software at Comcast</h1>
+                <p class="message-content"> We are committed to open source software. We use it to build great products, attract elite talent and evolve the technology we use to deliver an amazing customer experience. Beyond using open-source technologies to build our products, we contribute actively to a wide range of open-source and open-standards groups including the Linux Foundation, OpenStack Foundation, Apache Foundation, Cloud Foundry Foundation and Internet Engineering Task Force, to name just a few. We also encourage and support our software engineers in open-sourcing the projects they develop at Comcast.
+                </p>
+                <p class="message-content"> We know the collective development ethos behind robust open source projects makes our products better and more powerful and we’re committed to being part of the global open source community now and into the future.
+                </p>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <ul class="category-menu">
+                <li><a href="#all-projects">All Projects</a></li>
+                <li><a href="#backend-projects">Backend</a></li>
+                <li><a href="#bigdata-projects">Big Data</a></li>
+                <li><a href="#frontend-projects">Frontend</a></li>
+                <li><a href="#hardware-projects">Hardware</a></li>
+                <li><a href="#infrastructure-projects">Infrastructure</a></li>
+                <li><a href="#mobile-projects">Mobile</a></li>
+                <li><a href="#testing-projects">Testing</a></li>
+                <li><a href="#video-projects">Video</a></li>
+                <li><a href="#webpa-projects">WebPA</a></li>
+            </ul>
+            <ul class="github-content" id="all-projects">
+              <li class="github-category" id="backend-projects">
+                <h2>Backend</h2>
+                <ul>
+                  <li class="github-project">
+                      <a href="https://github.com/Comcast/jrugged">
+                          <img class="project-logo" src="./img/jrugged.png" alt="jrugged" />
+                          <h3 class="project-title">jrugged</h3>
+                      </a>
+                      <p class="project-description">
+                          The jrugged library allows your code to adapt to network issues in a responsible way.
+                      </p>
+                      <p class="project-description">
+                          The jrugged library provides straightforward add-ons to existing code to make it more robust and easier to manage. Examples include CircuitBreaker, Initializer, PerformanceMonitor and Monitorable.
+                      </p>
+                      <p class="project-description">
+                          Most of these classes implement a ServiceWrapper interface to allow them to be applied around existing services using the Decorator design pattern. Those classes providing operational information, such as PerformanceMonitor and Monitorable can be wrapped in classes that expose their data to JMX controls or on web-accessible health status pages as desired.
+                      </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/rulio">
+                        <img class="project-logo" src="./img/Rulio_logo.png" alt="rulio" />
+                        <h2 class="project-title">rulio</h2>
+                    </a>
+                    <p class="project-description">
+                        A rules engine, i.e. an event processor based on pattern matching, condition evaluation, and arbitrary actions.
+                    </p>
+                    <p class="project-description">
+                        You write rules and send events. You can also write some facts that rules can use. When an event arrives, the system finds candidate rules. A candidate rule's condition is evaluated to find zero or more sets of variable bindings. For each set of variable bindings, the rule's actions are executed.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Backend Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/xml-selector">xml-selector</a></li>
+                        <li><a href="https://www.github.com/Comcast/http-health-check-microservice">http-health-check-microservice</a></li>
+                        <li><a href="https://www.github.com/Comcast/drive-thru">drive-thru</a></li>
+                        <li><a href="https://www.github.com/Comcast/redirector">redirector</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-log">go-log</a></li>
+                        <li><a href="https://www.github.com/Comcast/pantry">pantry</a></li>
+                        <li><a href="https://www.github.com/Comcast/cjson-extras">cjson-extras</a></li>
+                        <li><a href="https://www.github.com/Comcast/malcolm">malcolm</a></li>
+                        <li><a href="https://www.github.com/Comcast/malcolm-sample-express-client">malcolm-sample-express-client</a></li>
+                        <li><a href="https://www.github.com/Comcast/malcolm-sample-hapi-client">malcolm-sample-hapi-client</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="bigdata-projects">
+                <h2>Big Data</h2>
+                <ul>
+                  <li class="github-project">
+                      <a href="https://github.com/Comcast/cmb">
+                          <img class="project-logo" src="./img/cmb.png" alt="cmb" />
+                          <h2 class="project-title">cmb</h2>
+                      </a>
+                      <p class="project-description">
+                          CMB is a general purpose open source message bus for the cloud.
+                      </p>
+                      <p class="project-description">
+                          The service is API compatible with Amazon’s SQS/SNS and is built on Cassandra and Redis with the goal of linear horizontal scalability.
+                      </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/sirius">
+                        <img class="project-logo" src="./img/sirius.png" alt="Sirius" />
+                        <h2 class="project-title">Sirius</h2>
+                    </a>
+                    <p class="project-description">
+                        Sirius is a library for distributing and coordinating data updates amongst a cluster of nodes.
+                    </p>
+                    <p class="project-description">
+                        Sirius enables a cluster of nodes to keep developer-controlled in-memory data structures eventually consistent, allowing I/O-free access to shared information.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Big Data Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/sirius-reference-app">sirius-reference-app</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="frontend-projects">
+                <h2>Frontend</h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/Surf-N-Perf">
+                        <img class="project-logo" src="./img/surf-n-perf.png" alt="surf-n-perf" />
+                        <h2 class="project-title">surf-n-perf</h2>
+                    </a>
+                    <p class="project-description">
+                        A micro-library for gathering frontend web page performance data.
+                    </p>
+                    <p class="project-description">
+                        Surf-N-Perf provides a simple to use API to gather User Timing and other important performance data in any browser.
+                    </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/Speed-testJS">
+                        <img class="project-logo" src="./img/speed-testJS.png" alt="Speed-testJS" />
+                        <h2 class="project-title">SpeedtestJS</h2>
+                    </a>
+                    <p class="project-description">
+                        SpeedtestJS is a JavaScript based speed test providing users with an enriched view of their Internet speed. We developed and open sourced SpeedTestJS to create a benchmark solution that would be transparent, independent and used and contributed by many.
+                    </p>
+                    <p class="project-description">
+                        Using speed tier data to add a qualifying metric to standard speed test results, users will now know whether their experience is poor, good or great.
+                    </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/Xooie">
+                        <img class="project-logo" src="./img/xooie.png" alt="xooie" />
+                        <h2 class="project-title">xooie</h2>
+                    </a>
+                    <p class="project-description">
+                        Xooie is a library of JavaScript UI widgets designed to be extremely modular and agnostic of markup and styles.
+                    </p>
+                    <p class="project-description">
+                        With Xooie, you can create almost any interface you want. Key components are tagged with data attributes, informing Xooie to bind the associated widget functionality.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Frontend Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/compass-csslint">compass-csslint</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csscss">compass-csscss</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-extensions-sample">compass-extensions-sample</a></li>
+                        <li><a href="https://www.github.com/Comcast/polaris">polaris</a></li>
+                        <li><a href="https://www.github.com/Comcast/html-helloworld-ref-app">html-helloworld-ref-app</a></li>
+                        <li><a href="https://www.github.com/Comcast/compass-csslint-sample">compass-csslint-sample</a></li>
+                        <li><a href="https://www.github.com/Comcast/publicious">publicious</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="hardware-projects">
+                <h2>Hardware</h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/dmc-sim">
+                        <img class="project-logo" src="./img/dmc-sim.png" alt="dmc-sim" />
+                        <h2 class="project-title">dmc-sim</h2>
+                    </a>
+                    <p class="project-description">
+                        ns-3 bindings to support simulation evaluations of Distributed Monotonic Clocks (DMC).
+                    </p>
+                    <p class="project-description">
+                        Distributed monotonic clocks (DMC) whose timestamps can reflect causality but which have a component that stays close to wall clock time. This scheme builds on previous hybrid logical clock proposals by adding important operational hooks and by building in mechanisms to prevent a single runaway system clock from dragging a whole cluster's logical clocks forward into the future.  <a href="https://www.youtube.com/watch?v=YqNGbvFHoKM">More at YouTube.</a>
+                    </p>
+                  </li>
+	          <li class="github-project">
+                    <a href="https://github.com/Comcast/rdk-on-raspberrypi">
+                        <img class="project-logo" src="./img/rdk-on-raspberrypi.png" alt="rdk-on-raspberrypi" />
+                        <h2 class="project-title">rdk-on-raspberrypi</h2>
+                    </a>
+                    <p class="project-description">
+                        Documentation for running RDK profiles ( Video, broadband, Camera ) on Raspberrypi boards.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Hardware Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/cf-recycle-plugin">cf-recycle-plugin</a></li>
+                        <li><a href="https://www.github.com/Comcast/Oscar">Oscar</a></li>
+                        <li><a href="https://www.github.com/Comcast/cimplog">cimplog</a></li>
+                        <li><a href="https://www.github.com/Comcast/service-agent-c">service-agent-c</a></li>
+                        <li><a href="https://www.github.com/Comcast/libucresolv">libucresolv</a></li>
+                        <li><a href="https://www.github.com/Comcast/tr18b1e">tr18b1e</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="infrastructure-projects">
+                <h2>Infrastructure</h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/apache/incubator-trafficcontrol">
+                        <img class="project-logo" src="./img/traffic_control.png" alt="traffic control" />
+                        <h2 class="project-title">traffic control</h2>
+                    </a>
+                    <p class="project-description">
+                        Traffic Control is a caching server control plane application used to aggregate caching servers into a Content Delivery Network (CDN).
+                    </p>
+                    <p class="project-description">
+                        The CDN caching software chosen for Traffic Control is Apache Traffic Server (ATS). Although the current release only supports ATS as a cache, this may change with future releases.
+                    </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/kube-yarn">
+                        <img class="project-logo" src="./img/kube-yarn.png" alt="kube yarn" />
+                        <h2 class="project-title">kube yarn</h2>
+                    </a>
+                    <p class="project-description">
+                        Running YARN on Kubernetes with PetSet controller.
+                    </p>
+                    <p class="project-description">
+                        Apache Hadoop YARN (Yet Another Resource Negotiator) is a cluster management technology. This allows you to build an Image for deploying the kube-yarn artifacts without any local dependencies.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Infrastructure Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/Canticle">Canticle</a></li>
+                        <li><a href="https://www.github.com/Comcast/k8sh">k8sh</a></li>
+                        <li><a href="https://www.github.com/Comcast/eel">eel</a></li>
+                        <li><a href="https://www.github.com/Comcast/money">money</a></li>
+                        <li><a href="https://www.github.com/Comcast/ActorServiceRegistry">ActorServiceRegistry</a></li>
+                        <li><a href="https://www.github.com/Comcast/hlsparserj">hlsparserj</a></li>
+                        <li><a href="https://www.github.com/Comcast/ssh-to">ssh-to</a></li>
+                        <li><a href="https://www.github.com/Comcast/ansible-sdkman">ansible-sdkman</a></li>
+                        <li><a href="https://www.github.com/Comcast/discovery">discovery</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-edgegrid">go-edgegrid</a></li>
+                        <li><a href="https://www.github.com/Comcast/css_lint_ruby">css_lint_ruby</a></li>
+                        <li><a href="https://www.github.com/Comcast/vesper">vesper</a></li>
+                        <li><a href="https://www.github.com/Comcast/golang-money">golang-money</a></li>
+                        <li><a href="https://www.github.com/Comcast/flume2storm">flume2storm</a></li>
+                        <li><a href="https://www.github.com/Comcast/dawg">dawg</a></li>
+                        <li><a href="https://www.github.com/Comcast/akamai-slack-reporter">akamai-slack-reporter</a></li>
+                        <li><a href="https://www.github.com/Comcast/zootomy">zootomy</a></li>
+                        <li><a href="https://www.github.com/Comcast/svn-to-github">svn-to-github</a></li>
+                        <li><a href="https://www.github.com/Comcast/pipeclamp">pipeclamp</a></li>
+                        <li><a href="https://www.github.com/Comcast/drone-cloudfoundry">drone-cloudfoundry</a></li>
+                        <li><a href="https://www.github.com/Comcast/cereal">cereal</a></li>
+                        <li><a href="https://www.github.com/Comcast/akamai-gtm">akamai-gtm</a></li>
+                        <li><a href="https://www.github.com/Comcast/terraform-provider-akamai">terraform-provider-akamai</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-zdd-plugin">cf-zdd-plugin</a></li>
+                        <li><a href="https://www.github.com/Comcast/kafka-admin-tool">kafka-admin-tool</a></li>
+                        <li><a href="https://www.github.com/Comcast/rdkcryptoapi">rdkcryptoapi</a></li>
+                        <li><a href="https://www.github.com/Comcast/telegraf-buildpack">telegraf-buildpack</a></li>
+                        <li><a href="https://www.github.com/Comcast/weasel">weasel</a></li>
+                        <li><a href="https://www.github.com/Comcast/trower-base64">trower-base64</a></li>
+                        <li><a href="https://www.github.com/Comcast/cjwt">cjwt</a></li>
+                        <li><a href="https://www.github.com/Comcast/compare-ini-files">compare-ini-files</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-buildpack-multi">cf-buildpack-multi</a></li>
+                        <li><a href="https://www.github.com/Comcast/ansible-role-pypi">ansible-role-pypi</a></li>
+                        <li><a href="https://www.github.com/Comcast/telegraf-boshrelease">telegraf-boshrelease</a></li>
+                        <li><a href="https://www.github.com/Comcast/seshat">seshat</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-leaderelection">go-leaderelection</a></li>
+                        <li><a href="https://www.github.com/Comcast/cf-scaler-service">cf-scaler-service</a></li>
+                        <li><a href="https://www.github.com/Comcast/golang-discovery-client">golang-discovery-client</a></li>
+                        <li><a href="https://www.github.com/Comcast/rally-rest-toolkit">rally-rest-toolkit</a></li>
+                        <li><a href="https://www.github.com/Comcast/VulKrum">VulKrum</a></li>
+                        <li><a href="https://www.github.com/Comcast/Cleanup-SnapShots">Cleanup-SnapShots</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="mobile-projects">
+                <h2>Mobile</h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/FreeFlow">
+                        <img class="project-logo" src="./img/freeform.png" alt="Free Flow" />
+                        <h2 class="project-title">Free Flow</h2>
+                    </a>
+                    <p class="project-description">
+                        A layout engine for Android that decouples layouts from the View containers. We developed FreeFlow to overcome limitations we encountered as we worked to develop our next generation of Android apps.
+                    </p>
+                    <p class="project-description">
+                        FreeFlow is a composition based approach to Android Layouts. As opposed to default Android Layouts, FreeFlow Layouts are swappable at runtime which allows views to their new states smoothly. The fundamental difference here is that FreeFlow prefers Composition over Inheritance which makes the system a lot more adaptable.
+                    </p>
+                  </li>
+	          <li class="github-project">
+                    <a href="https://github.com/Comcast/ccsplite">
+                        <img class="project-logo" src="./img/ccsplite.png" alt="ccsplite" />
+                        <h2 class="project-title">ccsplite</h2>
+                    </a>
+                    <p class="project-description">
+                        Simple and light weight interface to the CCSP Bus.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Mobile Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/resourceprovider">resourceprovider</a></li>
+                        <li><a href="https://www.github.com/Comcast/loadingdots">loadingdots</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="testing-projects">
+                <h2>Testing</h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/zucchini">
+                        <img class="project-logo" src="./img/zucchini.png" alt="zucchini" />
+                        <h2 class="project-title">Zucchini</h2>
+                    </a>
+                    <p class="project-description">
+                        Run your cucumber-jvm tests in parallel across all your devices.
+                    </p>
+                    <p class="project-description">
+                        Zucchini sits on top of cucumber-jvm and maven to provide higher testing throughput by enabling concurrent test execution. A test author specifies a description of each of the devices (or browsers) under test as well as the cucumber feature files to execute and zucchini runs the tests in parallel with a separate backing cucumber runtime for each device under test. Upon completion, all of these tests are compiled into a single report made available in an html format.
+                    </p>
+                  </li>
+	          <li class="github-project">
+                    <a href="https://github.com/Comcast/kratos">
+                        <img class="project-logo" src="./img/kratos.png" alt="kratos" />
+                        <h2 class="project-title">kratos</h2>
+                    </a>
+                    <p class="project-description">
+                        Websocket wrapper that provides a simple API for making new connections, sending messages on that connection, and providing a way to handle received messages.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Testing Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/cats">cats</a></li>
+                        <li><a href="https://www.github.com/Comcast/watchmen-ping-nightmare">watchmen-ping-nightmare</a></li>
+                        <li><a href="https://www.github.com/Comcast/magic-wand">magic-wand</a></li>
+                        <li><a href="https://www.github.com/Comcast/goint">goint</a></li>
+                        <li><a href="https://www.github.com/Comcast/go-junit-report">go-junit-report</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="video-projects">
+                <h2>Video</h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/gots">
+                        <img class="project-logo"  src="./img/gots.png" alt="gots" />
+                        <h2 class="project-title">gots</h2>
+                    </a>
+                    <p class="project-description">
+                        gots (Go Transport Streams) is a library for working with MPEG transport streams.
+                    </p>
+                    <p class="project-description">
+                        It provides abstractions for reading packet information and program specific information (psi).
+                    </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/gaad">
+                        <img class="project-logo"  src="./img/gaad.png" alt="gaad" />
+                        <h2 class="project-title">gaad (Go Advanced Audio Decoder)</h2>
+                    </a>
+                    <p class="project-description">
+                        Package currently provides AAC parsing capabilities. This package performs a full parse of AAC-LC and HE-AACv1 bitstreams. Bitstreams with Parametric Stereo (HE-AACv2) are not yet supported, but AAC bitstream data and SBR data will be extracted. The AAC decode from the parsed data to LPCM (.wav) is not yet implemented. Please help us expand and test this library!
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional Video Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/cea-extractor">cea-extractor</a></li>
+                        <li><a href="https://www.github.com/Comcast/xmpp_maven">xmpp_maven</a></li>
+                        <li><a href="https://www.github.com/Comcast/scte35-js">scte35-js</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="github-category" id="webpa-projects">
+                <h2><a href="http://rdkcentral.com/a-unique-feature-of-rdk-b-webpa/">WebPA</a></h2>
+                <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/webpa-common">
+                        <img class="project-logo"  src="./img/webpa-common.png" alt="webpa-common" />
+                        <h2 class="project-title">webpa-common</h2>
+                    </a>
+                    <p class="project-description">
+                        The collection of small common packages for the webpa project.
+                    </p>
+                    <p class="project-description">
+                        WebPA is a lightweight connectivity socket, with lower-level protocol connectivity between devices, and the cloud — much like a websocket. It works by each client registering with the cloud, so that it maintains a socket connection to the cloud. On the cloud side, APIs enable polls through which other cloud components could receive events, or translate them in to a TR-181 device data model for further analysis.
+                    </p>
+                  </li>
+                  <li class="github-project">
+                    <a href="https://github.com/Comcast/wrp-c">
+                        <img class="project-logo"  src="./img/wrp-c.png" alt="wrp-c" />
+                        <h2 class="project-title">wrp-c</h2>
+                    </a>
+                    <p class="project-description">
+                        C implementation of the Web Routing Protocol
+                    </p>
+                    <p class="project-description">
+                        The goal of this layer is to enable devices to interact with a centralized web router (cluster) that routes the messages to/from various services on the other side. From the service perspective, this layer provides a centralized mechanism to directly interact with millions of authorized devices in the field in a scalable manor.
+                    </p>
+                  </li>
+                  <li class="additional-projects">
+                      <h4>Additional WebPA Projects</h4>
+                      <ul>
+                        <li><a href="https://www.github.com/Comcast/parodus">parodus</a></li>
+                        <li><a href="https://www.github.com/Comcast/caduceus">caduceus</a></li>
+                        <li><a href="https://www.github.com/Comcast/wdmp-c">wdmp-c</a></li>
+                        <li><a href="https://www.github.com/Comcast/libparodus">libparodus</a></li>
+                        <li><a href="https://www.github.com/Comcast/talaria">talaria</a></li>
+                        <li><a href="https://www.github.com/Comcast/petasos">petasos</a></li>
+                        <li><a href="https://www.github.com/Comcast/scytale">scytale</a></li>
+                        <li><a href="https://www.github.com/Comcast/tr181cli">tr181cli</a></li>
+                        <li><a href="https://www.github.com/Comcast/parodus2snmp">parodus2snmp</a></li>
+                        <li><a href="https://www.github.com/Comcast/mnemosyne">mnemosyne</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+    <div class="bottom-informational">
+      <div class="stats">
+        <h2>Statistics</h2>
+        <section>
+          <div class="stat-box" id="stat-newest">
+            <h3>Our Newest Projects</h3>
+            <ul>
+              <li><a href="https://github.com/Comcast/Cleanup-SnapShots">Cleanup-SnapShots</a> <span class="repo-description">Automate cleaning up vCenter snapshots</span></li>
+              <li><a href="https://github.com/Comcast/malcolm">malcolm</a> <span class="repo-description">Leverage your RAM within your web service implementation</span></li>
+              <li><a href="https://github.com/Comcast/malcolm-sample-express-client">malcolm-sample-express-client</a> <span class="repo-description">Sample malcolm client app that uses Express</span></li>
+              <li><a href="https://github.com/Comcast/malcolm-sample-hapi-client">malcolm-sample-hapi-client</a> <span class="repo-description">Sample malcolm client app that uses Express.</span></li>
+              <li><a href="https://github.com/Comcast/publicious">publicious</a> <span class="repo-description">A replacement for Mediator-JS</span></li>
+              <li><a href="https://github.com/Comcast/svn-to-github">svn-to-github</a> <span class="repo-description">Comprehensive Tool for Converting SVN to Git in Bulk</span></li>
+              <li><a href="https://github.com/Comcast/VulKrum">VulKrum</a> <span class="repo-description">Manage vCenter clusters</span></li>
+              <li><a href="https://github.com/Comcast/k8sh">k8sh</a> <span class="repo-description">A shell for easily navigating your kubernetes clusters</span></li>
+              <li><a href="https://github.com/Comcast/weasel">weasel</a> <span class="repo-description">Lightweight license checker</span></li>
+              <li><a href="https://github.com/Comcast/telegraf-boshrelease">telegraf-boshrelease</a> <span class="repo-description">Telegraf release for BOSH</span></li>
+            </ul>
+          </div>
+          <div class="stat-box">
+            <h3>Recently updated</h3>
+            <ul>
+              <li id="recent-1">...</li>
+              <li id="recent-2">...</li>
+              <li id="recent-3">...</li>
+              <li id="recent-4">...</li>
+              <li id="recent-5">...</li>
+            </ul>
+          </div>
+          <div class="stat-box">
+            <h3>Most Starred</h3>
+            <ul>
+              <li id="starred-1">...</li>
+              <li id="starred-2">...</li>
+              <li id="starred-3">...</li>
+              <li id="starred-4">...</li>
+              <li id="starred-5">...</li>
+            </ul>
+          </div>
+          <div class="stat-box">
+            <h3>Most Forked</h3>
+            <ul>
+              <li id="forked-1">...</li>
+              <li id="forked-2">...</li>
+              <li id="forked-3">...</li>
+              <li id="forked-4">...</li>
+              <li id="forked-5">...</li>
+            </ul>
+          </div>
+          <div class="stat-box">
+            <h3>Recently Contributed To</h3>
+            <ul>
+              <li id="pr-1">...</li>
+              <li id="pr-2">...</li>
+              <li id="pr-3">...</li>
+              <li id="pr-4">...</li>
+              <li id="pr-5">...</li>
+            </ul>
+          </div>
+          <div class="stat-box">
+            <h3>Overall Stats</h3>
+            <ul>
+              <li>Total Source Repos: <span id="total-source-repos">...</span></li>
+              <li>Total Forked Repos: <span id="total-forked-repos">...</span></li>
+              <li>Total Members: <span id="total-members">...</span></li>
+            </ul>
+            <p><a href="https://github.com/comcast/repositories">View All Repos on GitHub</a></p>
+          </div>
+        </section>
+      </div>
+        <footer id="contact">
+          <section>
+            <h2>Learn More</h2>
+            <address>
+                <a class="email" href="mailto:Comcast_Open_Source_Services@comcast.com"><span>Comcast Open Source Services</span></a>
+                <a class="blog" href="http://labs.comcast.com"><span>Comcast Labs Blog</span></a>
+            </address>
+          </section>
+          <section>
+            <p>Like what you see? <span>Come work with us!</span></p>
+            <a href="http://jobs.comcast.com/search-jobs?q=open+source&amp;loc=&amp;team=Technology&amp;radius=25&amp;postDate=&amp;pos=Full+Time&amp;country=#results" class="button button--primary">View Job Openings</a>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/ComcastCareers/?fref=ts"><img src="img/icon-facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/comcastcareers"><img src="img/icon-twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/comcastcareers/"><img src="img/icon-instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.youtube.com/user/ComcastCareers"><img src="img/icon-youtube.svg" alt="YouTube"></a></li>
+                <li><a href="https://dribbble.com/comcast"><img src="img/icon-dribbble.svg" alt="Dribbble"></a></li>
+            </ul>
+          </section>
+          <section>
+            <div class="copyright">
+              <a href="http://corporate.comcast.com"><img src="img/logo-comcast-alt.svg" alt="Comcast"></a> &copy; 2017 Comcast
+              <a href="http://www.xfinity.com/corporate/legal/privacyStatement.html">Privacy</a>
+              <a href="http://www.xfinity.com/corporate/legal/visitorAgreement.html">Terms</a>
+              <a href="humans.txt" class="humans"><span class="screen-reader-text">humans.txt</span></a>
+            </div>
+          </section>
+        </footer>
+    </div>
+        <script src="./js/javascript.js"></script>
+        <script>
+            var GA_PAGEVIEW_SENT = false;
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-102911798-1', 'auto');
+            setTimeout(function() {
+              if(!window.GA_PAGEVIEW_SENT) {
+                ga('send', 'pageview');
+                GA_PAGEVIEW_SENT = true;
+              }
+            }, 3000);
+        </script>
+    </body>
+</html>
