@@ -2,7 +2,7 @@
 
 Thank you for considering helping out!
 
-Looking to update information or feature your project? Feel free to make the change yourself! You're in the right place to get started.
+Looking to update information or feature your project? Feel free to make the change yourself. You're in the right place for getting started.
 
 First, please read the [code of conduct](CODE_OF_CONDUCT.md). We take it very seriously!
 
