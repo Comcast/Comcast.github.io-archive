@@ -2,7 +2,11 @@
 
 Thank you for considering helping out!
 
+<<<<<<< HEAD
 Looking to update information or feature your project? Feel free to make the change yourself. You're in the right place for getting started.
+=======
+Looking to update description or feature your project? You're in the right place. Feel free to make the change by following these steps.
+>>>>>>> parent of 8068f3a... added text to encourage self-updates
 
 First, please read the [code of conduct](CODE_OF_CONDUCT.md). We take it very seriously!
 
