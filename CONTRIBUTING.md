@@ -19,6 +19,14 @@ Once your PR is issued, we will review your work and decide on adding it to the 
 For more details about contributing to GitHub projects see
 http://gun.io/blog/how-to-github-fork-branch-and-pull-request/
 
+## Adding a New Project
+
+If your change is adding your newly released Comcast Open Source project to https://comcast.github.io, here are the specific changes to make to [index.html](/index.html) in your PR:
+
+1. Add your project to the appropriate category in the main list of projects
+2. Add your project to the top of “Our Newest Projects”
+3. Remove the last project from “Our Newest Projects”
+
 ## Contributor License Agreement
 
 Before Comcast merges your code into the project you must sign the [Comcast Contributor License Agreement (CLA)](https://gist.github.com/ComcastOSS/a7b8933dd8e368535378cda25c92d19a).
