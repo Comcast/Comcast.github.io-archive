@@ -5,9 +5,9 @@
   "description": "Comcast Open Source Software Portal",
   "main": "index.html",
   "scripts": {
-    "compress": "npm run compress:css && npm run compress:js",
-    "compress:css": "./node_modules/uglifycss/uglifycss --output style/css.css style/all-digital.css style/style.css",
-    "compress:js": "./node_modules/uglify-js/bin/uglifyjs -o js/javascript.js --compress --mangle -- js/jquery.min.js js/GitHub.bundle.min.js js/promise.min.js js/menu_toggle.js js/menu_sticky.js js/carousel.js js/gh_stats.js",
+    "compress": "npm-run-all compress:*",
+    "compress:css": "uglifycss --output style/css.css style/all-digital.css style/style.css",
+    "compress:js": "uglifyjs -o js/javascript.js --compress --mangle -- js/jquery.min.js js/GitHub.bundle.min.js js/promise.min.js js/menu_toggle.js js/menu_sticky.js js/carousel.js js/gh_stats.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://comcast.github.io",
   "devDependencies": {
+    "npm-run-all": "^4.1.1",
     "uglify-js": "^3.0.25",
     "uglifycss": "0.0.27"
   }
