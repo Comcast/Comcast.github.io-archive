@@ -1,13 +1,38 @@
 Comcast Open Source Projects Ideas Page
 Google Summer of Code 20178
 
-Blueprint
-
 Apache Traffic Control
+Apache Traffic Control is an Open Source implementation of a Content Delivery Network. The vast majority of today’s Internet traffic
+is media files being sent from a single source to many thousands or even millions of destinations. Content Delivery Networks make 
+that one-to-many distribution possible in an economical way. Traffic Control is an Open Source implementation of a Content Delivery Network.
 
 Bynar
+Running large-scale operations at a sizeable organization can be an enormous task. The Strategic Platform Acceleration and Cloud 
+Engineering (SPACE) Operations team here at Comcast has the critical responsibility of operating our private cloud in multiple 
+regions, and providing 24/7 operational support to multiple engineering teams across Comcast. 
+
+Ensuring our services are always available and working properly requires consistent, and constant monitoring. Primarily, there is 
+the scale of the overall infrastructure and the priority it places on ensuring reliability, and consistency, but just maintaining 
+that is not all it takes. Operations teams are also required to constantly innovate, automate, and provide elasticity and adequate 
+capacity for the business to grow and move forward with our goals. Being on-call is also a critical responsibility that many operations 
+and engineering teams must take on in order to keep the services reliable and available 24/7, 365 days a year. 
+
+A common challenge for many operations teams occurs when new failures in the infrastructure are detected. Getting paged in the middle 
+of the night for failed hardware, or looking through your monitoring system and seeing several failed drives that you must manually 
+go through to get repaired, can become overwhelming. That’s why we are thrilled to announce a new open source project called Bynar, a 
+tool for automating server remediation across multiple data centers. Bynar builds upon many years of experience, and automates the 
+task of hardware maintenances and replacements. Various applications such as Cassandra, Ceph, Gluster, and Hadoop all require quick, 
+and fast, replacements of hardware as they fail, or the cluster can become degraded. Bynar hopes to break this cycle and free up 
+operators time so that the clusters can scale to even greater sizes without requiring more headcount to maintain them. Bynar is designed 
+to automate the process for hardware failures gracefully, in turn saving you time and money. 
 
 Comcast.github.io
+Comcast.github.io is our public facing page that displays our open source projects, and displays metrics about some of our open source
+projects. 
+
+Blueprint
+Blueprint is a compact framework for constructing mvp architecture within a scrollable, multi-view-type list UI. It uses the Android 
+RecyclerView library, and currently only supports LinearLayouts. 
 
 List of interested mentors from Comcast
 Ganesh Chandrasekaran
