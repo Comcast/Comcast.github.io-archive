@@ -92,28 +92,53 @@ limitations under the License.
                         <img class="project-logo" src="./img/bynar.png" alt="bynar" />
                         <h2 class="project-title">Bynar</h2>
                     </a>
-                    <p class="project-description">
-                         Project idea 1.  Bynar currently knows how to repair hard drives on Ceph clusters
+                    <div class="project-description">
+                         <b>Project idea 1.</b>  Bynar currently knows how to repair hard drives on Ceph clusters
 						 but nothing else.  The goal of this project would be to add Gluster drive remediation
                          support to Bynar.  This would greatly expand the situations where Bynar can be used.
-                    </p>
-                    <p class="project-description">
-						Project idea 2.  On storage servers you generally have raid controllers installed.  
+						 <ul>
+							<li> Difficulty: Easy</li>
+							<li> Skills: Rust language experience preferred. General programming 
+								 experience in a statically typed language should be enough</li>
+						 	<li> Mentor: <a href="https://github.com/cholcombe973/">Chris Holcombe</a></li>
+						 </ul>
+                    </div>
+					<br>
+                    <div class="project-description">
+						<b>Project idea 2.</b>  On storage servers you generally have raid controllers installed.  
 						While these controllers are helpful in managing storage drives they also create a problem.
 						Tools such as smartmon, libatasmart, etc do not always interact well with raid controllers.
 						The raid controllers expose information about the backing storage drives in their own
 						way with their own command line interface.  The goal of this project would be to teach
 						Bynar how to interact with a few major raid controllers thus giving it more accurate
-						information to work under.  
-					</p>
-                    <p class="project-description">
-						Project idea 3.  This is the hardest project.  Hard drives expose a variety of information
+						information to work under.  This project will require some research on how 
+						raid controllers work before being started.
+						 <ul>
+							<li> Difficulty: Medium</li>
+							<li> Skills: Rust language experience preferred. General programming 
+								 experience in a statically typed language should be enough</li>
+						 	<li> Mentor: <a href="https://github.com/cholcombe973/">Chris Holcombe</a></li>
+						 </ul>
+					</div>
+					<br>
+                    <div class="project-description">
+						<b>Project idea 3.</b>  This is the hardest project but also possibly the most interesting!
+						Hard drives expose a variety of information
 						about their status.  The goal of this project would be to use artificial intelligence
 						to make accurate predictions about when a hard drive might die.  There have been papers
 						written about this that are floating around the internet.  Predictions from smart are 
 						generally not very accurate but AI predictions are proving very accurate. 80-90% accurate
-						to within a few days of when a drive will die.  
-					</p>
+						to within a few days of when a drive will die.  This project may will require reading of PhD
+						papers, independent research on hard drive failure scenarios and machine learning.
+						 <ul>
+							<li> Difficulty: Hard</li>
+							<li> Skills: Rust language experience preferred. General programming 
+								 experience in a statically typed language should be enough.  Machine learning
+								 experience would also be highly valuable for this project.</li>
+						 	<li> Mentor: <a href="https://github.com/cholcombe973/">Chris Holcombe</a></li>
+						 </ul>
+					</div>
+					<br>
                     <p class="project-description">
                         Bynar is an open source system for automating server maintenance across the datacenter. 
 			Bynar builds upon many years of experience automating the drudgery of server repair. 
