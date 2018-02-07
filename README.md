@@ -16,7 +16,7 @@ We take our [code of conduct](CODE_OF_CONDUCT.md) very seriously. Please abide b
 Contributing
 ============
 
-Please read our [contributing guide](CONTRIBUTING.md) for details on how to contribue to our project.
+Please read our [contributing guide](CONTRIBUTING.md) for details on how to contribute to our project.
 
 Compiling JS & CSS
 ==================
