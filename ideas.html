@@ -58,113 +58,9 @@ limitations under the License.
                 <p class="message-content">We are committed to open source software. We use it to build products, attract talent and evolve the technology we use to improve the customer experience. Beyond using open-source technologies to build our products, we contribute actively to a wide range of open-source and open-standards groups including the Linux Foundation, OpenStack Foundation, Apache Foundation, Cloud Foundry Foundation and Internet Engineering Task Force, to name just a few. We also encourage and support our software engineers in open-sourcing the projects they develop at Comcast.
                 </p>
                 <p class="message-content"> We know the collective development ethos behind robust open source projects makes our products better and more powerful and we’re committed to being part of the global open source community now and into the future.
-
-      <p class="message-content">      
-<h2>Join the Community </h2> Join the <a href="https://join.slack.com/t/opencomcast/signup">Comcast Open Source Slack group</a>, a public place for people to come and ask questions about Comcast open source projects, or for general discussion. </p>
         </div>
         <div class="projects" id="projects">
                 <ul>
-                  <li class="github-project">
-                    <a href="https://github.com/Comcast/blueprint">
-                        <img class="project-logo" src="./img/blueprint.png" alt="blueprint" />
-                        <h2 class="project-title">Blueprint</h2>
-                    </a>
-                    <p class="project-description">
-                        A compact framework for constructing mvp architecture within a scrollable, multi-view-type list UI.
-                    </p>
-                    <p class="project-description">
-                        It uses the Android RecyclerView library, and currently only supports LinearLayouts.
-                    </p>
-	   	    	<p class="project-description">
-			As a student participating in this project, you'll learn about the automatic composition of Java source files using
-			Annotation processing. You'll use libraries like Square's JavaPoet to build tools that write code for developers,
-			automating tasks that can be predicted and standardized ahead of time.</p>			 
-		    	<p class="project-description">
-			<b>Project Idea 1.</b> Blueprint uses Annotation Processing to dynamically write new source code, which automates 
-			the creation of the boilerplate associated with Android RecyclerViews.  Students will expand this capability,
-			using Annotation Processing to create even more functionality to make the task of build apps evenb easier for 
-			developers using Blueprint.</p>
-	    		<p class="project-description">
-			<b>Project idea 2.</b> Students on this project will help us convert the entire codebase to Kotlin.  Google has recently
-			endorsed Kotlin as a supported language for Android Application Development, so we'll convert both our sample App
-			and library tools to use the Kotlin programming language.</p>
-			<p class="project-description">
-			<b>Project Idea 3. </b> Students will work to create templates for common tasks facing developers using Blueprint.  Students will
-			help design standard base classes for Activities and Fragments that Blueprint devs can use to jump start the creation of
-			Blueprint apps.
-			  </p>
-			<p class="project-description">
-			<b>Project Idea 4.</b> Students will expand Blueprint to allw devs to create apps using a Grid,  rather than a single column 
-			list.  Students will build functionality and samples of how to use Blueprint to add components to screens in multiple 
-			columns, and develop optional custom animations for adding, removing, and changing components.
-			                    <p class="project-description">
-                       <a href="https://github.com/dapp">Mentor: Mark Dappollone</a></p>
-			  </p>
-			<p class="project-description">
-			Additional Articles About Blueprint </p>
-			<p class="project-description"><a href="https://medium.com/@daptronic/intro-to-blueprint-for-android-697a88e12279">Intro to Blueprint</a></p>
-		  	<p class="project-description"><a href="https://medium.com/@daptronic/building-reusable-android-components-with-blueprint-8354a7c6e14d">Building Blueprint Components</a></p>
-			  </p>
-                  </li>
-                  </li>
-                  <li class="github-project">
-                    <a href="https://github.com/Comcast/Bynar">
-                        <img class="project-logo" src="./img/bynar.png" alt="bynar" />
-                        <h2 class="project-title">Bynar</h2>
-                    </a>
-                    <div class="project-description">
-                         <b>Project idea 1.</b>  Bynar currently knows how to repair hard drives on Ceph clusters
-						 but nothing else.  The goal of this project would be to add Gluster drive remediation
-                         support to Bynar.  This would greatly expand the situations where Bynar can be used.
-						 <ul>
-							<li> Difficulty: Easy</li>
-							<li> Skills: Rust language experience preferred. General programming 
-								 experience in a statically typed language should be enough</li>
-						 	<li> Mentor: <a href="https://github.com/cholcombe973/">Chris Holcombe</a></li>
-						 </ul>
-                    </div>
-					<br>
-                    <div class="project-description">
-						<b>Project idea 2.</b>  On storage servers you generally have raid controllers installed.  
-						While these controllers are helpful in managing storage drives they also create a problem.
-						Tools such as smartmon, libatasmart, etc do not always interact well with raid controllers.
-						The raid controllers expose information about the backing storage drives in their own
-						way with their own command line interface.  The goal of this project would be to teach
-						Bynar how to interact with a few major raid controllers thus giving it more accurate
-						information to work under.  This project will require some research on how 
-						raid controllers work before being started.
-						 <ul>
-							<li> Difficulty: Medium</li>
-							<li> Skills: Rust language experience preferred. General programming 
-								 experience in a statically typed language should be enough</li>
-						 	<li> Mentor: <a href="https://github.com/cholcombe973/">Chris Holcombe</a></li>
-						 </ul>
-					</div>
-					<br>
-                    <div class="project-description">
-						<b>Project idea 3.</b>  This is the hardest project but also possibly the most interesting!
-						Hard drives expose a variety of information
-						about their status.  The goal of this project would be to use artificial intelligence
-						to make accurate predictions about when a hard drive might die.  There have been papers
-						written about this that are floating around the internet.  Predictions from smart are 
-						generally not very accurate but AI predictions are proving very accurate. 80-90% accurate
-						to within a few days of when a drive will die.  This project may will require reading of PhD
-						papers, independent research on hard drive failure scenarios and machine learning.
-						 <ul>
-							<li> Difficulty: Hard</li>
-							<li> Skills: Rust language experience preferred. General programming 
-								 experience in a statically typed language should be enough.  Machine learning
-								 experience would also be highly valuable for this project.</li>
-						 	<li> Mentor: <a href="https://github.com/cholcombe973/">Chris Holcombe</a></li>
-						 </ul>
-					</div>
-					<br>
-                    <p class="project-description">
-                        Bynar is an open source system for automating server maintenance across the datacenter. 
-			Bynar builds upon many years of experience automating the drudgery of server repair. 
-			The goal is to have the datacenter maintain itself.
-                    </p>
-                  </li>
                   <li class="github-project">
                     <a href="https://github.com/comcast/comcast.github.io">
                         <img class="project-logo" src="./img/comcast_github_io.png" alt="comcast_github_io" />
@@ -186,35 +82,6 @@ limitations under the License.
 			<p class="project-description">
 			<b>Project Idea 3.</b> Metrics. We want to see more numbers, and data backed behind some of the work that we're doing in open source. Students will work to create metrics on the portal, such as most popular projects, projects with a thriving community, projects that have the most contributions, highlight the contributors, and more. 
 			  </p>
-			                    <p class="project-description">
-                       <a href="https://github.com/shillasaebi">Mentor: Shilla Saebi</a></p>
-                       <p class="project-description">
-                       <a href="https://github.com/kristakhare">Mentor: Krista Khare</a>
-                       </p>
-                  </li>
-                  <li class="github-project">
-                    <a href="https://trafficcontrol.incubator.apache.org">
-                      <img class="project-logo" src="./img/traffic_control.png" alt="traffic control"/>
-                      <h2 class="project-title">Traffic Control</h2>
-                    </a>
-                    <p class="project-description">
-                      Traffic Control is a caching server control plane application which is used to aggregate caching servers into a Content Delivery Network (CDN). The CDN caching software chosen for Traffic Control is Apache Traffic Server (ATS). Although the current release only supports ATS as a cache, this may change with future releases.
-                    </p>
-                    <p class="project-description">
-                      Traffic Control was first developed at Comcast for internal use and released to Open Source in April of 2015. Traffic Control moved into the Apache Incubator in August of 2016.
-                    </p>
-                    <p class="project-description">
-                      Preferred languages for interns are: Go, Perl, Java, Javascript
-                    </p>
-                    <p class="project-description">
-                      For more see our <a href="http://traffic-control-cdn.readthedocs.io/en/latest/overview/introduction.html">introduction page</a>.
-                    </p>
-                    <p class="project-description">
-                      <a href="https://github.com/PSUdaemon">Mentor: Phil Sorber</a>
-                    </p>
-                    <p class="project-description">
-                      <a href="https://github.com/knutsel">Mentor: Jan van Doorn</a>
-                    </p>
                   </li>
 
 
