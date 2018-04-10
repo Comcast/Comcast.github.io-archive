@@ -6,7 +6,7 @@ This is the main landing page for Open Source at Comcast. It highlights our effo
 License
 =======
 
-Comcast.github.io is licensed under [Apache License 2.0](LICENSE).
+Comcast.github.io is licensed under [Apache License 2.0](LICENSES/Apache-2.0.txt). Valid-License-Identifier: Apache-2.0
 
 Code of Conduct
 ===============
