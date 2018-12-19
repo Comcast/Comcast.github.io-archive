@@ -81,7 +81,7 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .projects, .stats {
+header > div, .intro-message-container, .projects, .blog-content, .stats {
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -281,10 +281,29 @@ ul.sticky, .projects {
 
 .github-content,
 .github-content ul,
-.github-content li {
+.github-content li,
+.blog-content ul,
+.blog-content li {
   list-style-type: none;
   margin: 0 0 1em;
   padding: 0;
+}
+
+.blog-content p {
+  margin: 1.5em 0;
+}
+
+.blog-content section {
+  margin-bottom: 1.5em;
+}
+
+.blog-content h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.blog-content li {
+  margin: 1.5em 0;
 }
 
 @media all and (min-width: 700px) {
@@ -355,7 +374,8 @@ ul.sticky, .projects {
   display: block;
 }
 
-li.github-project {
+li.github-project,
+.blog-content section {
   background: #fff;
   border: 1px solid #DDE2E6;
   padding: 1em;
