@@ -65,22 +65,37 @@ limitations under the License.
             <div class="hero-carousel-container" id="about">
                 <ul id="hero-carousel" class="hero-carousel">
                     <li id="slide1" class="hero-slides">
-                        <img id="carousel-img1" class="carousel-hero-img" src="./img/carousel/innovation.jpg" alt="Comcast Innovation Fund"/>
+                            <img class="carousel-hero-img" src="./img/carousel/kuberhealthy.jpg" alt="kuberhealthy"/>
+                            <div class="slide-text-container">
+                              <h2 class="carousel-slide-title">Kuberhealthy</h2>
+                              <p  class="carousel-text">
+                                Easy synthetic testing for Kubernetes clusters. Supplements other solutions like Prometheus nicely.</p>
+                              <p class="carousel-text"> <a class="carousel-text-link" href="https://github.com/Comcast/kuberhealthy">
+                                Click here for more info  &#10095;</a></p>
+                            </div>
+                    </li>
+                    <li id="slide3" class="hero-slides">
+                            <img class="carousel-hero-img" src="./img/carousel/trickstercarousel.jpg" alt="Trickster"/>
+                            <div class="slide-text-container">
+                              <h2 class="carousel-slide-title">Trickster</h2>
+                              <p  class="carousel-text">
+                                Trickster is a reverse proxy cache for the Prometheus HTTP APIv1 that dramatically accelerates dashboard rendering times for any series queried from Prometheus.</p>
+                              <p class="carousel-text"> <a class="carousel-text-link" href="https://github.com/Comcast/trickster/">
+                                Click here for more info  &#10095;</a></p>
+                            </div>
+                    </li>
+                    <li id="slide3" class="hero-slides">
+                        <img class="carousel-hero-img" src="./img/carousel/vinyldns.png" alt="VinylDNS"/>
                         <div class="slide-text-container">
-                            <h2 class="carousel-slide-title">Open Source Grants</h2>
-                            <p class="carousel-text">
-                                The Comcast Innovation Fund provides grants for both open
-                                source and educational research. The Open Source Development Grants
-                                fund development of open source software in areas
-                                benefiting cable, internet and broadband industries.
-                            </p>
-                            <p class="carousel-text">
-                                For more information, please visit the
-                                <a class="carousel-text-link" href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
-                            </p>
+                          <h2 class="carousel-slide-title">VinylDNS</h2>
+                          <p  class="carousel-text">
+                            VinylDNS is a vendor-agnostic frontend for enabling self-service and enhancing administration
+                            across all of your DNS servers.</p>
+                          <p class="carousel-text"> <a class="carousel-text-link" href="http://vinyldns.io">
+                            Click here for more info  &#10095;</a></p>
                         </div>
                     </li>
-                    <li id="slide2" class="hero-slides">
+                    <li id="slide3" class="hero-slides">
                         <img class="carousel-hero-img" src="./img/carousel/traffic.jpg" alt="Apache Traffic Control"/>
                         <div class="slide-text-container">
                             <h2 class="carousel-slide-title">Traffic Control</h2>
@@ -93,6 +108,22 @@ limitations under the License.
                               Software Foundation and renamed to Apache Traffic Control.
                               It is currently under incubation and available at
                               <a class="carousel-text-link" href="https://trafficcontrol.incubator.apache.org">Apache Traffic Control</a>.
+                            </p>
+                        </div>
+                    </li>
+                    <li id="slide2" class="hero-slides">
+                        <img id="carousel-img1" class="carousel-hero-img" src="./img/carousel/innovation.jpg" alt="Comcast Innovation Fund"/>
+                        <div class="slide-text-container">
+                            <h2 class="carousel-slide-title">Open Source Grants</h2>
+                            <p class="carousel-text">
+                                The Comcast Innovation Fund provides grants for both open
+                                source and educational research. The Open Source Development Grants
+                                fund development of open source software in areas
+                                benefiting cable, internet and broadband industries.
+                            </p>
+                            <p class="carousel-text">
+                                For more information, please visit the
+                                <a class="carousel-text-link" href="http://innovationfund.comcast.com">Comcast Innovation Fund</a>.
                             </p>
                         </div>
                     </li>
@@ -110,27 +141,6 @@ limitations under the License.
                                 Join us  &#10095;</a></p>
                             </div>
                     </li>
-                    <li id="slide4" class="hero-slides">
-                        <img class="carousel-hero-img" src="./img/carousel/vinyldns.png" alt="VinylDNS"/>
-                        <div class="slide-text-container">
-                          <h2 class="carousel-slide-title">VinylDNS</h2>
-                          <p  class="carousel-text">
-                            VinylDNS is a vendor-agnostic frontend for enabling self-service and enhancing administration
-                            across all of your DNS servers.</p>
-                          <p class="carousel-text"> <a class="carousel-text-link" href="http://vinyldns.io">
-                            Click here for more info  &#10095;</a></p>
-                        </div>
-                    </li>
-                                        <li id="slide5" class="hero-slides">
-                            <img class="carousel-hero-img" src="./img/carousel/trickstercarousel.jpg" alt="Trickster"/>
-                            <div class="slide-text-container">
-                              <h2 class="carousel-slide-title">Trickster</h2>
-                              <p  class="carousel-text">
-                                Trickster is a reverse proxy cache for the Prometheus HTTP APIv1 that dramatically accelerates dashboard rendering times for any series queried from Prometheus.</p>
-                              <p class="carousel-text"> <a class="carousel-text-link" href="https://github.com/Comcast/trickster/">
-                                Click here for more info  &#10095;</a></p>
-                            </div>
-                    </li>
                     <li class="navigateBtn">
                         <a class="prev" id="prevBtn" onclick="COSS.showNext(-1)">&#10094;</a>
                         <a class="next" id="nextBtn" onclick="COSS.showNext(1)">&#10095;</a>
@@ -141,6 +151,7 @@ limitations under the License.
                         <a><span class="navdot" onclick="COSS.show(3)"></span></a>
                         <a><span class="navdot" onclick="COSS.show(4)"></span></a>
                         <a><span class="navdot" onclick="COSS.show(5)"></span></a>
+                        <a><span class="navdot" onclick="COSS.show(6)"></span></a>
                     </li>
                 </ul>
             </div>
