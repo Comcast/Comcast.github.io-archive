@@ -88,8 +88,9 @@
               var forkedRepos;
 
               if (type === "repos") {
-                sourceRepos = response.data.filter(function(repo){ return !repo.fork; });
-                forkedRepos = response.data.filter(function(repo){ return repo.fork; });
+                sourceRepos = response.data.filter(function(repo){ return !repo.archived && !repo.private &&!repo.fork; });
+                forkedRepos = response.data.filter(function(repo){ return !repo.archived && !repo.private &&repo.fork; });
+                document.getElementById('total-public-repos').innerHTML = response.data.length;
                 document.getElementById('total-source-repos').innerHTML = sourceRepos.length;
                 document.getElementById('total-forked-repos').innerHTML = forkedRepos.length;
                 this.populateStat(sourceRepos, 'pushed_at', 'recent', {stars: false, forks: false});
@@ -143,6 +144,8 @@
         }
 
         comcast.getRepos().then(stats.populateTotal("repos")).catch(stats.handleGithubFailure.bind(stats));
-        comcast.listMembers().then(stats.populateTotal("members")).catch(stats.handleGithubFailure.bind(stats));
+        comcast.listMembers({
+          per_page: 100
+        }).then(stats.populateTotal("members")).catch(stats.handleGithubFailure.bind(stats));
     });
 }(jQuery));
