@@ -88,8 +88,8 @@
               var forkedRepos;
 
               if (type === "repos") {
-                sourceRepos = response.data.filter(function(repo){ return !repo.fork; });
-                forkedRepos = response.data.filter(function(repo){ return repo.fork; });
+                sourceRepos = response.data.filter(function(repo){ return !repo.archived && !repo.fork; });
+                forkedRepos = response.data.filter(function(repo){ return !repo.archived && repo.fork; });
                 document.getElementById('total-source-repos').innerHTML = sourceRepos.length;
                 document.getElementById('total-forked-repos').innerHTML = forkedRepos.length;
                 this.populateStat(sourceRepos, 'pushed_at', 'recent', {stars: false, forks: false});
