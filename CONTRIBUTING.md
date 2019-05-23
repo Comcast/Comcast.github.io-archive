@@ -21,7 +21,7 @@ http://gun.io/blog/how-to-github-fork-branch-and-pull-request/
 
 ## Adding a New Project
 
-If your change is adding your newly released Comcast Open Source project to https://comcast.github.io, here are the specific changes to make to [index.html](/index.html) in your PR:
+Please help us showcase your open source project! If your change is adding your newly released Comcast Open Source project to https://comcast.github.io, here are the specific changes to make to [index.html](/index.html) in your PR:
 
 1. Add your project to the appropriate category in the main list of projects
 2. Add your project to the top of “Our Newest Projects”
