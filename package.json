@@ -8,6 +8,8 @@
     "compress": "npm-run-all compress:*",
     "compress:css": "uglifycss --output style/css.css style/all-digital.css style/style.css",
     "compress:js": "uglifyjs -o js/javascript.js --compress --mangle -- js/jquery.min.js js/GitHub.bundle.min.js js/promise.min.js js/menu_toggle.js js/menu_sticky.js js/carousel.js js/gh_stats.js",
+    "transform": "npm-run-all transform:*",
+    "transform:hacktoberfest": "npx babel js/octokit-rest.js js/hacktoberfest_stats.js -o js/hacktoberfest.js --presets minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +23,11 @@
   },
   "homepage": "https://comcast.github.io",
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.6.2",
+    "babel-preset-airbnb": "^4.0.1",
+    "babel-preset-minify": "^0.5.1",
     "npm-run-all": "^4.1.1",
     "uglify-js": "^3.0.25",
     "uglifycss": "0.0.27"
