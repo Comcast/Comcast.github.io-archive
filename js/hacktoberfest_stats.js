@@ -40,10 +40,10 @@
                 allPrs.push(issue);
                 openPrs.push(issue);
                 openPrsFormatted.push(formatIssue(issue));
-              } else if (issue.pull_request && issue.closed_at > '2019-10-01' && issue.closed_at < '2019-10-31') {
+              } else if (issue.pull_request && issue.closed_at >= '2019-10-01' && '2019-10-31' >= issue.closed_at) {
                 allPrs.push(issue);
                 closedPrs.push(issue);
-              } else if (issue.closed_at && issue.closed_at > '2019-10-01' && issue.closed_at < '2019-10-31') {
+              } else if (issue.closed_at && issue.closed_at >= '2019-10-01' && '2019-10-31' >= issue.closed_at) {
                 allIssues.push(issue);
                 closedIssues.push(issue);
               } else if (!issue.pull_request && !issue.closed_at) {
