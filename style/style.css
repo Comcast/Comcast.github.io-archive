@@ -81,7 +81,8 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .projects, .blog-content, .stats {
+header > div, .intro-message-container, .projects, .blog-content, .stats,
+.hacktoberfest-stats {
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -459,6 +460,24 @@ li.github-project,
   }
 }
 
+.hacktoberfest-stats > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.hacktoberfest-stats {
+  margin-top: -17px;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
 .stat-box {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -477,6 +496,11 @@ li.github-project,
 
 .stat-box a {
   font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.issues-list a {
+  font-size: 1rem;
   margin-right: 0.5rem;
 }
 
