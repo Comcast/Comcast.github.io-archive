@@ -96,7 +96,6 @@
                 this.populateStat(sourceRepos, 'pushed_at', 'recent', {stars: false, forks: false});
                 this.populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false, desc: false});
                 this.populateStat(sourceRepos, 'forks_count', 'forked', {date:false, desc: false});
-                this.populateStat(forkedRepos, 'pushed_at', 'pr', {date:false, stars: false, forks: false});
               } else {
                 document.getElementById('total-members').innerHTML = response.data.length;
               }
