@@ -362,6 +362,7 @@ ul.sticky, .projects {
 .github-content.category-selected .github-category {
   display: none;
 }
+.github-content.android-selected #android-projects,
 .github-content.backend-selected #backend-projects,
 .github-content.bigdata-selected #bigdata-projects,
 .github-content.frontend-selected #frontend-projects,
