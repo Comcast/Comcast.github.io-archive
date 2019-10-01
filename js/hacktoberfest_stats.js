@@ -18,7 +18,7 @@
   function formatRepo(repoUrl) {
     const regexOrgAndRepo = /(\w|-)*\/(\w|-)*$/;
     const orgAndRepo = repoUrl.match(regexOrgAndRepo)[0];
-    const html = `<li><a href="${repoUrl}">${orgAndRepo}</a></li>`;
+    const html = `<li><a href="https://github.com/${orgAndRepo}">${orgAndRepo}</a></li>`;
     return html;
   }
 
