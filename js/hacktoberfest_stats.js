@@ -9,15 +9,13 @@
   }));
 
   function formatIssue(issue) {
-    const regexOrgAndRepo = /(\w|-)*\/(\w|-)*$/;
-    const orgAndRepo = issue.repository_url.match(regexOrgAndRepo)[0];
+    const orgAndRepo = issue.repository_url.replace('https://api.github.com/repos/', '');
     const html = `<li><a href="${issue.html_url}">${orgAndRepo}: ${issue.title}</a></li>`;
     return html;
   }
 
   function formatRepo(repoUrl) {
-    const regexOrgAndRepo = /(\w|-)*\/(\w|-)*$/;
-    const orgAndRepo = repoUrl.match(regexOrgAndRepo)[0];
+    const orgAndRepo = repoUrl.replace('https://api.github.com/repos/', '');
     const html = `<li><a href="https://github.com/${orgAndRepo}">${orgAndRepo}</a></li>`;
     return html;
   }
