@@ -52,6 +52,9 @@ header img {
 .navbar {
   display: none;
 }
+.navbar a:hover {
+  color:rgb(0,0,0);
+}
 
 @media all and (min-width: 520px) {
   .navbar {
