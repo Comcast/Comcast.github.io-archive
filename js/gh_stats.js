@@ -97,7 +97,14 @@
                 this.populateStat(sourceRepos, 'stargazers_count', 'starred', {date:false, desc: false});
                 this.populateStat(sourceRepos, 'forks_count', 'forked', {date:false, desc: false});
               } else {
-                document.getElementById('total-members').innerHTML = response.data.length;
+                var currentCount = Number(document.getElementById('total-members').innerHTML);
+                if (!isNaN(currentCount)) {
+                  currentCount += Number(response.data.length);
+                }
+                else {
+                  currentCount = Number(response.data.length);
+                }
+                document.getElementById('total-members').innerHTML = currentCount;
               }
 
               ga('set', 'dimension1', 'success'); // githubApiStatus
@@ -143,8 +150,15 @@
         }
 
         comcast.getRepos().then(stats.populateTotal("repos")).catch(stats.handleGithubFailure.bind(stats));
-        comcast.listMembers({
-          per_page: 100
-        }).then(stats.populateTotal("members")).catch(stats.handleGithubFailure.bind(stats));
+        
+        // Organization.listMembers() does not get all pages right now, though other classes
+        // in the API do. I have put in a pull request to fix it, but until it is merged, this
+        // will work for the first 200 members. If more are added, this must be updated.
+        for (var i = 1; i <= 2; i++) {
+          comcast.listMembers({
+            per_page: 100,
+            page: i
+          }).then(stats.populateTotal("members")).catch(stats.handleGithubFailure.bind(stats));
+        }
     });
 }(jQuery));
