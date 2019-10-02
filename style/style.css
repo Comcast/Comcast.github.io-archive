@@ -22,6 +22,10 @@ html, body {
   background-color: #eef1f3;
 }
 
+a {
+  cursor: pointer;
+}
+
 .screen-reader-text {
   position: absolute !important;
   display: block;
@@ -150,8 +154,6 @@ header > div, .intro-message-container, .projects, .blog-content, .stats,
 .hero-carousel-container{
   max-width:1200px;
   position:relative;
-  margin-left:15%;
-  margin-right:15%;
 }
 
 .prev, .next{
@@ -210,7 +212,7 @@ header > div, .intro-message-container, .projects, .blog-content, .stats,
   border-radius:50%;
   height: 13px;
   width: 13px;
-  margin: 0 2px;
+  margin: 0 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -419,9 +421,10 @@ li.github-project,
     float: right;
     padding-right: 0;
   }
-}
-
-@media all and (min-width: 1200px) {
+  .hero-carousel-container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .project-logo {
     margin: 0 1em 0 0;
     float: left;
