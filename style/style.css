@@ -60,6 +60,33 @@ header img {
   color:rgb(0,0,0);
 }
 
+.talks-content section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.talks-content section ul li {
+  background: #fff;
+  border: 1px solid #DDE2E6;
+  padding: 1em;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.talks-content section ul li:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.talks-content section ul li h2 {
+  font-size: 1.5rem;
+}
+
+.talks-content section ul li h3 {
+  font-size: 1rem;
+}
+
 @media all and (min-width: 520px) {
   .navbar {
     float: right;
@@ -319,6 +346,9 @@ ul.sticky, .projects {
 }
 
 @media all and (min-width: 700px) {
+  .talks-content section ul li {
+    width: 49%
+  }
   .category-menu {
     display: block;
     float: left;
@@ -394,33 +424,6 @@ li.github-project,
   overflow: hidden;
 }
 
-.talks-content section ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.talks-content section ul li {
-  background: #fff;
-  border: 1px solid #DDE2E6;
-  padding: 1em;
-  width: 32%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.talks-content section ul li:nth-of-type(3n) {
-  margin-right: 0;
-}
-
-.talks-content section ul li h2 {
-  font-size: 1.5rem;
-}
-
-.talks-content section ul li h3 {
-  font-size: 1rem;
-}
-
 .project-logo {
   height: 200px;
   width: 200px;
@@ -445,6 +448,9 @@ li.github-project,
 }
 
 @media all and (min-width: 1200px) {
+  .talks-content section ul li {
+    width: 33%;
+  }
   .additional-projects li {
     width: 32%;
     padding-right: 2%;
