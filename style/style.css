@@ -115,7 +115,7 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .projects, .blog-content, .talks-content, .stats,
+header > div, .intro-message-container, .projects, .blog-content, .stats,
 .hacktoberfest-stats {
   margin-left: 15%;
   margin-right: 15%;
@@ -316,32 +316,26 @@ ul.sticky, .projects {
 .github-content ul,
 .github-content li,
 .blog-content ul,
-.blog-content li,
-.talks-content ul,
-.talks-content li {
+.blog-content li {
   list-style-type: none;
   margin: 0 0 1em;
   padding: 0;
 }
 
-.blog-content p,
-.talks-content p {
+.blog-content p {
   margin: 1.5em 0;
 }
 
-.blog-content section,
-.talks-content section {
+.blog-content section {
   margin-bottom: 1.5em;
 }
 
-.blog-content h2,
-.talks-content h2 {
+.blog-content h2 {
   font-weight: 500;
   font-size: 1.25rem;
 }
 
-.blog-content li,
-.talks-content li {
+.blog-content li {
   margin: 1.5em 0;
 }
 
