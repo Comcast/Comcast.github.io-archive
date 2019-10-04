@@ -60,6 +60,33 @@ header img {
   color:rgb(0,0,0);
 }
 
+.talks-content section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.talks-content section ul li {
+  background: #fff;
+  border: 1px solid #DDE2E6;
+  padding: 1em;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.talks-content section ul li:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.talks-content section ul li h2 {
+  font-size: 1.5rem;
+}
+
+.talks-content section ul li h3 {
+  font-size: 1rem;
+}
+
 @media all and (min-width: 520px) {
   .navbar {
     float: right;
@@ -88,7 +115,7 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .projects, .blog-content, .stats,
+header > div, .intro-message-container, .projects, .blog-content, .talks-content, .stats,
 .hacktoberfest-stats {
   margin-left: 15%;
   margin-right: 15%;
@@ -289,30 +316,39 @@ ul.sticky, .projects {
 .github-content ul,
 .github-content li,
 .blog-content ul,
-.blog-content li {
+.blog-content li,
+.talks-content ul,
+.talks-content li {
   list-style-type: none;
   margin: 0 0 1em;
   padding: 0;
 }
 
-.blog-content p {
+.blog-content p,
+.talks-content p {
   margin: 1.5em 0;
 }
 
-.blog-content section {
+.blog-content section,
+.talks-content section {
   margin-bottom: 1.5em;
 }
 
-.blog-content h2 {
+.blog-content h2,
+.talks-content h2 {
   font-weight: 500;
   font-size: 1.25rem;
 }
 
+.blog-content li,
 .blog-content li {
   margin: 1.5em 0;
 }
 
 @media all and (min-width: 700px) {
+  .talks-content section ul li {
+    width: 49%
+  }
   .category-menu {
     display: block;
     float: left;
@@ -412,6 +448,9 @@ li.github-project,
 }
 
 @media all and (min-width: 1200px) {
+  .talks-content section ul li {
+    width: 33%;
+  }
   .additional-projects li {
     width: 32%;
     padding-right: 2%;
