@@ -7,7 +7,7 @@
   "scripts": {
     "compress": "npm-run-all compress:*",
     "compress:css": "uglifycss --output style/css.css style/all-digital.css style/style.css",
-    "compress:js": "uglifyjs -o js/javascript.js --compress --mangle -- js/jquery.min.js js/GitHub.bundle.min.js js/promise.min.js js/menu_toggle.js js/menu_sticky.js js/carousel.js js/gh_stats.js",
+    "compress:js": "uglifyjs -o js/javascript.js --compress --mangle -- js/jquery.min.js js/GitHub.bundle.min.js js/promise.min.js js/menu_toggle.js js/menu_sticky.js js/carousel.js js/gh_stats.js js/newest_projects.js",
     "transform": "npm-run-all transform:*",
     "transform:hacktoberfest": "npx babel js/octokit-rest.js js/hacktoberfest_stats.js -o js/hacktoberfest.js --presets minify",
     "test": "echo \"Error: no test specified\" && exit 1"
