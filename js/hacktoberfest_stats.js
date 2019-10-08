@@ -61,12 +61,26 @@
         });
         const contributors = [...new Set(allPrs.map((pr) => pr.user.login))];
         const participatingRepos = [...new Set(allIssues.map((issue) => issue.repository_url))];
-        document.getElementById('total-repos').innerHTML = participatingRepos.length;
-        document.getElementById('total-open-issues').innerHTML = openIssues.length;
-        document.getElementById('total-contributors').innerHTML = contributors.length;
-        document.getElementById('total-open-pull-requests').innerHTML = openPrs.length;
-        document.getElementById('total-closed-issues').innerHTML = closedIssues.length;
-        document.getElementById('total-closed-pull-requests').innerHTML = closedPrs.length;
+        const total_repos = document.getElementById('total-repos')
+        const total_open_issues = document.getElementById('total-open-issues')
+        const total_contributors = document.getElementById('total-contributors')
+        const total_open_pull_requests = document.getElementById('total-open-pull-requests')
+        const total_closed_issues = document.getElementById('total-closed-issues')
+        const total_closed_pull_requests = document.getElementById('total-closed-pull-requests')
+
+        total_repos.classList.remove("animated-loader")
+        total_open_issues.classList.remove("animated-loader")
+        total_contributors.classList.remove("animated-loader")
+        total_open_pull_requests.classList.remove("animated-loader")
+        total_closed_issues.classList.remove("animated-loader")
+        total_closed_pull_requests.classList.remove("animated-loader")
+
+        total_repos.innerHTML = participatingRepos.length;
+        total_open_issues.innerHTML = openIssues.length;
+        total_contributors.innerHTML = contributors.length;
+        total_open_pull_requests.innerHTML = openPrs.length;
+        total_closed_issues.innerHTML = closedIssues.length;
+        total_closed_pull_requests.innerHTML = closedPrs.length;
         participatingRepos.forEach((repo) => {
           document.getElementById('hacktoberfest-repos').innerHTML += formatRepo(repo);
         });
