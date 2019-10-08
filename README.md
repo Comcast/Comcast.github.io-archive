@@ -27,6 +27,7 @@ Run the following to install dependencies (you only have to do this once):
 
 Then run the following to compile the JS & CSS:
 
+    $ npm run transform
     $ npm run compress
 
 Then check in the compiled files at [js/javascript.js](js/javascript.js) & [style/css.css](style/css.css) if they were modified
