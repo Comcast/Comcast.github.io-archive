@@ -7,16 +7,12 @@
     org: orgName,
     type: 'sources',
   }));
-  const allIssues = [];
-  const allPrs = [];
   const openIssues = [];
   const openPrs = [];
-  const closedPrs = [];
+  let closedPrs = 0;
   const closedIssues = [];
-  const openIssuesFormatted = [];
-  const openPrsFormatted = [];
   let contributors = [];
-  let participatingRepos = [];
+  const participatingRepos = [];
   const totalRepos = document.getElementById('total-repos');
   const totalOpenIssues = document.getElementById('total-open-issues');
   const totalContributors = document.getElementById('total-contributors');
@@ -50,25 +46,23 @@
             if (v.length > 0) {
               v.forEach((issue) => {
                 if (issue.pull_request && !issue.closed_at && issue.created_at > '2019-10-01') {
-                  allPrs.push(issue);
                   openPrs.push(issue);
-                  openPrsFormatted.push(formatIssue(issue));
+                  contributors.push(issue.user.login);
                 } else if (issue.pull_request && issue.closed_at >= '2019-10-01' && issue.closed_at <= '2019-10-31') {
-                  allPrs.push(issue);
-                  closedPrs.push(issue);
+                  closedPrs += 1;
+                  contributors.push(issue.user.login);
                 } else if (issue.closed_at && issue.closed_at >= '2019-10-01' && issue.closed_at <= '2019-10-31') {
-                  allIssues.push(issue);
                   closedIssues.push(issue);
                 } else if (!issue.pull_request && !issue.closed_at) {
-                  allIssues.push(issue);
                   openIssues.push(issue);
-                  openIssuesFormatted.push(formatIssue(issue));
+                  document.getElementById('hacktoberfest-issues').innerHTML += formatIssue(issue);
                 }
               });
+              participatingRepos.push(v[0].repository_url);
+              document.getElementById('hacktoberfest-repos').innerHTML += formatRepo(v[0].repository_url);
             }
           });
-          contributors = [...new Set(allPrs.map((pr) => pr.user.login))];
-          participatingRepos = [...new Set(allIssues.map((issue) => issue.repository_url))];
+          contributors = [...new Set(contributors)];
           totalRepos.innerHTML = participatingRepos.length;
           totalRepos.classList.remove('animated-loader');
           totalOpenIssues.innerHTML = openIssues.length;
@@ -79,17 +73,8 @@
           totalOpenPullRequests.classList.remove('animated-loader');
           totalClosedIssues.innerHTML = closedIssues.length;
           totalClosedIssues.classList.remove('animated-loader');
-          totalClosedPullRequests.innerHTML = closedPrs.length;
+          totalClosedPullRequests.innerHTML = closedPrs;
           totalClosedPullRequests.classList.remove('animated-loader');
-          participatingRepos.forEach((repo) => {
-            document.getElementById('hacktoberfest-repos').innerHTML += formatRepo(repo);
-          });
-          openIssuesFormatted.forEach((issue) => {
-            document.getElementById('hacktoberfest-issues').innerHTML += issue;
-          });
-          openPrsFormatted.forEach((pr) => {
-            document.getElementById('hacktoberfest-prs').innerHTML += pr;
-          });
         });
       });
   }
