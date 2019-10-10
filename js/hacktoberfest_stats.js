@@ -20,6 +20,11 @@
   const totalClosedIssues = document.getElementById('total-closed-issues');
   const totalClosedPullRequests = document.getElementById('total-closed-pull-requests');
 
+  function formatContributor(contributor) {
+    const html = `<a href="${contributor.html_url}"><img class="thumbnail" src="${contributor.avatar_url}" alt="${contributor.login}"/></a>`;
+    return html;
+  }
+
   function formatIssue(issue) {
     const orgAndRepo = issue.repository_url.replace('https://api.github.com/repos/', '');
     const html = `<li><a href="${issue.html_url}">${orgAndRepo}: ${issue.title}</a></li>`;
@@ -47,10 +52,10 @@
               v.forEach((issue) => {
                 if (issue.pull_request && !issue.closed_at && issue.created_at > '2019-10-01') {
                   openPrs.push(issue);
-                  contributors.push(issue.user.login);
+                  contributors.push(formatContributor(issue.user));
                 } else if (issue.pull_request && issue.closed_at >= '2019-10-01' && issue.closed_at <= '2019-10-31') {
                   closedPrs += 1;
-                  contributors.push(issue.user.login);
+                  contributors.push(formatContributor(issue.user));
                 } else if (issue.closed_at && issue.closed_at >= '2019-10-01' && issue.closed_at <= '2019-10-31') {
                   closedIssues.push(issue);
                 } else if (!issue.pull_request && !issue.closed_at) {
@@ -75,9 +80,23 @@
           totalClosedIssues.classList.remove('animated-loader');
           totalClosedPullRequests.innerHTML = closedPrs;
           totalClosedPullRequests.classList.remove('animated-loader');
+          document.getElementById('hacktoberfest-contributors').innerHTML = '';
+          contributors.map((contributor) => {
+            document.getElementById('hacktoberfest-contributors').innerHTML += contributor;
+            return contributor;
+          });
         });
       });
   }
 
   Object.keys(orgsAndRepos).forEach((org) => build(orgsAndRepos[org]));
 }());
+
+function toggleContent(contentName) {
+  document.getElementById(contentName).toggleAttribute('hidden');
+  if (document.getElementById(`${contentName}-toggle`).innerHTML === 'show') {
+    document.getElementById(`${contentName}-toggle`).innerHTML = 'hide';
+  } else {
+    document.getElementById(`${contentName}-toggle`).innerHTML = 'show';
+  }
+}
