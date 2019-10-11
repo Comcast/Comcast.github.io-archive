@@ -38,7 +38,7 @@
   }
 
   function build(org) {
-    org
+    return org
       .then((orgRepos) => orgRepos.map((repo) => clientWithAuth.paginate('GET /repos/:owner/:repo/issues', {
         owner: repo.owner.login,
         repo: repo.name,
@@ -46,7 +46,7 @@
         state: 'all',
       })))
       .then((issuesAndPullRequests) => {
-        Promise.all(issuesAndPullRequests).then((values) => {
+        return Promise.all(issuesAndPullRequests).then((values) => {
           values.forEach((v) => {
             if (v.length > 0) {
               v.forEach((issue) => {
@@ -69,17 +69,11 @@
           });
           contributors = [...new Set(contributors)];
           totalRepos.innerHTML = participatingRepos.length;
-          totalRepos.classList.remove('animated-loader');
           totalOpenIssues.innerHTML = openIssues.length;
-          totalOpenIssues.classList.remove('animated-loader');
           totalContributors.innerHTML = contributors.length;
-          totalContributors.classList.remove('animated-loader');
           totalOpenPullRequests.innerHTML = openPrs.length;
-          totalOpenPullRequests.classList.remove('animated-loader');
           totalClosedIssues.innerHTML = closedIssues.length;
-          totalClosedIssues.classList.remove('animated-loader');
           totalClosedPullRequests.innerHTML = closedPrs;
-          totalClosedPullRequests.classList.remove('animated-loader');
           document.getElementById('hacktoberfest-contributors').innerHTML = '';
           contributors.map((contributor) => {
             document.getElementById('hacktoberfest-contributors').innerHTML += contributor;
@@ -89,7 +83,15 @@
       });
   }
 
-  Object.keys(orgsAndRepos).forEach((org) => build(orgsAndRepos[org]));
+  const loadingPromises = Object.keys(orgsAndRepos).map((org) => build(orgsAndRepos[org]));
+  Promise.all(loadingPromises).then(function (values) {
+    totalRepos.classList.remove('animated-loader');
+    totalOpenIssues.classList.remove('animated-loader');
+    totalContributors.classList.remove('animated-loader');
+    totalOpenPullRequests.classList.remove('animated-loader');
+    totalClosedIssues.classList.remove('animated-loader');
+    totalClosedPullRequests.classList.remove('animated-loader');
+  });
 }());
 
 function toggleContent(contentName) {
