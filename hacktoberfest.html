@@ -75,17 +75,26 @@ limitations under the License.
           </ul>
         </div>
         <div class="stat-box">
-          <h3>Participating Repos</h3>
-          <ul id="hacktoberfest-repos">
+          <div class="stat-heading">
+            <h3>Participating Repos</h3>
+            <span id="hacktoberfest-repos-toggle" class="stat-toggle" onclick="toggleContent('hacktoberfest-repos')">show</span>
+          </div>
+          <ul id="hacktoberfest-repos" hidden>
           </ul>
         </div>
         <div class="stat-box">
-          <h3>Opened PRs</h3>
-          <ul id="hacktoberfest-prs">
+          <div class="stat-heading">
+            <h3>Contributors</h3>
+            <span id="hacktoberfest-contributors-toggle" class="stat-toggle" onclick="toggleContent('hacktoberfest-contributors')">hide</span>
+          </div>
+          <ul id="hacktoberfest-contributors">
           </ul>
         </div>
         <div class="stat-box issues-list">
-          <h3>Open Hacktoberfest Issues</h3>
+          <div class="stat-heading">
+            <h3>Open Hacktoberfest Issues</h3>
+            <span id="hacktoberfest-issues-toggle" class="stat-toggle" onclick="toggleContent('hacktoberfest-issues')">hide</span>
+          </div>
           <ul id="hacktoberfest-issues">
           </ul>
         </div>

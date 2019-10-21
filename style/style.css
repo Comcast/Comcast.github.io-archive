@@ -565,6 +565,24 @@ li.github-project,
   margin: 0 0.5rem;
 }
 
+.stat-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.stat-toggle:hover {
+  color: #000;
+  cursor: pointer;
+}
+
 .github-api-failed .stat-box {
   display: none;
 }
@@ -756,4 +774,12 @@ address .blog:hover {
     display: inline-block;
     width: 200px;
   }
+}
+
+.thumbnail {
+  max-width: 80px;
+}
+
+h1,h2 {
+  font-weight: bold;
 }
