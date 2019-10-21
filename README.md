@@ -1,5 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/comcast/comcast.github.io)
 ![GitHub contributors](https://img.shields.io/github/contributors/comcast/comcast.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/comcast/comcast.github.io)
 
 Comcast.github.io
 =================
