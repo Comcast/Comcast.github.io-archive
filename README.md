@@ -1,3 +1,5 @@
+<img alt="GitHub" src="https://img.shields.io/github/license/Comcast/comcast.github.io">
+
 Comcast.github.io
 =================
 
