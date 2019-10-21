@@ -779,3 +779,7 @@ address .blog:hover {
 .thumbnail {
   max-width: 80px;
 }
+
+h1 {
+  font-weight: bold;
+}
