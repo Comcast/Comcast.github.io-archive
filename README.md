@@ -1,4 +1,5 @@
-<img alt="GitHub" src="https://img.shields.io/github/license/Comcast/comcast.github.io">
+![GitHub](https://img.shields.io/github/license/comcast/comcast.github.io)
+![GitHub contributors](https://img.shields.io/github/contributors/comcast/comcast.github.io)
 
 Comcast.github.io
 =================
