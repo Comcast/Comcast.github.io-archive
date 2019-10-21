@@ -780,6 +780,6 @@ address .blog:hover {
   max-width: 80px;
 }
 
-h1 {
+h1,h2 {
   font-weight: bold;
 }
