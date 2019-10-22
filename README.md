@@ -1,6 +1,6 @@
-![GitHub](https://img.shields.io/github/license/comcast/comcast.github.io)
-![GitHub contributors](https://img.shields.io/github/contributors/comcast/comcast.github.io)
-![GitHub last commit](https://img.shields.io/github/last-commit/comcast/comcast.github.io)
+[![GitHub https://github.com/Comcast/Comcast.github.io/blob/master/LICENSE-Apache-2.0](https://img.shields.io/github/license/comcast/comcast.github.io)](https://github.com/Comcast/Comcast.github.io/blob/master/LICENSE-Apache-2.0)
+[![GitHub contributors https://github.com/Comcast/Comcast.github.io/graphs/contributors](https://img.shields.io/github/contributors/comcast/comcast.github.io)](https://github.com/Comcast/Comcast.github.io/graphs/contributors)
+[![GitHub last commit https://github.com/Comcast/Comcast.github.io/commits/master](https://img.shields.io/github/last-commit/comcast/comcast.github.io)](https://github.com/Comcast/Comcast.github.io/commits/master)
 
 Comcast.github.io
 =================
