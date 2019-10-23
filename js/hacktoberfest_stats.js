@@ -1,6 +1,6 @@
 (function hacktoberfestStats() {
   const clientWithAuth = new Octokit({
-    auth() { return 'token 6752827c8bd9591f64f14dd2505a38b723fadf10'; },
+    auth() { return 'token 46bf392d999b9d9f133b24a2d9e6677aa5ce109b'; },
   });
   const orgs = ['xmidt-org', 'vinyldns', 'comcast'];
   const orgsAndRepos = orgs.map((orgName) => clientWithAuth.paginate('GET /orgs/:org/repos', {
