@@ -115,7 +115,7 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .sponsors, .projects, .blog-content, .talks-content, .stats,
+header > div, .intro-message-container, .sponsorship, .projects, .blog-content, .talks-content, .stats,
 .hacktoberfest-stats {
   margin-left: 15%;
   margin-right: 15%;
@@ -282,12 +282,12 @@ header > div, .intro-message-container, .sponsors, .projects, .blog-content, .ta
   top: 0;
 }
 
-ul.sticky, .projects, .sponsors {
+ul.sticky, .projects, .sponsorship {
   padding-top: 2em;
 }
 
 .projects, 
-.sponsors {
+.sponsorship {
   clear: both;
 }
 
