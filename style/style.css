@@ -115,7 +115,7 @@ header img {
   }
 }
 
-header > div, .intro-message-container, .projects, .blog-content, .talks-content, .stats,
+header > div, .intro-message-container, .sponsorship, .projects, .blog-content, .talks-content, .stats,
 .hacktoberfest-stats {
   margin-left: 15%;
   margin-right: 15%;
@@ -282,11 +282,12 @@ header > div, .intro-message-container, .projects, .blog-content, .talks-content
   top: 0;
 }
 
-ul.sticky, .projects {
+ul.sticky, .projects, .sponsorship {
   padding-top: 2em;
 }
 
-.projects {
+.projects, 
+.sponsorship {
   clear: both;
 }
 
@@ -315,6 +316,9 @@ ul.sticky, .projects {
 .github-content,
 .github-content ul,
 .github-content li,
+.member-content,
+.member-content ul,
+.member-content li,
 .blog-content ul,
 .blog-content li,
 .talks-content ul,
@@ -391,18 +395,25 @@ ul.sticky, .projects {
     font-weight: 700;
   }
 
-  .github-content {
+  .github-content,
+  .member-content {
   	margin-left: 220px;
   }
-}
 
-.github-content .github-category {
+.github-content .github-category,
+.member-content .member-category {
   display: block;
 }
 
-.github-content.category-selected .github-category {
+.github-content.category-selected .github-category,
+.member-content.category-selected .member-category {
   display: none;
 }
+
+.member-content.platinum-selected #platinum-members,
+.member-content.silver-selected #silver-members,
+.member-content.preferred-selected #preferred-members,
+.member-content.members-selected #members,
 .github-content.backend-selected #backend-projects,
 .github-content.bigdata-selected #bigdata-projects,
 .github-content.frontend-selected #frontend-projects,
@@ -417,6 +428,7 @@ ul.sticky, .projects {
 }
 
 li.github-project,
+li.member,
 .blog-content section {
   background: #fff;
   border: 1px solid #DDE2E6;
@@ -424,7 +436,8 @@ li.github-project,
   overflow: hidden;
 }
 
-.project-logo {
+.project-logo,
+.member-logo {
   height: 200px;
   width: 200px;
   display: block;
@@ -467,11 +480,13 @@ li.github-project,
     margin-left: 15%;
     margin-right: 15%;
   }
-  .project-logo {
+  .project-logo, 
+  .member-logo {
     margin: 0 1em 0 0;
     float: left;
   }
-  .project-description {
+  .project-description,
+  .member-description {
     margin-left: calc(200px + 1em);
   }
 }
