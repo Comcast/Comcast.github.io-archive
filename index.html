@@ -68,6 +68,19 @@ limitations under the License.
             <div class="hero-carousel-container" id="about">
                 <ul id="hero-carousel" class="hero-carousel">
                     <li id="slide1" class="hero-slides">
+                      <img class="carousel-hero-img" src="./img/carousel/capsule.png" alt="Capsule"/>
+                      <div class="slide-text-container">
+                        <h2 class="carousel-slide-title">Capsule</h2>
+                        <p  class="carousel-text">
+                          Capsule is a framework for network function development. Written in Rust, inspired by
+                          <a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-panda.pdf">NetBricks</a>
+                          and built on Intel's <a href="https://www.dpdk.org/">Data Plane Development Kit</a>.
+                        </p>
+                        <p class="carousel-text"> <a class="carousel-text-link" href="https://github.com/capsule-rs/capsule">
+                          Click here for more info  &#10095;</a></p>
+                      </div>
+                    </li>
+                    <li id="slide3" class="hero-slides">
                             <img class="carousel-hero-img" src="./img/carousel/kuberhealthy.jpg" alt="kuberhealthy"/>
                             <div class="slide-text-container">
                               <h2 class="carousel-slide-title">Kuberhealthy</h2>
@@ -155,6 +168,7 @@ limitations under the License.
                         <a><span class="navdot" onclick="COSS.show(4)"></span></a>
                         <a><span class="navdot" onclick="COSS.show(5)"></span></a>
                         <a><span class="navdot" onclick="COSS.show(6)"></span></a>
+                        <a><span class="navdot" onclick="COSS.show(7)"></span></a>
                     </li>
                 </ul>
             </div>
@@ -184,6 +198,29 @@ limitations under the License.
               <li class="github-category" id="backend-projects">
                 <h2>Backend</h2>
                 <ul>
+                  <li class="github-project">
+                    <a href="https://github.com/capsule-rs/capsule">
+                      <img class="project-logo" src="./img/capsule-logo.png" alt="capsule" />
+                      <h2 class="project-title">Capsule</h2>
+                    </a>
+                    <p class="project-description">
+                      Capsule is a framework for network function development. Written in Rust, inspired by
+                      <a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-panda.pdf">NetBricks</a>
+                      and built on Intel's <a href="https://www.dpdk.org/">Data Plane Development Kit</a>.
+                    </p>
+                    <p class="project-description">
+                      The goal of Capsule is to offer an ergonomic framework for network function development
+                      that traditionally has high barriers of entry for developers. We've created a tool to
+                      efficiently manipulate network packets while being type-safe, memory-safe, and thread-safe.
+                    </p>
+                    <p class="project-description">
+                      Building on DPDK and Rust, Capsule offers:
+                      a fast packet processor that uses minimum number of CPU cycles;
+                      a rich packet type system that guarantees memory-safety and thread-safety;
+                      a declarative programming model that emphasizes simplicity;
+                      and, an extensible and testable framework that is easy to develop and maintain.
+                    </p>
+                  </li>
                   <li class="github-project">
                       <a href="https://github.com/Comcast/jrugged">
                           <img class="project-logo" src="./img/jrugged.png" alt="jrugged" />
