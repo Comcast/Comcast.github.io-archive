@@ -483,17 +483,19 @@ li.member > a {
     margin-left: 15%;
     margin-right: 15%;
   }
-  li.github-project,
-  li.member,
-  .blog-content section {
-    display: flex;
-    align-items: center;
+  .project-logo {
+    float: left;
   }
   .project-logo,
   .member-logo {
     margin: 0 1em 0 0;
   }
+  .project-description {
+    margin-left: calc(200px + 1em);
+  }
   .member {
+    display: flex;
+    align-items: center;
     margin-left: 0;
   }
 }
