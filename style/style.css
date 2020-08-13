@@ -286,7 +286,7 @@ ul.sticky, .projects, .sponsorship {
   padding-top: 2em;
 }
 
-.projects, 
+.projects,
 .sponsorship {
   clear: both;
 }
@@ -436,9 +436,12 @@ li.member,
   overflow: hidden;
 }
 
+li.member > a {
+  display: contents;
+}
+
 .project-logo,
 .member-logo {
-  height: 200px;
   width: 200px;
   display: block;
   margin: 0 auto 1em;
@@ -480,14 +483,18 @@ li.member,
     margin-left: 15%;
     margin-right: 15%;
   }
-  .project-logo, 
+  li.github-project,
+  li.member,
+  .blog-content section {
+    display: flex;
+    align-items: center;
+  }
+  .project-logo,
   .member-logo {
     margin: 0 1em 0 0;
-    float: left;
   }
-  .project-description,
-  .member-description {
-    margin-left: calc(200px + 1em);
+  .member {
+    margin-left: 0;
   }
 }
 
@@ -797,4 +804,5 @@ address .blog:hover {
 
 h1,h2 {
   font-weight: bold;
+}
 }
