@@ -2,7 +2,7 @@
   const clientWithAuth = new Octokit({
     auth() { return 'token 46bf392d999b9d9f133b24a2d9e6677aa5ce109b'; },
   });
-  const orgs = ['xmidt-org', 'vinyldns', 'comcast'];
+  const orgs = ['Tricksterproxy', 'Capsule'];
   const orgsAndRepos = orgs.map((orgName) => clientWithAuth.paginate('GET /orgs/:org/repos', {
     org: orgName,
     type: 'sources',
@@ -50,7 +50,7 @@
           values.forEach((v) => {
             if (v.length > 0) {
               v.forEach((issue) => {
-                if (issue.pull_request && !issue.closed_at && issue.created_at > '2020-10-01') {
+                if (issue.pull_request && !issue.closed_at && issue.created_at >= '2020-10-01') {
                   openPrs.push(issue);
                   contributors.push(formatContributor(issue.user));
                 } else if (issue.pull_request && issue.closed_at >= '2020-10-01' && issue.closed_at <= '2020-10-31') {
