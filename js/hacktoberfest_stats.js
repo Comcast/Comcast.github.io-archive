@@ -2,7 +2,7 @@
   const clientWithAuth = new Octokit({
     auth() { return 'token 46bf392d999b9d9f133b24a2d9e6677aa5ce109b'; },
   });
-  const orgs = ['Tricksterproxy', 'Capsule'];
+  const orgs = ['xmidt-org', 'vinyldns', 'comcast', 'capsule', 'tricksterproxy'];
   const orgsAndRepos = orgs.map((orgName) => clientWithAuth.paginate('GET /orgs/:org/repos', {
     org: orgName,
     type: 'sources',
