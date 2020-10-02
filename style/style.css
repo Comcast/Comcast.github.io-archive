@@ -798,3 +798,37 @@ address .blog:hover {
 h1,h2 {
   font-weight: bold;
 }
+}
+/***Blog Card***/
+.blog-card-deck{
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.blog-card-deck .blog-card{
+    flex: 1 0 0%;
+    margin: 15px;
+    margin-bottom: 0;
+    min-width: 250px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+}
+.blog-date-box{
+  border-bottom: 1px solid;
+    background: #eef1f3;
+    padding: 10px;
+}
+.blog-card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+.blog-link-box{
+  padding: 10px;
+}
+.blog-section h2{
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background: #e0eed6;
+}

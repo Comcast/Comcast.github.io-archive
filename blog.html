@@ -16,191 +16,915 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="title" content="Open Source | Comcast" />
-    <meta name="description" content="Comcast Open Source web site" />
-    <meta name="robots" content="open source, comcast, innovation" />
-    <meta name="googlebot" content="open source, comcast, innovation" />
 
-    <link rel="stylesheet" href="./style/css.css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="https://comcast.github.io/img/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="https://comcast.github.io/img/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="https://comcast.github.io/img/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="https://comcast.github.io/img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="https://comcast.github.io/img/favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="https://comcast.github.io/img/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="https://comcast.github.io/img/favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="https://comcast.github.io/img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-128.png" sizes="128x128" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="title" content="Open Source | Comcast" />
+  <meta name="description" content="Comcast Open Source web site" />
+  <meta name="robots" content="open source, comcast, innovation" />
+  <meta name="googlebot" content="open source, comcast, innovation" />
 
-    <title>Comcast Open Source Blog</title>
-  </head>
-  <body>
-    <div class="top-informational">
-      <header>
-        <div>
-          <img src="./img/logo-comcast-color.png" alt="Comcast">
-          <ul class="navbar">
-            <li id="nav-about"><a href="https://corporate.comcast.com/news-information/company-overview" target="_blank">About</a></li>
-            <li id="nav-projects"><a href="index.html">Home</a></li>
-            <li id="nav-talks"><a href="talks.html">Talks</a></li>
-            <li id="nav-sponsorship"><a href="sponsorship.html">Sponsorship</a></li>
-            <li id="nav-contact"><a href="#contact">Contact</a></li>
-            <li id="nav-contact"><a href="blog">Blog</a></li>
-          </ul>
-        </div>
-      </header>
-      <div class="intro-message-container">
-        <h1 class="message-title">Comcast Open Source Blog</h1>
-        <p class="message-content">The <a href="https://labs.comcast.com">Comcast Labs blog </a>is a place where Comcast technologists talk about the work they are doing, the products, infrastructure, and services they are building, and the trends and developments that are changing how we experience entertainment.
+  <link rel="stylesheet" href="./style/css.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://comcast.github.io/img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://comcast.github.io/img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://comcast.github.io/img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://comcast.github.io/img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="https://comcast.github.io/img/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://comcast.github.io/img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://comcast.github.io/img/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://comcast.github.io/img/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="https://comcast.github.io/img/favicon/favicon-128.png" sizes="128x128" />
+
+  <title>Comcast Open Source Blog</title>
+</head>
+
+<body>
+  <div class="top-informational">
+    <header>
+      <div>
+        <img src="./img/logo-comcast-color.png" alt="Comcast">
+        <ul class="navbar">
+          <li id="nav-about"><a href="https://corporate.comcast.com/news-information/company-overview"
+              target="_blank">About</a></li>
+          <li id="nav-projects"><a href="index.html">Home</a></li>
+          <li id="nav-talks"><a href="talks.html">Talks</a></li>
+          <li id="nav-sponsorship"><a href="sponsorship.html">Sponsorship</a></li>
+          <li id="nav-contact"><a href="#contact">Contact</a></li>
+          <li id="nav-contact"><a href="blog">Blog</a></li>
+        </ul>
       </div>
+    </header>
+    <div class="intro-message-container">
+      <h1 class="message-title">Comcast Open Source Blog</h1>
+      <p class="message-content">The <a href="https://labs.comcast.com">Comcast Labs blog </a>is a place where Comcast
+        technologists talk about the work they are doing, the products, infrastructure, and services they are building,
+        and the trends and developments that are changing how we experience entertainment.
     </div>
-    <div class="blog-content">
-      <p>Check the below links to read blog entries that are related to open source at Comcast.</p>
-      <section>
-         <h2>2020</h2>
-        <ul>
-          <li>September 11, 2020 - <a href="https://www.redhat.com/en/about/press-releases/gpl-initiative-grows-over-40-more-60-companies-have-joined-campaign-greater-predictability-open-source-licensing?sc_cid=701f2000000tyBjAAI"> GPL Initiative Grows Over 40%; More Than 60 Companies Have Joined the Campaign for Greater Predictability in Open Source Licensing</a></li>
-          <li>September 10, 2020 - <a href="https://technical.ly/philly/2020/09/10/meet-11-tech-companies-hiring-september-23-developers-conference-philly-tech-week-2020/"> Meet these 12 tech companies and see who’s hiring at the Sept. 23 Developers Conference</a></li>
-          <li>September 3, 2020 - <a href="https://www.prnewswire.com/news-releases/the-linux-foundation-announces-the-full-line-up-of-sessions-for-the-open-source-summit--embedded-linux-conference-europe-2020-virtual-experience-october-26---29-open-for-all---anytime-anywhere-301123877.html"> The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.</a></li>
-          <li>August 28, 2020 - <a href="https://opensource.com/article/20/9/open-source-dns"> Why Comcast open sourced its DNS management tool by Paul James Cleary</a></li>
-          <li>August 19, 2020 - <a href="https://www.finos.org/blog/why-your-ospo-needs-to-invest-in-more-than-compliance-nithya-ruff-comcast"> Why Your OSPO Needs to Invest in More Than Compliance</a></li>
-          <li>August 17, 2020 - <a href="https://technical.ly/philly/2020/08/17/code-for-philly-new-technical-fellowship-paid-skills-development-mentorship/"> Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael Butler</a></li>
-          <li>August 5, 2020 - <a href="https://opensource.com/article/20/8/capsule-networking"> Modernize network function development with this Rust-based framework by Zeeshan Lakhani</a></li>
-          <li>July 30, 2020 - <a href="https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/"> Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon</a></li>
-          <li>July 6, 2020 - <a href="https://searchitoperations.techtarget.com/news/252485541/Open-source-contributions-face-friction-over-company-IP"> Open source contributions face friction over company IP</a></li>
-          <li>July 2, 2020 - <a href="https://www.mobileworldmagazine.com/interviews/comcasts-larry-maccherone-driving-digital-transformation"> Comcast's Larry Maccherone on driving digital transformation by Sean Galea-Pace</a></li>
-          <li>July 1, 2020 - <a href="https://www.mobileworldmagazine.com/company/comcast-introducing-devsecops-scale">Comcast: Introducing DevSecOps at Scale by Sean Galea-Pace</a></li>
-          <li>May 29, 2020 - <a href="https://kubernetes.io/blog/2020/05/29/k8s-kpis-with-kuberhealthy/"> K8s KPIs with Kuberhealthy by Joshulyne Park, Eric Greer</a></li>
-          <li>May 12, 2020 - <a href="https://events.linuxfoundation.org/2020/05/12/a-big-thank-you-to-our-open-source-summit-embedded-linux-conference-north-america-2020-program-committee-members/"> A Big Thank You to OSS Summit + Embedded Linux Conference NA 2020 Program Committee Members!</a></li>
-          <li>May 6, 2020 - <a href="https://www.linkedin.com/pulse/committing-innovation-comcasts-nithya-ruff-talks-open-erica-brescia/?trackingId=05hzrZWrTW%2B0Nl2FMcRpDg%3D%3D">Committing to innovation: Comcast’s Nithya Ruff talks Open Source with GitHub COO Erica Brescia</a></li>
-          <li>March 27, 2020 - <a href="https://medium.com/@ShillaSaebi/collaboration-for-a-cause-beedfab787ca"> Collaboration for a Cause by Shilla Saebi</a></li>
-          <li>February 28, 2020 - <a href="https://medium.com/@ShillaSaebi/black-history-month-hear-from-5-technology-innovators-ec6954ca2d61"> Black History Month: Hear from 5 Technology Innovators by Shilla Saebi</a></li>
-          <li>February 28, 2020 - <a href="https://opensource.com/article/20/2/careers-tech-minorities"> 4 technologists on careers in tech for minorities by Shilla Saebi</a></li>
-          <li>January 29, 2020 - <a href="https://medium.com/@leslielauralive/meet-the-community-devroom-speakers-alison-shilla-28f9a8b129e9"> Meet the Community Devroom Speakers Alison & Shilla by Leslie Hawthorn & Laura Czajkowsk</a></li>
-        </ul>
-        <h2>2019</h2>
-        <ul>
-          <li>October 23, 2019 - <a href="http://www.informationweek.com/software/opening-up-to-open-source/a/d-id/1335916">Opening Up to Open Source by Mario Rodriguez</a></li>
-          <li>October 2, 2019 - <a href="https://techbeacon.com/devops/devops-100-top-leaders-practitioners-experts-follow-0">DevOps 100: Top leaders, practitioners, experts to follow by Mike Perrow</a></li> 
-          <li>September 26, 2019 - <a href="https://www.linkedin.com/pulse/five-reasons-why-organizations-should-invest-open-source-anderson/">Five Reasons Why Organizations Should Invest in Open Source by Erica Anderson</a></li> 
-          <li>September 13, 2019 - <a href="https://www.fiercetelecom.com/operators/comcast-puts-open-source-networking-software-into-production">Comcast Puts Open Source Networking Software into Production by Linda Hardesty</a></li> 
-          <li>September 13, 2019 - <a href="https://www.sdxcentral.com/articles/news/comcast-deploys-open-source-trellis-in-multiple-markets/2019/09/">Comcast Deploys Open Source Trellis in ‘Multiple Markets’ by Jessica Lyons Hardcastle</a></li> 
-          <li>July 23, 2019 - <a href="https://devrel.net/community/whats-brewing-and-cooking-in-your-open-source-community-part-2">What’s brewing and cooking in your open source community? (part 2) by Shilla Saebi</a></li> 
-          <li>June 28, 2019 - <a href="https://thenewstack.io/how-comcast-was-no-longer-blinded-by-the-light/">How Comcast Was No Longer ‘Blinded by the Light‘ by Abby Kearns</a></li> 
-          <li>May 14, 2019 - <a href="https://www.infoq.com/articles/architecture-guild-800-friends">Architecture with 800 of My Closest Friends: The Evolution of Comcast’s Architecture Guild</a></li>
-          <li>May 1, 2019 - <a href="https://colorado.comcast.com/2019/04/30/the-2nd-annual-open-source-conference-is-coming-to-denver-co-on-june-20th/">The 2nd Annual Open Source Conference is coming to Denver, CO on June 20th</a></li>
-          <li>May 1, 2019 - <a href="https://blogs.dxc.technology/2019/05/01/ignore-the-hysteria-cloud-foundry-is-just-fine/">Ignore the hysteria, Cloud Foundry is just fine - Cloudy Weather</a></li>
-          <li>April 22, 2019 - <a href="https://developer.ibm.com/blogs/cf-summit-2019-na-recap/">A recap of Cloud Foundry Summit North America 2019 - Michael Maximilian</a></li>
-          <li>April 12, 2019 - <a href="https://soundcloud.com/thenewstackanalysts/cloud-foundrys-past-present-and-future-discussed-over-pancakes">Cloud Foundry’s Past, Present And Future Discussed Over Pancakes - TNS Staff</a></li>
-          <li>April 3, 2019 - <a href="https://www.itprotoday.com/iaaspaas/how-comcast-empowers-developers-open-source">How Comcast Empowers Developers with Open Source - Nicole Henderson</a></li>
-          <li>April 2, 2019 - <a href="https://www.prnewswire.com/news-releases/cloud-foundry-2019-north-american-summit-begins-in-philadelphia-announces-project-eirini-ready-for-early-adopters-300822805.html">Cloud Foundry 2019 North American Summit Begins in Philadelphia, Announces Project Eirini Ready for Early Adopters - Cloud Foundry Foundation</a></li>
-          <li>March 26, 2019 - <a href="https://www.cloudfoundry.org/blog/attend-the-comcast-community-reception-at-cloud-foundry-summit/">Attend the Comcast Community Reception at Cloud Foundry Summit - Caitlyn O’Connell</a></li>
-          <li>March 25, 2019 - <a href="https://labs.comcast.com/welcoming-the-global-cloud-foundry-community-to-philly">Welcoming The Global Cloud Foundry Community to Philly - Greg Otto</a></li>
-          <li>March 18, 2019 - <a href="https://labs.comcast.com/conferences-technologists-europes-open-source-meeting">Several Conferences, 8,000 Technologists, One Great Week at Europe’s Free Open Source Meeting - Shilla Saebi</a></li>
-          <li>March 14, 2019 - <a href="https://www.tfir.io/attend-cloud-foundry-north-america-summit-in-philadelphia-april-2-4/">Attend Cloud Foundry North America Summit In Philadelphia, April 2-4 - Swapnil Bhartiya </a></li>
-          <li>March 12, 2019 - <a href="https://devops.com/it-revolution-announces-second-round-of-speakers-for-devops-enterprise-summit-london-2019/">IT Revolution Announces Second Round of Speakers for DevOps Enterprise Summit London 2019 - Deborah Schalm</a></li>
-          <li>March 5, 2019 - <a href="https://opensourceforu.com/2019/03/comcast-encourages-its-engineers-to-not-just-consume-open-source-but-to-also-contribute-to-it/">“Comcast encourages its engineers to not just consume open source but to also contribute to it” - Aamir Hussain Kaki</a></li>
-          <li>March 5, 2019 - <a href="https://www.kitv.com/story/40070765/cloud-foundry-foundation-kicks-off-2019-with-new-members">Cloud Foundry Foundation Kicks off 2019 With New Members - KITV 4 abc</a></li>
-          <li>February 25, 2019 - <a href="https://opensource.com/article/19/2/trailblazers-black-history-month">7 trailblazers in tech comment on Black History Month - Shilla Saebi</a></li>
-          <li>February 22, 2019 - <a href="https://thenewstack.io/googles-hybrid-cloud-cloud-foundrys-upcoming-philadelphia-summit/">Google’s Hybrid Cloud, Cloud Foundry’s Upcoming Philadelphia Summit - TNS Staff</a></li>
-          <li>February 20, 2019 - <a href="https://medium.com/@ShillaSaebi/celebrating-open-source-trailblazers-during-black-history-month-6a57e83699fc">Celebrating Open Source Trailblazers During Black History Month - Shilla Saebi</a></li>
-          <li>February 12, 2019 - <a href="https://www.linuxfoundation.org/press-release/2019/02/open-source-leadership-summit-2019/">Linux Foundation Unveils Impressive Speaker Lineup for Open Source Leadership Summit 2019 - Rachel Romoff</a></li>
-          <li>February 11, 2019 - <a href="https://labs.comcast.com/keeping-kubernetes-clusters-running-smoothly-with-kuberhealthy">Keeping Kubernetes Clusters Running Smoothly with Kuberhealthy - Eric Greer</a></li>
-          <li>January 16, 2019 - <a href="https://www.prnewswire.com/news-releases/cloud-foundry-foundation-announces-initial-schedule-for-2019-north-america-summit-300779100.html">Cloud Foundry Foundation Announces Initial Schedule for 2019 North America Summit - Cloud Foundry Foundation</a></li>
-        </ul>
-        <h2>2018</h2>
-        <ul>
-          <li>December 15, 2018 - <a href="https://www.youtube.com/watch?v=ZO7nrX20iT0">Got a Need for Speed? Accelerate Your Prometheus Dashboard Using Trickster - Shilla Saebi & James Ranson</a></li>
-          <li>October 16, 2018 - <a href="https://www.swedsoft.se/2018/05/14/stew-keynote-nithya-a-ruff-senior-director-comcasts-open-source-practice/">STEW keynote: Nithya A. Ruff, Head, Comcast’s Open Source Practice</a></li>
-          <li>November 29, 2018 - <a href="https://www.youtube.com/watch?v=RYJhSEoWB4E"> Nithya Ruff on Open Source at Comcast</a></li>
-          <li>November 15, 2018 - <a href="https://simplecast.com/s/7e4bc893?t=0m0s"> Moving companies to Open Source with the Head of Comcast's Open Source Office Nithya Ruff</a></li>
-          <li>September 27, 2018 - <a href="http://labs.comcast.com/highlights-from-the-open-source-summit-north-america-2018"> Highlights from the Open Source Summit North America 2018</a></li>
-          <li>September 12, 2018 - <a href="http://superuser.openstack.org/articles/interview-nithya-ruff/"> Talking to the women of "Chasing Grace": Nithya Ruff</a></li>
-          <li>August 1, 2018 - <a href="http://labs.comcast.com/introducing-vinyldns-an-open-source-dns-management-platform"> Introducing VinylDNS, an Open Source DNS Management Platform</a></li>
-          <li>July 31, 2018 - <a href="https://technical.ly/philly/2018/07/31/top-programming-languages-tech-skills-2018/"> Software developers: Here’s what tech employers are looking for in 2018</a></li>
-          <li>June 1, 2018 - <a href="http://www.globenewswire.com/news-release/2018/06/04/1516016/0/en/The-Apache-Software-Foundation-Announces-Apache-Traffic-Control-as-a-Top-Level-Project.html"> The Apache Software Foundation Announces Apache® Traffic Control™ as a Top-Level Project</a></li>
-          <li>May 30, 2018 - <a href="http://labs.comcast.com/announcing-trickster-an-open-source-dashboard-accelerator-for-prometheus"> Announcing Trickster, an Open-Source Dashboard Accelerator for Prometheus</a></li>
-          <li>May 25, 2018 - <a href="https://technical.ly/philly/2018/05/25/code-for-philly-launchpad-projects-2018-philadelphia-civic-tech/">Meet the 5 projects from Code for Philly’s Civic Engagement Launchpad</a></li>
-          <li>May 24, 2018 - <a href="https://www.infoq.com/presentations/comcast-open-source">How Comcast Embraced Open </a></li>
-          <li>May 14, 2018 - <a href="https://www.codeforphilly.org/blog/recap--a_guide_to_open_source_licensing">Recap: A Guide to Open Source Licensing </a></li>
-          <li>April 12, 2018 - <a href="https://labs.comcast.com/talking-cloud-containers-and-diversity-at-the-open-source-leadership-summit">Talking Cloud, Containers and Diversity at the Open Source Leadership Summit</a></li>
-          <li>March 29, 2018 - <a href="http://superuser.openstack.org/articles/introducing-openstack-event-listener/">Introducing OpenStack Event Listener</a></li>
-          <li>March 27, 2018 - <a href="https://thenewstack.io/chasing-grace-project-the-gender-pay-gap-in-the-male-dominated-world-of-tech-and-open-source/">Chasing Grace Project: The Gender Pay Gap in the Male-Dominated World of Tech and Open Source</a></li>
-          <li>March 27, 2018 - <a href="https://thenewstack.io/chasing-grace-project-the-gender-pay-gap-in-the-male-dominated-world-of-tech-and-open-source/">Chasing Grace Project: The Gender Pay Gap in the Male-Dominated World of Tech and Open Source</a></li>
-          <li>March 26, 2018 - <a href="https://thenewstackmakers.fireside.fm/guests/nithya-ruff">Open Source Leaders in Chasing Grace Film Discuss Challenges Women in Tech Face</a></li>
-          <li>March 22, 2018 - <a href="https://www.youtube.com/watch?v=KK012uilLH0">Women In Tech: The Story of Open Source at Comcast</a></li>
-          <li>March 6, 2018 - <a href="http://labs.comcast.com/refining-enterprise-open-source-approaches-with-the-todo-group">Refining Enterprise Open Source Approaches with The TODO Group</a></li>
-          <li>March 5, 2018 - <a href="http://labs.comcast.com/rdk-2018-americas-summit-recap"> RDK 2018 Americas Summit Recap</a></li>
-          <li>January 25, 2018 - <a href="http://labs.comcast.com/announcing-a-new-open-source-server-remediation-tool"> Announcing a New Open Source Server Remediation Tool</a></li>
-        </ul>
-        <h2>2017</h2>
-        <ul>
-          <li>October 30, 2017 - <a href="http://labs.comcast.com/open-source-season-fall-conference-roundup"> Open Source Season: Fall Conference Roundup</a></li>
-          <li>September 22, 2017 - <a href="http://labs.comcast.com/open-source-technologies-comcast-at-open-source-summit-north-america"> Collaboration at the Forefront at Open Source Summit North America</a></li>
-          <li>September 15, 2018 - <a href="https://www.youtube.com/watch?v=mfXJV9dJQoc">If There Are No Metrics, Did It Even Happen? - Shilla Saebi & David Grizzanti</a></li>
-          <li>August 24, 2017 - <a href="http://labs.comcast.com/comcast-launches-updated-github-page-for-open-source-projects"> Comcast Launches Updated GitHub Page for Open Source Projects</a></li>
-          <li>August 10, 2017 - <a href="http://labs.comcast.com/our-speed-test-is-now-available-open-source"> Our Speed Test is Now Available Open Source</a></li>
-          <li>March 28, 2017 - <a href="http://labs.comcast.com/innovation-fund-spotlight-dns-oarc-drool-open-source-software"> Innovation Fund Spotlight: DNS-OARC “drool” Open Source Software</a></li>
-        </ul>
-        <h2>2016</h2>
-        <ul>
-          <li>October 27, 2016 - <a href="http://labs.comcast.com/future-proofing-the-cloud-tokyo"> Future-Proofing the Cloud at OpenStack Tokyo</a></li>
-          <li>September 20, 2016 - <a href="http://labs.comcast.com/introducing-an-open-source-network-policy-engine"> Introducing An Open Source Network Policy Engine</a></li>
-          <li>August 23, 2016 - <a href="http://labs.comcast.com/beta-testing-a-new-open-source-speed-test"> Beta Testing a New Open-Source Speed Test</a></li>
-          <li>May 19, 2016 - <a href="http://labs.comcast.com/comcast-openstack-engineering"> Comcast and OpenStack: Engineering from Cloud to Couch</a></li>
-          <li>May 4, 2016 - <a href="http://labs.comcast.com/building-a-smarter-network-with-openstack"> Building a Smarter Network with OpenStack</a></li>
-          <li>February 23, 2016 - <a href="http://labs.comcast.com/engineering-next-gen-of-tech"> Building What’s Next</a></li>
-        </ul>
-      </section>
-    </div>
-    <footer id="contact">
-      <section>
-        <h2>Learn More</h2>
-        <address>
-          <a class="email" href="mailto:Comcast_Open_Source_Services@comcast.com"><span>Comcast Open Source Services</span></a>
-          <a class="blog" href="http://labs.comcast.com"><span>Comcast Labs Blog</span></a>
-        </address>
-      </section>
-      <section>
-        <p>Like what you see? <span>Come work with us!</span></p>
-        <a href="http://jobs.comcast.com/search-jobs?q=open+source&amp;loc=&amp;team=Technology&amp;radius=25&amp;postDate=&amp;pos=Full+Time&amp;country=#results" class="button button--primary">View Job Openings</a>
-
-        <ul class="social">
-          <li><a href="https://www.facebook.com/ComcastCareers/?fref=ts"><img src="img/icon-facebook.svg" alt="Facebook"></a></li>
-          <li><a href="https://twitter.com/comcastcareers"><img src="img/icon-twitter.svg" alt="Twitter"></a></li>
-          <li><a href="https://www.instagram.com/comcastcareers/"><img src="img/icon-instagram.svg" alt="Instagram"></a></li>
-          <li><a href="https://www.youtube.com/user/ComcastCareers"><img src="img/icon-youtube.svg" alt="YouTube"></a></li>
-          <li><a href="https://dribbble.com/comcast"><img src="img/icon-dribbble.svg" alt="Dribbble"></a></li>
-        </ul>
-      </section>
-      <section>
-        <div class="copyright">
-          <a href="http://corporate.comcast.com"><img src="img/logo-comcast-alt.svg" alt="Comcast"></a> &copy; 2018 Comcast
-          <a href="humans.txt" class="humans"><span class="screen-reader-text">humans.txt</span></a>
+  </div>
+  <div class="blog-content">
+    <p>Check the below links to read blog entries that are related to open source at Comcast.</p>
+    <section class="blog-section">
+      <h2>2020</h2>
+      <div class="blog-card-deck">
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">September 11, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://www.redhat.com/en/about/press-releases/gpl-initiative-grows-over-40-more-60-companies-have-joined-campaign-greater-predictability-open-source-licensing?sc_cid=701f2000000tyBjAAI">
+                GPL Initiative Grows Over 40%; More Than 60 Companies Have Joined the Campaign for Greater
+                Predictability in
+                Open Source Licensing</a>
+            </div>
+          </div>
         </div>
-      </section>
-    </footer>
-    <script>
-      var GA_PAGEVIEW_SENT = false;
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">September 10, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://technical.ly/philly/2020/09/10/meet-11-tech-companies-hiring-september-23-developers-conference-philly-tech-week-2020/">
+                Meet these 12 tech companies and see who’s hiring at the Sept. 23 Developers Conference</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">September 3, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://www.prnewswire.com/news-releases/the-linux-foundation-announces-the-full-line-up-of-sessions-for-the-open-source-summit--embedded-linux-conference-europe-2020-virtual-experience-october-26---29-open-for-all---anytime-anywhere-301123877.html">
+                The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux
+                Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">August 28, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://opensource.com/article/20/9/open-source-dns">
+                Why Comcast open sourced its DNS management tool by Paul James Cleary</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">August 19, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://www.finos.org/blog/why-your-ospo-needs-to-invest-in-more-than-compliance-nithya-ruff-comcast">
+                Why Your OSPO Needs to Invest in More Than Compliance</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">August 17, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://technical.ly/philly/2020/08/17/code-for-philly-new-technical-fellowship-paid-skills-development-mentorship/">
+                Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael
+                Butler</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">August 5, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://opensource.com/article/20/8/capsule-networking">
+                Modernize network function development with this Rust-based framework by Zeeshan Lakhani</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">July 30, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/">
+                Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">July 6, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://searchitoperations.techtarget.com/news/252485541/Open-source-contributions-face-friction-over-company-IP">
+                Open source contributions face friction over company IP</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">July 2, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://www.mobileworldmagazine.com/interviews/comcasts-larry-maccherone-driving-digital-transformation">
+                Comcast's Larry Maccherone on driving digital transformation by Sean Galea-Pace</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">July 1, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://www.mobileworldmagazine.com/company/comcast-introducing-devsecops-scale">
+                Comcast: Introducing DevSecOps at Scale by Sean Galea-Pace</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">May 29, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://kubernetes.io/blog/2020/05/29/k8s-kpis-with-kuberhealthy/">
+                K8s KPIs with Kuberhealthy by Joshulyne Park, Eric Greer</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">May 12, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://events.linuxfoundation.org/2020/05/12/a-big-thank-you-to-our-open-source-summit-embedded-linux-conference-north-america-2020-program-committee-members/">
+                A Big Thank You to OSS Summit + Embedded Linux Conference NA 2020 Program Committee Members!</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">May 6, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://www.linkedin.com/pulse/committing-innovation-comcasts-nithya-ruff-talks-open-erica-brescia/?trackingId=05hzrZWrTW%2B0Nl2FMcRpDg%3D%3D">
+                Committing to innovation: Comcast’s Nithya Ruff talks Open Source with GitHub COO Erica Brescia</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">March 27, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://medium.com/@ShillaSaebi/collaboration-for-a-cause-beedfab787ca">
+                Collaboration for a Cause by Shilla Saebi</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">February 28, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://medium.com/@ShillaSaebi/black-history-month-hear-from-5-technology-innovators-ec6954ca2d61">
+                Black History Month: Hear from 5 Technology Innovators by Shilla Saebi</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">February 28, 2020</div>
+            <div class="blog-link-box">
+              <a href="https://opensource.com/article/20/2/careers-tech-minorities">
+                4 technologists on careers in tech for minorities by Shilla Saebi</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-date-box">January 29, 2020</div>
+            <div class="blog-link-box">
+              <a
+                href="https://medium.com/@leslielauralive/meet-the-community-devroom-speakers-alison-shilla-28f9a8b129e9">
+                Meet the Community Devroom Speakers Alison &amp; Shilla by Leslie Hawthorn &amp; Laura Czajkowsk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>2019</h2>
+      <div class="blog-card-deck">
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">October 23, 2019</div>
+              <div class="blog-link-box">
+                <a href="http://www.informationweek.com/software/opening-up-to-open-source/a/d-id/1335916">
+                  Opening Up to Open Source by Mario Rodriguez</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">October 2, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://techbeacon.com/devops/devops-100-top-leaders-practitioners-experts-follow-0">
+                  DevOps 100: Top leaders, practitioners, experts to follow by Mike Perrow</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 26, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.linkedin.com/pulse/five-reasons-why-organizations-should-invest-open-source-anderson/">
+                  Five Reasons Why Organizations Should Invest in Open Source by Erica Anderson</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 13, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.fiercetelecom.com/operators/comcast-puts-open-source-networking-software-into-production">
+                  Comcast Puts Open Source Networking Software into Production by Linda Hardesty</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 13, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://www.sdxcentral.com/articles/news/comcast-deploys-open-source-trellis-in-multiple-markets/2019/09/">
+                  Comcast Deploys Open Source Trellis in ‘Multiple Markets’ by Jessica Lyons Hardcastle</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">July 23, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://devrel.net/community/whats-brewing-and-cooking-in-your-open-source-community-part-2">
+                  What’s brewing and cooking in your open source community? (part 2) by Shilla Saebi</a>
+              </div>
+            </div>
+          </div>
 
-      ga('create', 'UA-102911798-1', 'auto');
-      setTimeout(function() {
-        if(!window.GA_PAGEVIEW_SENT) {
-          ga('send', 'pageview');
-          GA_PAGEVIEW_SENT = true;
-        }
-      }, 3000);
-    </script>
-  </body>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">June 28, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://thenewstack.io/how-comcast-was-no-longer-blinded-by-the-light/">
+                  How Comcast Was No Longer ‘Blinded by the Light‘ by Abby Kearns</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 14, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.infoq.com/articles/architecture-guild-800-friends">
+                  Architecture with 800 of My Closest Friends: The Evolution of Comcast’s Architecture Guild</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 1, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://colorado.comcast.com/2019/04/30/the-2nd-annual-open-source-conference-is-coming-to-denver-co-on-june-20th/">
+                  The 2nd Annual Open Source Conference is coming to Denver, CO on June 20th</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 1, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://blogs.dxc.technology/2019/05/01/ignore-the-hysteria-cloud-foundry-is-just-fine/">
+                  Ignore the hysteria, Cloud Foundry is just&nbsp;fine - Cloudy Weather</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">April 22, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://developer.ibm.com/blogs/cf-summit-2019-na-recap/">
+                  A recap of Cloud Foundry Summit North America </a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">April 12, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://soundcloud.com/thenewstackanalysts/cloud-foundrys-past-present-and-future-discussed-over-pancakes">
+                  Cloud Foundry’s Past, Present And Future Discussed Over Pancakes - TNS Staff</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">April 3, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.itprotoday.com/iaaspaas/how-comcast-empowers-developers-open-source">
+                  How Comcast Empowers Developers with Open Source - Nicole Henderson</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">April 2, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://www.prnewswire.com/news-releases/cloud-foundry-2019-north-american-summit-begins-in-philadelphia-announces-project-eirini-ready-for-early-adopters-300822805.html">
+                  Cloud Foundry 2019 North American Summit Begins in Philadelphia, Announces Project Eirini Ready for Early
+                  Adopters - Cloud Foundry Foundation</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 26, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.cloudfoundry.org/blog/attend-the-comcast-community-reception-at-cloud-foundry-summit/">
+                  Attend the Comcast Community Reception at Cloud Foundry Summit - Caitlyn O’Connell</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 25, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://labs.comcast.com/welcoming-the-global-cloud-foundry-community-to-philly">
+                  Welcoming The Global Cloud Foundry Community to Philly - Greg Otto</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 18, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://labs.comcast.com/conferences-technologists-europes-open-source-meeting">
+                  Several Conferences, 8,000 Technologists, One Great Week at Europe’s Free Open Source Meeting - Shilla
+                  Saebi</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 14, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.tfir.io/attend-cloud-foundry-north-america-summit-in-philadelphia-april-2-4/">
+                  Attend Cloud Foundry North America Summit In Philadelphia, April 2-4 - Swapnil Bhartiya</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 12, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://devops.com/it-revolution-announces-second-round-of-speakers-for-devops-enterprise-summit-london-2019/">
+                  IT Revolution Announces Second Round of Speakers for DevOps Enterprise Summit London </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 5, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://opensourceforu.com/2019/03/comcast-encourages-its-engineers-to-not-just-consume-open-source-but-to-also-contribute-to-it/">
+                  “Comcast encourages its engineers to not just consume open source but to also contribute to it” - Aamir
+                  Hussain Kaki</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 5, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.kitv.com/story/40070765/cloud-foundry-foundation-kicks-off-2019-with-new-members">
+                  Cloud Foundry Foundation Kicks off 2019 With New Members - KITV 4 abc</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">February 25, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://opensource.com/article/19/2/trailblazers-black-history-month">
+                  7 trailblazers in tech comment on Black History Month - Shilla Saebi</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">February 22, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://thenewstack.io/googles-hybrid-cloud-cloud-foundrys-upcoming-philadelphia-summit/">
+                  Google’s Hybrid Cloud, Cloud Foundry’s Upcoming Philadelphia Summit - TNS Staff</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">February 20, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://medium.com/@ShillaSaebi/celebrating-open-source-trailblazers-during-black-history-month-6a57e83699fc">
+                  Celebrating Open Source Trailblazers During Black History Month - Shilla Saebi</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">February 12, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://www.linuxfoundation.org/press-release/2019/02/open-source-leadership-summit-2019/">
+                  Linux Foundation Unveils Impressive Speaker Lineup for Open Source Leadership Summit </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">February 11, 2019</div>
+              <div class="blog-link-box">
+                <a href="https://labs.comcast.com/keeping-kubernetes-clusters-running-smoothly-with-kuberhealthy">
+                  Keeping Kubernetes Clusters Running Smoothly with Kuberhealthy - Eric Greer</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">January 16, 2019</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://www.prnewswire.com/news-releases/cloud-foundry-foundation-announces-initial-schedule-for-2019-north-america-summit-300779100.html">
+                  Cloud Foundry Foundation Announces Initial Schedule for 2019 North America Summit - Cloud Foundry
+                  Foundation</a>
+              </div>
+            </div>
+          </div>
+       </div>
+      <h2>2018</h2>
+      <div class="blog-card-deck">
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">December 15, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://www.youtube.com/watch?v=ZO7nrX20iT0">
+                  Got a Need for Speed? Accelerate Your Prometheus Dashboard Using Trickster - Shilla Saebi &amp; James
+                  Ranson</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">October 16, 2018</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://www.swedsoft.se/2018/05/14/stew-keynote-nithya-a-ruff-senior-director-comcasts-open-source-practice/">
+                  STEW keynote: Nithya A. Ruff, Head, Comcast’s Open Source Practice</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">November 29, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://www.youtube.com/watch?v=RYJhSEoWB4E">
+                  Nithya Ruff on Open Source at Comcast</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">November 15, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://simplecast.com/s/7e4bc893?t=0m0s">
+                  Moving companies to Open Source with the Head of Comcast's Open Source Office Nithya Ruff</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 27, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/highlights-from-the-open-source-summit-north-america-2018">
+                  Highlights from the Open Source Summit North America 2018</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 12, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://superuser.openstack.org/articles/interview-nithya-ruff/">
+                  Talking to the women of "Chasing Grace": Nithya Ruff</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">August 1, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/introducing-vinyldns-an-open-source-dns-management-platform">
+                  Introducing VinylDNS, an Open Source DNS Management Platform</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">July 31, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://technical.ly/philly/2018/07/31/top-programming-languages-tech-skills-2018/">
+                  Software developers: Here’s what tech employers are looking for in 2018</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">June 1, 2018</div>
+              <div class="blog-link-box">
+                <a
+                  href="http://www.globenewswire.com/news-release/2018/06/04/1516016/0/en/The-Apache-Software-Foundation-Announces-Apache-Traffic-Control-as-a-Top-Level-Project.html">
+                  The Apache Software Foundation Announces Apache® Traffic Control™ as a Top-Level Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 30, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/announcing-trickster-an-open-source-dashboard-accelerator-for-prometheus">
+                  Announcing Trickster, an Open-Source Dashboard Accelerator for Prometheus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 25, 2018</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://technical.ly/philly/2018/05/25/code-for-philly-launchpad-projects-2018-philadelphia-civic-tech/">
+                  Meet the 5 projects from Code for Philly’s Civic Engagement Launchpad</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 24, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://www.infoq.com/presentations/comcast-open-source">
+                  How Comcast Embraced Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 14, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://www.codeforphilly.org/blog/recap--a_guide_to_open_source_licensing">
+                  Recap: A Guide to Open Source Licensing</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">April 12, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://labs.comcast.com/talking-cloud-containers-and-diversity-at-the-open-source-leadership-summit">
+                  Talking Cloud, Containers and Diversity at the Open Source Leadership Summit</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 29, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://superuser.openstack.org/articles/introducing-openstack-event-listener/">
+                  Introducing OpenStack Event Listener</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 27, 2018</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://thenewstack.io/chasing-grace-project-the-gender-pay-gap-in-the-male-dominated-world-of-tech-and-open-source/">
+                  Chasing Grace Project: The Gender Pay Gap in the Male-Dominated World of Tech and Open Source</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 27, 2018</div>
+              <div class="blog-link-box">
+                <a
+                  href="https://thenewstack.io/chasing-grace-project-the-gender-pay-gap-in-the-male-dominated-world-of-tech-and-open-source/">
+                  Chasing Grace Project: The Gender Pay Gap in the Male-Dominated World of Tech and Open Source</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 26, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://thenewstackmakers.fireside.fm/guests/nithya-ruff">
+                  Open Source Leaders in Chasing Grace Film Discuss Challenges Women in Tech Face</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 22, 2018</div>
+              <div class="blog-link-box">
+                <a href="https://www.youtube.com/watch?v=KK012uilLH0">
+                  Women In Tech: The Story of Open Source at Comcast</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 6, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/refining-enterprise-open-source-approaches-with-the-todo-group">
+                  Refining Enterprise Open Source Approaches with The TODO Group</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 5, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/rdk-2018-americas-summit-recap">
+                  RDK 2018 Americas Summit Recap</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">January 25, 2018</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/announcing-a-new-open-source-server-remediation-tool">
+                  Announcing a New Open Source Server Remediation Tool</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <h2>2017</h2>
+      <div class="blog-card-deck">
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">October 30, 2017</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/open-source-season-fall-conference-roundup">
+                  Open Source Season: Fall Conference Roundup</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 22, 2017</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/open-source-technologies-comcast-at-open-source-summit-north-america">
+                  Collaboration at the Forefront at Open Source Summit North America</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 15, 2018 - If There Are No Metrics, Did It Even Happen? - Shilla Saebi &amp;
+                David Grizzanti2017</div>
+              <div class="blog-link-box">
+                <a href="https://www.youtube.com/watch?v=mfXJV9dJQoc">
+                  undefined</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">August 24, 2017</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/comcast-launches-updated-github-page-for-open-source-projects">
+                  Comcast Launches Updated GitHub Page for Open Source Projects</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">August 10, 2017</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/our-speed-test-is-now-available-open-source">
+                  Our Speed Test is Now Available Open Source</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">March 28, 2017</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/innovation-fund-spotlight-dns-oarc-drool-open-source-software">
+                  Innovation Fund Spotlight: DNS-OARC “drool” Open Source Software</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <h2>2016</h2>
+      <div class="blog-card-deck">
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">October 27, 2016</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/future-proofing-the-cloud-tokyo">
+                  Future-Proofing the Cloud at OpenStack Tokyo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">September 20, 2016</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/introducing-an-open-source-network-policy-engine">
+                  Introducing An Open Source Network Policy Engine</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">August 23, 2016</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/beta-testing-a-new-open-source-speed-test">
+                  Beta Testing a New Open-Source Speed Test</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 19, 2016</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/comcast-openstack-engineering">
+                  Comcast and OpenStack: Engineering from Cloud to Couch</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">May 4, 2016</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/building-a-smarter-network-with-openstack">
+                  Building a Smarter Network with OpenStack</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-body">
+              <div class="blog-date-box">February 23, 2016</div>
+              <div class="blog-link-box">
+                <a href="http://labs.comcast.com/engineering-next-gen-of-tech">
+                  Building What’s Next</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </div>
+  <footer id="contact">
+    <section>
+      <h2>Learn More</h2>
+      <address>
+        <a class="email" href="mailto:Comcast_Open_Source_Services@comcast.com"><span>Comcast Open Source
+            Services</span></a>
+        <a class="blog" href="http://labs.comcast.com"><span>Comcast Labs Blog</span></a>
+      </address>
+    </section>
+    <section>
+      <p>Like what you see? <span>Come work with us!</span></p>
+      <a href="http://jobs.comcast.com/search-jobs?q=open+source&amp;loc=&amp;team=Technology&amp;radius=25&amp;postDate=&amp;pos=Full+Time&amp;country=#results"
+        class="button button--primary">View Job Openings</a>
+
+      <ul class="social">
+        <li><a href="https://www.facebook.com/ComcastCareers/?fref=ts"><img src="img/icon-facebook.svg"
+              alt="Facebook"></a></li>
+        <li><a href="https://twitter.com/comcastcareers"><img src="img/icon-twitter.svg" alt="Twitter"></a></li>
+        <li><a href="https://www.instagram.com/comcastcareers/"><img src="img/icon-instagram.svg" alt="Instagram"></a>
+        </li>
+        <li><a href="https://www.youtube.com/user/ComcastCareers"><img src="img/icon-youtube.svg" alt="YouTube"></a>
+        </li>
+        <li><a href="https://dribbble.com/comcast"><img src="img/icon-dribbble.svg" alt="Dribbble"></a></li>
+      </ul>
+    </section>
+    <section>
+      <div class="copyright">
+        <a href="http://corporate.comcast.com"><img src="img/logo-comcast-alt.svg" alt="Comcast"></a> &copy; 2018
+        Comcast
+        <a href="humans.txt" class="humans"><span class="screen-reader-text">humans.txt</span></a>
+      </div>
+    </section>
+  </footer>
+  <script>
+    var GA_PAGEVIEW_SENT = false;
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-102911798-1', 'auto');
+    setTimeout(function () {
+      if (!window.GA_PAGEVIEW_SENT) {
+        ga('send', 'pageview');
+        GA_PAGEVIEW_SENT = true;
+      }
+    }, 3000);
+  </script>
+</body>
+
 </html>
