@@ -1,6 +1,7 @@
 (function hacktoberfestStats() {
   const clientWithAuth = new Octokit({
-    auth() { return 'token 46bf392d999b9d9f133b24a2d9e6677aa5ce109b'; },
+    previews: ["mercy-preview"],
+    auth: '46bf392d999b9d9f133b24a2d9e6677aa5ce109b',
   });
   const orgs = ['xmidt-org', 'vinyldns', 'comcast', 'capsule', 'tricksterproxy'];
   const orgsAndRepos = orgs.map((orgName) => clientWithAuth.paginate('GET /orgs/:org/repos', {
@@ -39,12 +40,15 @@
 
   function build(org) {
     return org
-      .then((orgRepos) => orgRepos.map((repo) => clientWithAuth.paginate('GET /repos/:owner/:repo/issues', {
-        owner: repo.owner.login,
-        repo: repo.name,
-        labels: 'hacktoberfest',
-        state: 'all',
-      })))
+      .then((orgRepos) => orgRepos
+        .filter((repo) => {
+          return repo.topics.includes('hacktoberfest') || repo.topics.includes('hacktoberfest2020');
+        })
+        .map((repo) => clientWithAuth.paginate('GET /repos/:owner/:repo/issues', {
+          owner: repo.owner.login,
+          repo: repo.name,
+          state: 'all',
+        })))
       .then((issuesAndPullRequests) => {
         return Promise.all(issuesAndPullRequests).then((values) => {
           values.forEach((v) => {
