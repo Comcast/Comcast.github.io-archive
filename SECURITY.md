@@ -19,3 +19,5 @@ Use this section to tell people how to report a vulnerability.
 Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc.
+
+Hi from https://bugcrowd.com/submissions/7a0ef173f23b8cd4d9773db20f73709a9674bd737727c5831c59e3f6b701673b
